@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="19.492" viewBox="0 0 24 19.492">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_131" data-name="Path 131" d="M367-19.685a9.861,9.861,0,0,1-2.832.761,4.9,4.9,0,0,0,2.162-2.711,9.683,9.683,0,0,1-3.122,1.188A4.907,4.907,0,0,0,359.614-22a4.917,4.917,0,0,0-4.919,4.919,5.548,5.548,0,0,0,.122,1.127A13.981,13.981,0,0,1,344.675-21.1a4.882,4.882,0,0,0-.67,2.482,4.915,4.915,0,0,0,2.193,4.1,4.954,4.954,0,0,1-2.223-.624v.061a4.919,4.919,0,0,0,3.944,4.827,5.2,5.2,0,0,1-1.294.168,6.2,6.2,0,0,1-.929-.076,4.927,4.927,0,0,0,4.6,3.411,9.851,9.851,0,0,1-6.107,2.1A10.169,10.169,0,0,1,343-4.716a13.9,13.9,0,0,0,7.553,2.208A13.9,13.9,0,0,0,364.548-16.5c0-.213,0-.426-.015-.64A10.575,10.575,0,0,0,367-19.685Z" transform="translate(0 24)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_146" data-name="Rectangle 146" width="34" height="30" transform="translate(338 -3)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Path_127" data-name="Path 127" d="M343-2h24V-22H343Z" transform="translate(0 24)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Path_130" data-name="Path 130" d="M343-24h24V0H343Z" transform="translate(0 24)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="twitter" transform="translate(-343 -2)" clip-path="url(#clip-path)">
+    <g id="Group_78" data-name="Group 78" clip-path="url(#clip-path-2)">
+      <g id="Group_75" data-name="Group 75" clip-path="url(#clip-path-3)">
+        <path id="Path_126" data-name="Path 126" d="M338,2.492h34V-27H338Z" transform="translate(0 24)" fill="#414141"/>
+      </g>
+      <g id="Group_77" data-name="Group 77" clip-path="url(#clip-path-4)">
+        <g id="Group_76" data-name="Group 76" clip-path="url(#clip-path-3)">
+          <path id="Path_128" data-name="Path 128" d="M338,5h34V-29H338Z" transform="translate(0 24)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

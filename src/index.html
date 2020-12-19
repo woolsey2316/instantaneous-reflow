@@ -4,18 +4,136 @@
     <title>Matrix</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   </head>
   <body>
-    <h1 class="text-4xl text-center my-16 text-gray-400 font-bold font-sans">Greetings.</h1>
-    <ul class="nav">
-      <li class="navlink"><a href="#">Home</a></li>
-      <li class="navlink"><a href="#">About</a></li>
-      <li class="navlink"><a href="#">Projects</a></li>
-      <li class="navlink"><a href="#">Contact</a></li>
+    <!-- Header with logo -->
+    <div class="bg-gray-900 h-24 p-4 bg-spinning-stars flex justify-between items-center border-b border-gray-500">
+      <img height="40" width="193" class="sm:logo-w sm:logo-h" src="./assets/images/matrix-logo.png">
+      <div class="pointer">
+        <i class="fas fa-bars text-white text-3xl"></i>
+      </div>
+    </div>
+    <div class="flex items-center p-2 justify-between bg-gray-900 border-b border-danger">
+      <button class="pointer text-sm font-bold rounded-lg py-1 px-5 text-white bg-blue-900">GLOSSARY</button>
+      <button class="pointer text-sm font-bold rounded-lg py-1 px-5 text-white bg-blue-900">CONCEPTS</button>
+      <button class="pointer text-sm font-bold rounded-lg py-1 px-5 text-white bg-blue-900">EXPERTS</button>
+    </div>
+    <!-- Landing Page -->
+    <div class="bg-cover bg-spinning-stars h-64 w-full absolute">
+      <div class="bg-black h-32"></div>
+      <img class="z-1 h-64 w-screen absolute" src="assets/images/spinning-stars.png"></img>
+    </div>
+    <div class="z-2 px-10 absolute bg-transparent">
+      <h1 class="z-50 my-12 font-bold text-5xl text-white">Super Cool Headline</h1>
+      <p class="z-50 text-white text-md">
+        Very good positioning statement should go here. 
+        It should capture the users attention and entice 
+        them to click the call-to-action button below
+      </p>
+      <button class="text-white leading-none font-semibold bg-blue-800 py-2 px-4 mt-5 rounded-lg">Call To Action</button>
+    </div>
+    <!-- search filter section -->
+    <div class="mt-96 flex justify-start items-center p-5 bg-gray-900">
+      <select class="flex-shrink-0 rounded-sm text-gray-500 p-1 bg-gray-800 w-20 mr-6" name="ARM" id="ARM">
+        <option value="ARM">ARM</option>
+        <option value="AMD">AMD</option>
+        <option value="IDT">IDT</option>
+        <option value="audi">audi</option>
+      </select>
+      <select class="flex-shrink-0 rounded-sm text-gray-500 p-1 bg-gray-800 w-20" name="x86" id="x86">
+        <option value="x86">x86</option>
+        <option value="x32">x32</option>
+        <option value="x64">x64</option>
+      </select>
+      <input
+        type="text"
+        placeholder="Filter..."
+        id="filter"
+        name="filter"
+        class="ml-6 rounded-sm w-full bg-gray-800 pl-2 pr-10 py-1 text-white">
+        <img src="assets/images/filter.png" class="fas fa-filter text-gray-500 text-3xl -ml-7"></img>
+      </input>
+    </div>
+    <!-- Blog list -->
+    <div class="bg-gray-900 p-4">
+      <!-- multi-colored border -->
+      <div class="border-t-4 ml-px border-red-800"></div>
+        <div class="bg-gray-900 px-5 py-10 border-l-2 border-r-2 border-gray-800">
+          <h3 class="text-white text-2xl">Widget Title</h3>
+          <p class="text-gray-400">Supporting text and content goes here.</p>
+        </div>
+      <img class="w-full h-auto" src="assets/images/pexels-pixabay-73910.png"></img>
+      <div class="bg-gray-900 px-5 py-8 mb-5 border border-gray-800">
+        <p class="text-gray-400 leading-none"> 
+        Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+        ea nec elaboraret interpretaris, sed diceret concludaturque no.
+        Verear habemus sea ut. His nibh scripta in.
+        In sea vocibus facilisis.
+        Sed ea cibo eripuit vituperata, pri eius debitis ne.
+        Eos et wisi legimus, vel cu paulo doctus vidisse.
+        Iudico dicant nostrum nec an, in eos harum vitae,
+        te quod vero salutandi nam.
+        </p>
+        <button class="text-gray-400 align-middle leading-none font-semibold border border-red-600 rounded-lg px-5 py-2 mt-8">Keep Reading</button>
+      </div>
+    </div>
+    <div class="bg-gray-900 p-4">
+      <!-- multi-colored border -->
+      <div class="border-t-4 ml-px border-blue-300"></div>
+        <div class="bg-gray-900 px-5 py-10 border-l-2 border-r-2 border-gray-800">
+          <h3 class="text-white text-2xl">Widget Title</h3>
+          <p class="text-gray-400">Supporting text and content goes here.</p>
+        </div>
+      <img class="w-full h-auto" src="assets/images/pexels-pixabay-73910.png"></img>
+      <div class="bg-gray-900 px-5 py-8 mb-5 border border-gray-800">
+        <p class="text-gray-400 leading-none"> 
+        Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+        ea nec elaboraret interpretaris, sed diceret concludaturque no.
+        Verear habemus sea ut. His nibh scripta in.
+        In sea vocibus facilisis.
+        Sed ea cibo eripuit vituperata, pri eius debitis ne.
+        Eos et wisi legimus, vel cu paulo doctus vidisse.
+        Iudico dicant nostrum nec an, in eos harum vitae,
+        te quod vero salutandi nam.
+        </p>
+        <button class="text-gray-400 align-middle leading-none font-semibold border border-red-600 rounded-lg px-5 py-2 mt-8">Keep Reading</button>
+      </div>
+    </div>
+    <div class="bg-gray-900 p-4">
+      <!-- multi-colored border -->
+      <div class="border-t-4 ml-px border-blue-500"></div>
+        <div class="bg-gray-900 px-5 py-10 border-l-2 border-r-2 border-gray-800">
+          <h3 class="text-white text-2xl">Widget Title</h3>
+          <p class="text-gray-400">Supporting text and content goes here.</p>
+        </div>
+      <img class="w-full h-auto" src="assets/images/pexels-pixabay-73910.png"></img>
+      <div class="bg-gray-900 px-5 py-8 mb-5 border border-gray-800">
+        <p class="text-gray-400 leading-none"> 
+        Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+        ea nec elaboraret interpretaris, sed diceret concludaturque no.
+        Verear habemus sea ut. His nibh scripta in.
+        In sea vocibus facilisis.
+        Sed ea cibo eripuit vituperata, pri eius debitis ne.
+        Eos et wisi legimus, vel cu paulo doctus vidisse.
+        Iudico dicant nostrum nec an, in eos harum vitae,
+        te quod vero salutandi nam.
+        </p>
+        <button class="text-gray-400 align-middle leading-none font-semibold border border-red-600 rounded-lg px-5 py-2 mt-8">Keep Reading</button>
+      </div>
+    </div>
+    <ul class="invisible md:visible">
+      <li class="navlink"><a href="#">COMPUTATION</a></li>
+      <li class="navlink"><a href="#">PROPULSION</a></li>
+      <li class="navlink"><a href="#">ANOTHER ITEM</a></li>
+      <li class="navlink"><a href="#">ONE MORE ITEM</a></li>
+      <li class="navlink"><a href="#">HOVER ITEM</a></li>
+      <li class="navlink"><a href="#">MENU ITEM</a></li>
+      <li class="navlink"><a href="#">MENU ITEM</a></li>
       </ul>
-      <div class="burger md:invisible">
-      <i class="fas fa-bars"></i>
+      <div class="burger">
+        <i class="fas fa-bars"></i>
       </div>
     </ul>
   </body>
