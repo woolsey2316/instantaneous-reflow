@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .btn-xs {
+    height: 22px;
+    width: 76px;
+  }
+  .btn-sm {
+    height: 26px;
+    width: 69px;
+  }
+  .btn-md {
+    height: 30px;
+    width: 82px;
+  }
+  .btn-lg {
+    height: 34px;
+    width: 76px;
+  }
+  .btn-xl {
+    height: 42px;
+    width: 178px;
+  }
+}

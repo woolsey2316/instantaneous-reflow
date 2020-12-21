@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tailwind Starter Template</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="./src/assets/css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="font-IBM-plex-sans">
+    <!-- Header with logo -->
+    <div class="bg-gray-800 h-24 p-4 bg-spinning-stars flex justify-between items-center border-b border-gray-500">
+      <img height="40" width="193" class="sm:logo-w sm:logo-h" src="./src/assets/images/matrix-logo.png">
+      <div class="pointer">
+        <i class="fas fa-bars text-white text-3xl"></i>
+      </div>
+    </div>
+    <div class="flex items-center p-2 justify-between bg-gray-800 border-b border-danger">
+      <button class="pointer text-sm font-bold rounded-lg py-1 px-5 text-white w-full bg-trueBlue">GLOSSARY</button>
+      <button class="pointer text-sm font-bold rounded-lg ml-4 py-1 px-5 text-white w-full bg-trueBlue">CONCEPTS</button>
+      <button class="pointer text-sm font-bold rounded-lg ml-4 py-1 px-5 text-white w-full bg-trueBlue">EXPERTS</button>
+    </div>
+    <!-- Landing Page -->
+    <div class="bg-cover bg-spinning-stars h-64 w-full absolute">
+      <div class="bg-gray-900 h-32"></div>
+      <img class="z-1 h-64 w-screen absolute" src="./src/assets/images/spinning-stars.png"></img>
+    </div>
+    <div class="z-2 px-10 absolute bg-transparent">
+      <h1 class="z-50 my-12 font-bold text-5xl text-white">Super Cool Headline</h1>
+      <p class="z-50 text-white text-md">
+        Very good positioning statement should go here. 
+        It should capture the users attention and entice 
+        them to click the call-to-action button below
+      </p>
+      <button class="text-white leading-none font-semibold bg-trueBlue py-2 px-4 mt-5 rounded-lg">Call To Action</button>
+    </div>
+    <!-- search filter section -->
+    <div class="mt-96 flex justify-start items-center p-5 bg-gray-800">
+      <select class="flex-shrink-0 rounded-sm text-gray-500 p-1 bg-gray-700 w-20 mr-6" name="ARM" id="ARM">
+        <option value="ARM">ARM</option>
+        <option value="AMD">AMD</option>
+        <option value="IDT">IDT</option>
+        <option value="audi">audi</option>
+      </select>
+      <select class="flex-shrink-0 rounded-sm text-gray-500 p-1 bg-gray-700 w-20" name="x86" id="x86">
+        <option value="x86">x86</option>
+        <option value="x32">x32</option>
+        <option value="x64">x64</option>
+      </select>
+      <input
+        type="text"
+        placeholder="Filter..."
+        id="filter"
+        name="filter"
+        class="ml-6 rounded-sm w-full bg-gray-700 pl-2 pr-10 py-1 text-white">
+        <img src="./src/assets/images/filter.png" class="fas fa-filter text-gray-500 text-3xl -ml-7"></img>
+      </input>
+    </div>
+    <!-- Blog list -->
+    <div class="bg-gray-800 p-4">
+      <!-- multi-colored border -->
+      <div class="border-t-4 ml-px border-red-800"></div>
+        <div class="bg-gray-800 px-5 py-10 border-l-2 border-r-2 border-gray-500">
+          <h3 class="text-white text-2xl">Widget Title</h3>
+          <p class="text-gray-400">Supporting text and content goes here.</p>
+        </div>
+      <img class="w-full h-auto" src="./src/assets/images/pexels-pixabay-73910.png"></img>
+      <div class="bg-gray-800 px-5 py-8 mb-5 border border-gray-500">
+        <p class="text-gray-400 leading-none"> 
+        Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+        ea nec elaboraret interpretaris, sed diceret concludaturque no.
+        Verear habemus sea ut. His nibh scripta in.
+        In sea vocibus facilisis.
+        Sed ea cibo eripuit vituperata, pri eius debitis ne.
+        Eos et wisi legimus, vel cu paulo doctus vidisse.
+        Iudico dicant nostrum nec an, in eos harum vitae,
+        te quod vero salutandi nam.
+        </p>
+        <button class="text-gray-400 align-middle leading-none font-semibold border border-red-600 rounded-lg px-5 py-2 mt-8">Keep Reading</button>
+      </div>
+    </div>
+    <div class="bg-gray-800 p-4">
+      <!-- multi-colored border -->
+      <div class="border-t-4 ml-px border-blue-300"></div>
+        <div class="bg-gray-800 px-5 py-10 border-l-2 border-r-2 border-gray-500">
+          <h3 class="text-white text-2xl">Widget Title</h3>
+          <p class="text-gray-400">Supporting text and content goes here.</p>
+        </div>
+      <img class="w-full h-auto" src="./src/assets/images/pexels-pixabay-256379.png"></img>
+      <div class="bg-gray-800 px-5 py-8 mb-5 border border-gray-500">
+        <p class="text-gray-400 leading-none"> 
+        Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+        ea nec elaboraret interpretaris, sed diceret concludaturque no.
+        Verear habemus sea ut. His nibh scripta in.
+        In sea vocibus facilisis.
+        Sed ea cibo eripuit vituperata, pri eius debitis ne.
+        Eos et wisi legimus, vel cu paulo doctus vidisse.
+        Iudico dicant nostrum nec an, in eos harum vitae,
+        te quod vero salutandi nam.
+        </p>
+        <button class="text-gray-400 align-middle leading-none font-semibold border border-red-600 rounded-lg px-5 py-2 mt-8">Keep Reading</button>
+      </div>
+    </div>
+    <div class="bg-gray-800 p-4">
+      <!-- multi-colored border -->
+      <div class="border-t-4 ml-px border-blue-500"></div>
+        <div class="bg-gray-800 px-5 py-10 border-l-2 border-r-2 border-gray-500">
+          <h3 class="text-white text-2xl">Widget Title</h3>
+          <p class="text-gray-400">Supporting text and content goes here.</p>
+        </div>
+      <img class="w-full h-auto" src="./src/assets/images/pexels-pixabay-2152.png"></img>
+      <div class="bg-gray-800 px-5 py-8 mb-5 border border-gray-500">
+        <p class="text-gray-400 leading-none"> 
+        Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+        ea nec elaboraret interpretaris, sed diceret concludaturque no.
+        Verear habemus sea ut. His nibh scripta in.
+        In sea vocibus facilisis.
+        Sed ea cibo eripuit vituperata, pri eius debitis ne.
+        Eos et wisi legimus, vel cu paulo doctus vidisse.
+        Iudico dicant nostrum nec an, in eos harum vitae,
+        te quod vero salutandi nam.
+        </p>
+        <button class="text-gray-400 align-middle leading-none font-semibold border border-red-600 rounded-lg px-5 py-2 mt-8">Keep Reading</button>
+      </div>
+    </div>
+    <!-- "another page section" with call to action -->
+    <div class="bg-cover h-screen w-full absolute bg-object-over-earth">
+      <div class="z-2 px-10 absolute text-center bg-transparent flex flex-col justify-center items-center">
+        <h1 class="z-50 my-4 font-bold text-xl text-white">Another Page Section</h1>
+        <p class="z-50 text-white text-md">
+          Very good positioning statement should go here. 
+          It should capture the 
+        </p>
+        <button class="text-gray-700 text-sm leading-none font-bold bg-white p-4 py-2 mt-5 rounded-md">Call To Action</button>
+      </div>
+    </div>
+    <!-- SPACING WORKAROUND -->
+    <div class="h-72"></div>
+    <!-- Footer -->
+    <div class="p-6 bg-gray-800 mt-96">
+      <img class="mb-2" src="./src/assets/images/matrix-logo-white.png">
+      <p class="text-gray-400 w-5/6">
+        Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+        ea nec elaboraret interpretaris, sed diceret concludaturque no. 
+        Verear habemus sea ut. His nibh scripta in. 
+      </p>
+      <h6 class="text-white uppercase my-4">
+        MENU HEADING
+      </h6>
+      <p class="text-gray-400 font-light text-sm">MENU ITEM</p>
+      <p class="text-gray-400 font-light text-sm">ANOTHER ITEM</p>
+      <p class="text-gray-400 font-light text-sm">MENU ITEM</p>
+      <h6 class="text-white uppercase my-4">
+        MENU HEADING
+      </h6>
+      <p class="text-gray-400 font-light text-sm">MENU ITEM</p>
+      <p class="text-gray-400 font-light text-sm">ANOTHER ITEM</p>
+      <p class="text-gray-400 font-light text-sm">MENU ITEM</p>
+      <h6 class="text-white uppercase my-4">
+        SETTINGS
+      </h6>
+      <p class="text-gray-400 font-light text-sm">SWITCH TO LIGHT THEME</p>
+      <p class="text-gray-400 font-light text-sm">CREATE AN ACCOUNT</p>
+      <p class="text-gray-400 font-light text-sm">NEWSLETTER</p>
+      <p class="text-gray-500 text-sm mt-10">
+        ©2020 Earthlight Foundation. | Terms  |  Privacy
+      </p>
+    </div>
+    <ul class="invisible md:visible">
+      <li class="navlink"><a href="#">COMPUTATION</a></li>
+      <li class="navlink"><a href="#">PROPULSION</a></li>
+      <li class="navlink"><a href="#">ANOTHER ITEM</a></li>
+      <li class="navlink"><a href="#">ONE MORE ITEM</a></li>
+      <li class="navlink"><a href="#">HOVER ITEM</a></li>
+      <li class="navlink"><a href="#">MENU ITEM</a></li>
+      <li class="navlink"><a href="#">MENU ITEM</a></li>
+      </ul>
+    </ul>
+  </body>
+</html>
