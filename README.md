@@ -1,25 +1,18 @@
-# Tailwind CSS Parcel Starter Project [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=SantiMA10/tailwindcss-parcel-starter)](https://dependabot.com) ![Node.js CI](https://github.com/SantiMA10/tailwindcss-parcel-starter/workflows/Node.js%20CI/badge.svg)
-
-This is an example of a super simple [Tailwind CSS](https://tailwindcss.com) + [ParcelJS](https://parceljs.org) starter project.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/SantiMA10/tailwindcss-parcel-starter)
+# Project: Instantaneous Reflow. Fully responsive home page. 
 
 ## Get started
 
 Clone the project and install the dependencies:
 
 ```
-git clone https://github.com/SantiMA10/tailwindcss-parcel-starter
-yarn // or npm i
+npm i
 ```
 
 After that, start up Parcel Development Server:
 
 ```
-yarn dev // or npm run dev
+npm run dev
 ```
-
-You can play around with `/index.html` to see the effects of your changes.
 
 ## Production bundle
 

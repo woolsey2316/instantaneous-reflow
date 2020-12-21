@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A simple tailwind starter project with parcel",
   "scripts": {
-    "dev": "yarn parcel src/index.html",
-    "prod": "yarn parcel build src/index.html"
+    "dev": "parcel serve src/index.html",
+    "prod": "parcel build src/index.html"
   },
   "repository": "https://github.com/SantiMA10/tailwindcss-parcel-starter.git",
   "author": "Santi <santiagomartinagra@gmail.com>",

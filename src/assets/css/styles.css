@@ -1,28 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+select {
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('../images/caret-down.png');
+  background-position: calc(100% - 10px) calc(0.75em + 2px);
+  background-repeat: no-repeat;
+}
+
+select.btn:focus {
+  background-image: url('../images/caret-up.png');
+  background-position: calc(100% - 10px) calc(0.70em + 2px);
+  background-repeat: no-repeat;
+
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
+  .heading-1 {
+    font-size: 36px;
+    line-height: 47px;
+  }
+  .heading-2 {
+    font-size: 30px;
+    font-weight: light;
+    line-height: 39px;
+  }
+  .heading-3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+  .heading-4 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .heading-5 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .heading-6 {
+    font-size: 12px;
+    line-height: 15px;
+  }
   .btn-xs {
-    height: 22px;
-    width: 76px;
+    padding: 5px 19px;
+    border-radius: 4px;
   }
   .btn-sm {
-    height: 26px;
-    width: 69px;
+    padding: 13px 17px;
+    border-radius: 4px;
   }
   .btn-md {
     height: 30px;
-    width: 82px;
+    padding: 0px 19px;
+    border-radius: 4px;
   }
   .btn-lg {
-    height: 34px;
-    width: 76px;
+    padding: 17px 38px;
+    border-radius: 4px;
   }
   .btn-xl {
-    height: 42px;
-    width: 178px;
+    padding: 21px 89px;
+    border-radius: 4px;
   }
 }
