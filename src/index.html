@@ -11,41 +11,98 @@
   </head>
   <body class="font-IBM-plex-sans">
     <!-- Header with logo -->
-    <div class="h-screen">
-      <div class="bg-gray-800 h-24 p-4 flex justify-between items-center border-b border-gray-500">
-        <img height="40" width="193" class="sm:logo-w sm:logo-h" src="./assets/images/matrix-logo.png">
-        <div class="pointer">
-          <i class="fas fa-bars text-white text-2xl"></i>
+    <div class="min-h-screen">
+      <div class="bg-gray-800 h-26 p-4 flex justify-between items-center border-b border-gray-500">
+        <img height="40" width="193" class="sm:logo-w sm:logo-h" src="./assets/images/matrix-logo.svg"></img>
+        <img height="15" width="17" class="cursor-pointer block sm:hidden" src="assets/images/menu-icon.svg"></img>
+        <!-- show/hide buttons without javaScript -->
+        <div class="hidden sm:flex items-center w-2/3">
+          <button class="hidden md:block font-bold w-full btn-lg leading-1 text-white bg-true-blue"><label class="cursor-pointer w-full" for="trigger">GLOSSARY</label></button>  
+          <button class="hidden md:block font-bold w-full btn-lg leading-1 ml-4 text-white bg-true-blue">CONCEPTS</button>
+          <button class="hidden md:block font-bold w-full btn-lg leading-1 ml-4 text-white bg-true-blue">EXPERTS</button>
         </div>
       </div>
-      <div class="flex items-center p-2 justify-between bg-gray-800 border-b border-true-blue">
-        <button class="pointer text-sm font-bold btn-xs py-1 px-5 text-white w-full bg-true-blue">GLOSSARY</button>
-        <button class="pointer text-sm font-bold btn-xs ml-4 py-1 px-5 text-white w-full bg-true-blue">CONCEPTS</button>
-        <button class="pointer text-sm font-bold btn-xs ml-4 py-1 px-5 text-white w-full bg-true-blue">EXPERTS</button>
+      <!-- Glossary -->
+      <input class="hidden" id="trigger" type="checkbox">
+      <div class="bg-gray-750 p-5 hidden border-b-3 border-matrix-blue relative">
+        <h4 class="text-white text-md font-bold">Glossary: Top 100 Terms</h4>
+        <ul class="bullet-points text-sm leading-3 pl-8 mt-2 mb-4 text-gray-350">  
+          <li class="mb-0.5">Aimpoint</li>
+          <li class="mb-0.5">Air lock</li>
+          <li class="mb-0.5">Ambient</li>
+          <li class="mb-0.5">Anti-matter</li>
+        </ul>
+        <ul class="bullet-points text-sm leading-3 pl-8 my-5 text-gray-350">  
+          <li class="mb-0.5">Backscattering</li>
+          <li class="mb-0.5">Bi-propellant</li>
+          <li class="mb-0.5">Black hole</li>
+          <li class="mb-0.5">Booster</li>
+        </ul>
+        <ul class="bullet-points text-sm leading-3 pl-8 my-5 text-gray-350">  
+          <li class="mb-0.5">Calibration</li>
+          <li class="mb-0.5">Celestial sphere</li>
+          <li class="mb-0.5">Chromosphere</li>
+          <li class="mb-0.5">Coronal mass ejection</li>
+        </ul>
+        <ul class="bullet-points text-sm leading-3 pl-8 my-5 text-gray-350">  
+          <li class="mb-0.5">Dark matter</li>
+          <li class="mb-0.5">Decompression</li>
+          <li class="mb-0.5">Descent module</li>
+          <li class="mb-0.5">Dynamo process</li>
+        </ul>
+        <ul class="bullet-points text-sm leading-3 pl-8 my-5 text-gray-350">  
+          <li class="mb-0.5">Eccentricity</li>
+          <li class="mb-0.5">Ecliptic</li>
+          <li class="mb-0.5">Electric propulsion</li>
+          <li class="mb-0.5">Electromagnetic</li>
+        </ul>
+        <ul class="bullet-points text-sm leading-3 pl-8 my-5 text-gray-350">
+          <li class="mb-0.5">Fairing</li>
+          <li class="mb-0.5">Fission</li>
+          <li class="mb-0.5">Flux</li>
+          <li class="mb-0.5">Fusion</li>
+        </ul>
+        <img class="md:invisible absolute -bottom-3.5 left-1/6" src="assets/images/triangle-show.png"></img>
+      </div>
+      <div class="flex items-center flex-wrap p-2.5 justify-between bg-gray-800 border-b border-true-blue">
+        <!-- show/hide buttons without javaScript -->
+        <button class="block md:hidden font-bold btn-xs leading-1 py-1 px-5 text-white w-1/4 bg-true-blue"><label class="cursor-pointer w-full" for="trigger">GLOSSARY</label></button>  
+        <button class="block md:hidden font-bold btn-xs leading-1 ml-3 py-1 px-5 text-white w-1/3 bg-true-blue">CONCEPTS</button>
+        <button class="block md:hidden font-bold btn-xs leading-1 ml-3 py-1 px-5 text-white w-1/3 bg-true-blue">EXPERTS</button>
+        <!-- Nav Menu -->
+        <ul class="hidden md:flex items-center justify-around w-full">
+          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">COMPUTATION</a></li>
+          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">PROPULSION</a></li>
+          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">ANOTHER ITEM</a></li>
+          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">ONE MORE ITEM</a></li>
+          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">HOVER ITEM</a></li>
+          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">MENU ITEM</a></li>
+          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">MENU ITEM</a></li>
+        </ul>
       </div>
       <!-- Landing Page -->
-      <div class="bg-cover bg-right bg-bottom bg-spinning-stars h-full w-auto">
-        <div class="bg-gray-800 py-10 w-full absolute"></div>
-        <div class="flex flex-col items-start px-10">
-          <h1 class="z-50 font-bold text-5xl text-white mt-10">Super Cool Headline</h1>
-          <p class="text-white mt-5 text-md">
+      <div class="bg-gray-800 sm:bg-black h-24 w-full"></div>
+      <div class="bg-cover bg-right bg-spinning-stars h-120 relative">
+        <div class="flex flex-col items-start sm:justify-center px-10 sm:pl-35 h-full absolute">
+          <h1 class="font-bold text-4xl text-gray-100 -mt-8 sm:mt-0 leading-7">Super Cool Headline</h1>
+          <p class="text-gray-100 font-medium mt-12 sm:mt-4 text-lg leading-3">
             Very good positioning statement should go here. 
             It should capture the users attention and entice 
             them to click the call-to-action button below
           </p>
-          <button class="text-white leading-none font-semibold bg-true-blue btn-sm mt-5">Call To Action</button>
+          <button class="text-white text-sm leading-2 font-bold bg-true-blue btn-sm mt-10 sm:mt-5">Call To Action</button>
         </div>
       </div>
     </div>
     <!-- search filter section -->
     <div class="flex justify-start items-center p-5 bg-gray-800">
-      <select class="select btn text-lg flex-shrink-0 rounded-sm border border-gray-650 hover:border-gray-500 text-gray-500 px-2 py-1 bg-gray-700 w-20 mr-6" name="ARM" id="ARM">
+      <select class="select btn text-sm flex-shrink-0 rounded-sm border border-gray-650 hover:border-gray-500 text-gray-500 px-2 py-1 bg-gray-700 w-20 mr-6" name="ARM" id="ARM">
         <option value="ARM">ARM</option>
         <option value="AMD">AMD</option>
         <option value="IDT">IDT</option>
         <option value="audi">audi</option>
       </select>
-      <select class="select btn text-lg flex-shrink-0 rounded-sm border border-gray-650 hover:border-gray-500 text-gray-500 px-2 py-1 bg-gray-700 w-20" name="x86" id="x86">
+      <select class="select btn text-sm flex-shrink-0 rounded-sm border border-gray-650 hover:border-gray-500 text-gray-500 px-2 py-1 bg-gray-700 w-20" name="x86" id="x86">
         <option value="x86">x86</option>
         <option value="x32">x32</option>
         <option value="x64">x64</option>
@@ -55,127 +112,137 @@
         placeholder="Filter ..."
         id="filter"
         name="filter"
-        class="ml-6 text-lg rounded-sm w-full bg-gray-700 border border-gray-650 hover:border-gray-500 focus:border-matrix-blue pl-2 pr-10 py-1 text-white">
+        class="ml-6 text-sm rounded-sm w-full bg-gray-700 border border-gray-650 hover:border-gray-500 focus:border-matrix-blue pl-2 py-1 text-white">
         <img src="./assets/images/filter.png" class="fas fa-filter text-gray-500 text-3xl -ml-7"></img>
       </input>
     </div>
     <!-- Blog list -->
-    <div class="bg-gray-800 p-4">
-      <!-- multi-colored border -->
-      <div class="border-t-4 border-danger"></div>
-        <div class="bg-gray-800 px-5 py-10 border-l border-r border-gray-500">
-          <h3 class="text-white text-3xl font-medium mb-2">Widget Title</h3>
-          <p class="text-gray-400 text-lg">Supporting text and content goes here.</p>
+    <div class="block sm:flex bg-gray-800 -mb-20 relative h-132">
+      <div class="bg-gray-800 p-4 md:w-75">
+        <!-- multi-colored border -->
+        <div class="border-t-3 border-danger"></div>
+          <div class="bg-gray-800 px-5 py-6 border-l border-r border-gray-700">
+            <h3 class="text-white text-xl font-medium">Widget Title</h3>
+            <p class="text-sm font-medium text-gray-300 mb-2">Supporting text and content goes here.</p>
+          </div>
+        <img class="object-cover h-28" height="230" width="556" src="./assets/images/pexels-pixabay-73910@2x.png"></img>
+        <div class="bg-gray-800 px-5 py-8 mb-5 border-l border-r border-b border-gray-700">
+          <p class="text-sm text-gray-400 leading-2 sm:h-200px sm:max-h-200px overflow-hidden"> 
+            Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+            ea nec elaboraret interpretaris, sed diceret concludaturque no.
+            Verear habemus sea ut. His nibh scripta in.
+            In sea vocibus facilisis.
+            Sed ea cibo eripuit vituperata, pri eius debitis ne.
+            Eos et wisi legimus, vel cu paulo doctus vidisse.
+            Iudico dicant nostrum nec an, in eos harum vitae,
+            te quod vero salutandi nam.
+            Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+            ea nec elaboraret interpretaris, sed diceret concludaturque no.
+            Verear habemus sea ut. His nibh scripta in.
+            In sea vocibus facilisis.
+            Sed ea cibo eripuit vituperata, pri eius debitis ne.
+            Eos et wisi legimus, vel cu paulo doctus vidisse.
+            Iudico dicant nostrum nec an, in eos harum vitae,
+            te quod vero salutandi nam.
+          </p>
+          <button class="btn-md text-gray-500 leading-none font-semibold border border-danger mt-8">Keep Reading</button>
         </div>
-      <img class="w-full h-auto" src="./assets/images/pexels-pixabay-73910.png"></img>
-      <div class="bg-gray-800 px-5 py-8 mb-5 border border-gray-500">
-        <p class="text-gray-400 text-lg leading-none"> 
-        Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
-        ea nec elaboraret interpretaris, sed diceret concludaturque no.
-        Verear habemus sea ut. His nibh scripta in.
-        In sea vocibus facilisis.
-        Sed ea cibo eripuit vituperata, pri eius debitis ne.
-        Eos et wisi legimus, vel cu paulo doctus vidisse.
-        Iudico dicant nostrum nec an, in eos harum vitae,
-        te quod vero salutandi nam.
-        </p>
-        <button class="btn-md text-gray-500 leading-none font-semibold border border-danger mt-8">Keep Reading</button>
       </div>
-    </div>
-    <div class="bg-gray-800 p-4">
-      <!-- multi-colored border -->
-      <div class="border-t-4 border-matrix-green"></div>
-        <div class="bg-gray-800 px-5 py-10 border-l border-r border-gray-500">
-          <h3 class="text-white text-3xl font-medium mb-2">Widget Title</h3>
-          <p class="text-gray-400 text-lg">Supporting text and content goes here.</p>
+      <div class="bg-gray-800 p-4 md:w-75 sm:max-h-133">
+        <!-- multi-colored border -->
+        <div class="border-t-3 border-matrix-green"></div>
+          <div class="bg-gray-800 px-5 py-6 border-l border-r border-gray-700">
+            <h3 class="text-white text-xl font-medium">Longer Widget Title</h3>
+            <p class="text-sm font-medium text-gray-300 mb-2">Supporting text and content goes here.</p>
+          </div>
+        <img class="object-cover h-28" height="230" width="556" src="./assets/images/pexels-pixabay-41006@2x.png"></img>
+        <div class="bg-gray-800 px-5 py-8 mb-5 border-l border-r border-b border-gray-700">
+          <p class="text-sm text-gray-400 sm:h-200px sm:max-h-200px leading-2"> 
+            Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+            ea nec elaboraret interpretaris, sed diceret concludaturque no.
+            Verear habemus sea ut. His nibh scripta in.
+            In sea vocibus facilisis.
+            Sed ea cibo eripuit vituperata, pri eius debitis ne.
+            Eos et wisi legimus, vel cu paulo doctus vidisse.
+            Iudico dicant nostrum nec an, in eos harum vitae,
+            te quod vero salutandi nam.
+          </p>
+          <button class="btn-md text-gray-500 leading-none font-semibold border border-matrix-green mt-8">Keep Reading</button>
         </div>
-      <img class="w-full h-auto" src="./assets/images/pexels-pixabay-256379.png"></img>
-      <div class="bg-gray-800 px-5 py-8 mb-5 border border-gray-500">
-        <p class="text-gray-400 text-lg leading-none"> 
-        Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
-        ea nec elaboraret interpretaris, sed diceret concludaturque no.
-        Verear habemus sea ut. His nibh scripta in.
-        In sea vocibus facilisis.
-        Sed ea cibo eripuit vituperata, pri eius debitis ne.
-        Eos et wisi legimus, vel cu paulo doctus vidisse.
-        Iudico dicant nostrum nec an, in eos harum vitae,
-        te quod vero salutandi nam.
-        </p>
-        <button class="btn-md text-gray-500 leading-none font-semibold border border-matrix-green mt-8">Keep Reading</button>
       </div>
-    </div>
-    <div class="bg-gray-800 p-4">
-      <!-- multi-colored border -->
-      <div class="border-t-4 border-matrix-blue"></div>
-        <div class="bg-gray-800 px-5 py-10 border-l border-r border-gray-500">
-          <h3 class="text-white text-3xl font-medium mb-2">Widget Title</h3>
-          <p class="text-gray-400 text-lg">Supporting text and content goes here.</p>
+      <div class="bg-gray-800 h-108 relative">
+        <div class="absolute sm:static p-4 md:w-75">
+          <!-- multi-colored border -->
+          <div class="border-t-3 border-true-blue"></div>
+            <div class="bg-gray-800 px-5 py-6 border-l border-r border-gray-700">
+              <h3 class="text-white text-xl font-medium">Short Title</h3>
+              <p class="text-sm font-medium text-gray-300 mb-2">Supporting text and content goes here.</p>
+            </div>
+          <img class="object-cover h-28" height="230" width="556" src="./assets/images/pexels-pixabay-2152@2x.png"></img>
+          <div class="bg-gray-800 px-5 py-8 border-l border-r border-b border-gray-700">
+            <p class="text-sm text-gray-400 sm:h-200px sm:max-h-200px leading-2"> 
+              Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+              ea nec elaboraret interpretaris, sed diceret concludaturque no.
+              Verear habemus sea ut. His nibh scripta in.
+              In sea vocibus facilisis.
+              Sed ea cibo eripuit vituperata, pri eius debitis ne.
+              Eos et wisi legimus, vel cu paulo doctus vidisse.
+              Iudico dicant nostrum nec an, in eos harum vitae,
+              te quod vero salutandi nam.
+            </p>
+            <button class="btn-md text-gray-500 leading-none font-semibold border border-true-blue mt-8">Keep Reading</button>
+          </div>
         </div>
-      <img class="w-full h-auto" src="./assets/images/pexels-pixabay-2152.png"></img>
-      <div class="bg-gray-800 px-5 py-8 mb-5 border border-gray-500">
-        <p class="text-gray-400 text-lg leading-none"> 
-        Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
-        ea nec elaboraret interpretaris, sed diceret concludaturque no.
-        Verear habemus sea ut. His nibh scripta in.
-        In sea vocibus facilisis.
-        Sed ea cibo eripuit vituperata, pri eius debitis ne.
-        Eos et wisi legimus, vel cu paulo doctus vidisse.
-        Iudico dicant nostrum nec an, in eos harum vitae,
-        te quod vero salutandi nam.
-        </p>
-        <button class="btn-md text-gray-500 align-middle leading-none font-semibold border border-matrix-blue mt-8">Keep Reading</button>
       </div>
     </div>
     <!-- "another page section" with call to action -->
-    <div class="bg-cover h-5/6 bg-object-over-earth">
+    <div class="bg-cover h-screen bg-object-over-earth">
       <div class="px-10 h-full text-center bg-transparent flex flex-col justify-center items-center">
-        <h1 class="my-4 font-bold text-xl text-white">Another Page Section</h1>
-        <p class="text-white text-md">
+        <h1 class="my-2 font-bold text-xl text-white leading-4">Another Page Section</h1>
+        <p class="text-white text-md leading-3">
           Very good positioning statement should go here. 
           It should capture the 
         </p>
-        <button class="btn-sm text-gray-700 text-sm leading-none font-bold bg-white mt-5">Call To Action</button>
+        <button class="btn-sm text-gray-700 text-sm leading-none font-bold bg-white mt-8">Call To Action</button>
       </div>
     </div>
     <!-- Footer -->
-    <div class="p-6 bg-gray-800 mt-96 flex flex-col items-start">
-      <img class="mb-2" src="./assets/images/matrix-logo-white.png">
-      <p class="text-gray-400 w-5/6">
-        Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
-        ea nec elaboraret interpretaris, sed diceret concludaturque no. 
-        Verear habemus sea ut. His nibh scripta in. 
-      </p>
-      <h6 class="text-white uppercase my-4">
-        MENU HEADING
-      </h6>
-      <a class="cursor-pointer text-gray-400 font-light text-sm">MENU ITEM</a>
-      <a class="cursor-pointer text-gray-400 font-light text-sm">ANOTHER ITEM</a>
-      <a class="cursor-pointer text-gray-400 font-light text-sm">MENU ITEM</a>
-      <h6 class="text-white uppercase my-4">
-        MENU HEADING
-      </h6>
-      <a class="cursor-pointer text-gray-400 font-light text-sm">MENU ITEM</a>
-      <a class="cursor-pointer text-gray-400 font-light text-sm">ANOTHER ITEM</a>
-      <a class="cursor-pointer text-gray-400 font-light text-sm">MENU ITEM</a>
-      <h6 class="text-white uppercase my-4">
-        SETTINGS
-      </h6>
-      <a class="cursor-pointer text-gray-400 font-light text-sm">SWITCH TO LIGHT THEME</a>
-      <a class="cursor-pointer text-gray-400 font-light text-sm">CREATE AN ACCOUNT</a>
-      <a class="cursor-pointer text-gray-400 font-light text-sm">NEWSLETTER</a>
-      <p class="text-gray-500 text-sm mt-10">
-        ©2020 Earthlight Foundation. | Terms  |  Privacy
-      </p>
+    <div class="px-6 pt-10 pb-6 sm:pb-0 bg-gray-800 flex flex-col sm:flex-row items-start">
+      <div>
+        <img class="mb-3" src="./assets/images/matrix-logo-white.png">
+        <p class="text-gray-400 leading-2 mb-12 w-72">
+          Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+          ea nec elaboraret interpretaris, sed diceret concludaturque no. 
+          Verear habemus sea ut. His nibh scripta in. 
+        </p>
+      </div>
+      <div class="flex flex-col ml-5">
+        <h6 class="text-white uppercase font-medium my-5.5">
+          MENU HEADING
+        </h6>
+        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">MENU ITEM</a>
+        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">ANOTHER ITEM</a>
+        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">MENU ITEM</a>
+      </div>
+      <div class="flex flex-col ml-5">
+        <h6 class="text-white uppercase font-medium my-5.5">
+          MENU HEADING
+        </h6>
+        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">MENU ITEM</a>
+        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">ANOTHER ITEM</a>
+        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">MENU ITEM</a>
+      </div>
+      <div class="flex flex-col ml-5">
+        <h6 class="text-white uppercase font-medium my-5.5">
+          SETTINGS
+        </h6>
+        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">SWITCH TO LIGHT THEME</a>
+        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">CREATE AN ACCOUNT</a>
+        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">NEWSLETTER</a>
+      </div>
     </div>
-    <ul class="invisible md:visible">
-      <li class="navlink"><a href="#">COMPUTATION</a></li>
-      <li class="navlink"><a href="#">PROPULSION</a></li>
-      <li class="navlink"><a href="#">ANOTHER ITEM</a></li>
-      <li class="navlink"><a href="#">ONE MORE ITEM</a></li>
-      <li class="navlink"><a href="#">HOVER ITEM</a></li>
-      <li class="navlink"><a href="#">MENU ITEM</a></li>
-      <li class="navlink"><a href="#">MENU ITEM</a></li>
-      </ul>
-    </ul>
+    <p class="text-gray-350 text-xs bg-gray-800 p-5 mt-10 sm:pt-4 sm:mt-0">
+      ©2020 Earthlight Foundation. | Terms  |  Privacy
+    </p>
   </body>
 </html>

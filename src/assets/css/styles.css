@@ -16,7 +16,13 @@ select.btn:focus {
   background-image: url('../images/caret-up.png');
   background-position: calc(100% - 10px) calc(0.70em + 2px);
   background-repeat: no-repeat;
+}
 
+#trigger:checked + div {
+  display: block;
+}
+#trigger:checked + div + div {
+  padding-top: 1.5rem;
 }
 
 @tailwind base;
@@ -24,6 +30,20 @@ select.btn:focus {
 @tailwind utilities;
 
 @layer utilities {
+  .zero-height {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .zero-width {
+    width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
   .heading-1 {
     font-size: 36px;
     line-height: 47px;
@@ -51,24 +71,30 @@ select.btn:focus {
     line-height: 15px;
   }
   .btn-xs {
-    padding: 5px 19px;
+    padding: 4px 19px;
     border-radius: 4px;
+    font-size: 0.8rem;
   }
   .btn-sm {
-    padding: 13px 17px;
+    padding: 10px 17px;
     border-radius: 4px;
   }
   .btn-md {
     height: 30px;
     padding: 0px 19px;
     border-radius: 4px;
+    font-size: 14px;
   }
   .btn-lg {
-    padding: 17px 38px;
+    height: 42px;
     border-radius: 4px;
+    font-size: 14px;
   }
   .btn-xl {
     padding: 21px 89px;
     border-radius: 4px;
+  }
+  .bullet-points {
+    list-style-image: url('../images/arrow-right.png');
   }
 }
