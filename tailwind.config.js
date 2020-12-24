@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'IBM-plex-sans': ['IBM Plex Sans', 'sans-serif'],
+      'source-sans': ['Source Sans Pro', 'sans-serif']
     },
     extend: {
       colors: {
@@ -55,7 +56,12 @@ module.exports = {
         '4xl': '48px'
       },
       spacing: {
-        '1/6': 'calc(16.66% - 1.5rem)',
+        '1/6': 'calc(16.66% - 0.75rem)',
+        '1/3-gap-3': 'calc(33.33% - 0.50rem)',
+        'mob-nav': 'calc(100% - 2.5rem)',
+        '5.5': '1.3rem',
+        '11': '2.6rem',
+        '13': '3.25rem',
         '22': '5.75rem',
         '26': '99px',
         '35': '8.75rem',
@@ -66,6 +72,7 @@ module.exports = {
         '120': '30rem',
         '132': '33rem',
         '133': '33.5rem',
+        '184': '46rem',
         '200px': '200px'
       },
       margin: {
@@ -78,8 +85,8 @@ module.exports = {
         '-2px': '-2px',
       },
       backgroundImage: {
-        'spinning-stars': "linear-gradient(rgba(0,0,0,0.63),rgba(0,0,0,0.63)),url('../images/spinning-stars-orange.png')",
-        'object-over-earth': "linear-gradient(rgba(0,0,0,0.63),rgba(0,0,0,0.63)),url('../images/pexels-spacex-23789.png')",
+        'spinning-stars': "linear-gradient(rgba(0,0,0,0.37),rgba(0,0,0,0.37)),url('../images/spinning-stars-orange.png')",
+        'object-over-earth': "linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('../images/pexels-spacex-23789.png')",
       }
     },
     screens: {
@@ -100,6 +107,14 @@ module.exports = {
     }
   
   },
-  variants: {},
+  variants: {
+    extend: {
+      backgroundColor: ['active'],
+      borderWidth: ['active'],
+      borderColor: ['active'],
+      textColor: ['active']
+
+    }
+  },
   plugins: [],
 };

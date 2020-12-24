@@ -13,79 +13,263 @@
     <!-- Header with logo -->
     <div class="min-h-screen">
       <div class="bg-gray-800 h-26 p-4 flex justify-between items-center border-b border-gray-500">
-        <img height="40" width="193" class="sm:logo-w sm:logo-h" src="./assets/images/matrix-logo.svg"></img>
-        <img height="15" width="17" class="cursor-pointer block sm:hidden" src="assets/images/menu-icon.svg"></img>
+        <img height="40" width="193" class="pl-2 sm:logo-w sm:logo-h" src="./assets/images/matrix-logo.svg"></img>
+        <label class="cursor-pointer" for="nav">
+          <img height="15" width="17" class="cursor-pointer block sm:hidden" src="assets/images/menu-icon.svg"></img>
+        </label>
+        <!-- show/hide glossary section -->
+        <input class="hidden" id="nav" type="checkbox">
+        <!-- Mobile nav -->
+        <div class="hidden bg-black w-mob-nav h-full left-10 fixed top-0 p-6 z-50">
+          <label class="cursor-pointer" for="nav">
+            <img class="gray-400" width="21" height="21" src="assets/images/ionic-close.png"></img>
+          </label>
+          <input
+            type="text"
+            id="filter"
+            name="filter"
+            class="text-md rounded-md w-full bg-gray-700 border border-gray-650 hover:border-gray-500 focus:border-matrix-blue pl-4 py-2.5 my-6 text-white">
+              <img src="./assets/images/search-icon.png" class="text-gray-500 text-3xl absolute top-20 right-12"></img>
+          </input>
+          <ul class="items-center justify-around w-full z-50">
+            <li class="text-md mt-4 font-bold hover:text-white focus:text-white text-gray-400"><a href="/link1">COMPUTATION</a></li>
+            <li class="text-md mt-4 font-bold hover:text-white focus:text-white text-gray-400"><a href="/link3">ANOTHER ITEM</a></li>
+            <li class="text-md mt-4 font-bold hover:text-white focus:text-white text-gray-400"><a href="/link2">PROPULSION</a></li>
+            <li class="text-md mt-4 font-bold hover:text-white focus:text-white text-gray-400"><a href="/link4">ONE MORE ITEM</a></li>
+            <li class="text-md mt-4 font-bold hover:text-white focus:text-white text-gray-400"><a href="/link5">HOVER ITEM</a></li>
+            <li class="text-md mt-4 font-bold hover:text-white focus:text-white text-gray-400"><a href="/link6">MENU ITEM</a></li>
+            <li class="text-md mt-4 font-bold hover:text-white focus:text-white text-gray-400"><a href="/link7">MENU ITEM</a></li>
+          </ul>
+        </div>
         <!-- show/hide buttons without javaScript -->
         <div class="hidden sm:flex items-center w-2/3">
-          <button class="hidden md:block font-bold w-full btn-lg leading-1 text-white bg-true-blue"><label class="cursor-pointer w-full" for="trigger">GLOSSARY</label></button>  
-          <button class="hidden md:block font-bold w-full btn-lg leading-1 ml-4 text-white bg-true-blue">CONCEPTS</button>
-          <button class="hidden md:block font-bold w-full btn-lg leading-1 ml-4 text-white bg-true-blue">EXPERTS</button>
+          <label class="cursor-pointer text-center hidden md:block font-bold w-full btn-lg leading-1 text-white bg-true-blue" for="glossary">GLOSSARY</label>
+          <label class="cursor-pointer text-center hidden md:block font-bold w-full btn-lg leading-1 ml-4 text-white bg-true-blue" for="glossary">CONCEPTS</label>
+          <label class="cursor-pointer text-center hidden md:block font-bold w-full btn-lg leading-1 ml-4 text-white bg-true-blue" for="glossary">EXPERTS</label>
         </div>
       </div>
+      <!-- show/hide glossary section -->
+      <input class="hidden" id="glossary" type="checkbox">
       <!-- Glossary -->
-      <input class="hidden" id="trigger" type="checkbox">
-      <div class="bg-gray-750 p-5 hidden border-b-3 border-matrix-blue relative">
-        <h4 class="text-white text-md font-bold">Glossary: Top 100 Terms</h4>
-        <ul class="bullet-points text-sm leading-3 pl-8 mt-2 mb-4 text-gray-350">  
-          <li class="mb-0.5">Aimpoint</li>
-          <li class="mb-0.5">Air lock</li>
-          <li class="mb-0.5">Ambient</li>
-          <li class="mb-0.5">Anti-matter</li>
-        </ul>
-        <ul class="bullet-points text-sm leading-3 pl-8 my-5 text-gray-350">  
-          <li class="mb-0.5">Backscattering</li>
-          <li class="mb-0.5">Bi-propellant</li>
-          <li class="mb-0.5">Black hole</li>
-          <li class="mb-0.5">Booster</li>
-        </ul>
-        <ul class="bullet-points text-sm leading-3 pl-8 my-5 text-gray-350">  
-          <li class="mb-0.5">Calibration</li>
-          <li class="mb-0.5">Celestial sphere</li>
-          <li class="mb-0.5">Chromosphere</li>
-          <li class="mb-0.5">Coronal mass ejection</li>
-        </ul>
-        <ul class="bullet-points text-sm leading-3 pl-8 my-5 text-gray-350">  
-          <li class="mb-0.5">Dark matter</li>
-          <li class="mb-0.5">Decompression</li>
-          <li class="mb-0.5">Descent module</li>
-          <li class="mb-0.5">Dynamo process</li>
-        </ul>
-        <ul class="bullet-points text-sm leading-3 pl-8 my-5 text-gray-350">  
-          <li class="mb-0.5">Eccentricity</li>
-          <li class="mb-0.5">Ecliptic</li>
-          <li class="mb-0.5">Electric propulsion</li>
-          <li class="mb-0.5">Electromagnetic</li>
-        </ul>
-        <ul class="bullet-points text-sm leading-3 pl-8 my-5 text-gray-350">
-          <li class="mb-0.5">Fairing</li>
-          <li class="mb-0.5">Fission</li>
-          <li class="mb-0.5">Flux</li>
-          <li class="mb-0.5">Fusion</li>
-        </ul>
-        <img class="md:invisible absolute -bottom-3.5 left-1/6" src="assets/images/triangle-show.png"></img>
+      <div class="bg-gray-750 h-184 p-8 hidden overflow-hidden relative">
+        <h4 class="text-white text-md font-bold sticky top-0">Glossary: Top 100 Terms</h4>
+        <input class="hidden" id="page1" type="radio" name="page" checked>
+        <div class="flex flex-col flex-wrap hidden pl-7 pt-4">
+          <ul class="bullet-points text-sm leading-3 mb-4 text-gray-350">  
+            <li class="mb-0.5">Aimpoint</li>
+            <li class="mb-0.5">Air lock</li>
+            <li class="mb-0.5">Ambient</li>
+            <li class="mb-0.5">Anti-matter</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Backscattering</li>
+            <li class="mb-0.5">Bi-propellant</li>
+            <li class="mb-0.5">Black hole</li>
+            <li class="mb-0.5">Booster</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Calibration</li>
+            <li class="mb-0.5">Celestial sphere</li>
+            <li class="mb-0.5">Chromosphere</li>
+            <li class="mb-0.5">Coronal mass ejection</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Dark matter</li>
+            <li class="mb-0.5">Decompression</li>
+            <li class="mb-0.5">Descent module</li>
+            <li class="mb-0.5">Dynamo process</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Eccentricity</li>
+            <li class="mb-0.5">Ecliptic</li>
+            <li class="mb-0.5">Electric propulsion</li>
+            <li class="mb-0.5">Electromagnetic</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">
+            <li class="mb-0.5">Fairing</li>
+            <li class="mb-0.5">Fission</li>
+            <li class="mb-0.5">Flux</li>
+            <li class="mb-0.5">Fusion</li>
+          </ul>
+        </div>
+        <input class="hidden" id="page2" type="radio" name="page">
+        <div class="flex flex-col flex-wrap hidden pl-7 pt-4">
+          <ul class="bullet-points text-sm leading-3 mb-4 text-gray-350">  
+            <li class="mb-0.5">Galaxy</li>
+            <li class="mb-0.5">Gas giant</li>
+            <li class="mb-0.5">Geostationary orbit</li>
+            <li class="mb-0.5">Gravitational waves</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Heliocentric</li>
+            <li class="mb-0.5">High-energy particle detector</li>
+            <li class="mb-0.5">Hydrosphere</li>
+            <li class="mb-0.5">Hyperbolic</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Impulse</li>
+            <li class="mb-0.5">Infrared</li>
+            <li class="mb-0.5">Interplanetary magnetic field</li>
+            <li class="mb-0.5">Ion engine</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Jansky</li>
+            <li class="mb-0.5">Jet propulsion</li>
+            <li class="mb-0.5">Jovian planet</li>
+            <li class="mb-0.5">JPL</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Kelvin</li>
+            <li class="mb-0.5">Kinetic energy</li>
+            <li class="mb-0.5">Kosmolyot</li>
+            <li class="mb-0.5">Kuiper belt</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">
+            <li class="mb-0.5">Lander spacecraft</li>
+            <li class="mb-0.5">Liquid oxygen</li>
+            <li class="mb-0.5">Low Earth orbit</li>
+            <li class="mb-0.5">Lunar module</li>
+          </ul>
+        </div>
+        <input class="hidden" id="page3" type="radio" name="page">
+        <div class="flex flex-col flex-wrap hidden pl-7 pt-4">
+          <ul class="bullet-points text-sm leading-3 mb-4 text-gray-350">  
+            <li class="mb-0.5">Magnetic field</li>
+            <li class="mb-0.5">MagnetoHydroDynamics</li>
+            <li class="mb-0.5">Mesosphere</li>
+            <li class="mb-0.5">Momentum</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Nadir</li>
+            <li class="mb-0.5">Nautical mile</li>
+            <li class="mb-0.5">Newton</li>
+            <li class="mb-0.5">Nitrogen tetroxide</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Occultation</li>
+            <li class="mb-0.5">Orbit trim maneuver</li>
+            <li class="mb-0.5">Orbital mechanics</li>
+            <li class="mb-0.5">Oxidizer</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Parking orbit</li>
+            <li class="mb-0.5">Passive cooling</li>
+            <li class="mb-0.5">Photosphere</li>
+            <li class="mb-0.5">Propulsion</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Quasars</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">
+            <li class="mb-0.5">Radiation belt</li>
+            <li class="mb-0.5">Reaction control system</li>
+            <li class="mb-0.5">Regenerative cooling</li>
+            <li class="mb-0.5">Round-trip light time</li>
+          </ul>
+        </div>
+        <input class="hidden" id="page4" type="radio" name="page">
+        <div class="flex flex-col flex-wrap hidden pl-7 pt-4">
+          <ul class="bullet-points text-sm leading-3 mb-4 text-gray-350">  
+            <li class="mb-0.5">Satellite</li>
+            <li class="mb-0.5">Service module</li>
+            <li class="mb-0.5">SETI</li>
+            <li class="mb-0.5">Spin stabilization</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Telemetry</li>
+            <li class="mb-0.5">Transducer</li>
+            <li class="mb-0.5">Troposphere</li>
+            <li class="mb-0.5">True anomaly</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Ullage maneuver</li>
+            <li class="mb-0.5">Ultraviolet</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Velocity trim</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">Walking orbit</li>
+            <li class="mb-0.5">Weightlessness</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">  
+            <li class="mb-0.5">X-band</li>
+            <li class="mb-0.5">X-rays</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">
+            <li class="mb-0.5">Yaw</li>
+          </ul>
+          <ul class="bullet-points text-sm leading-3 my-5 text-gray-350">
+            <li class="mb-0.5">Zenith</li>
+            <li class="mb-0.5">Zero gravity</li>
+            <li class="mb-0.5">Zero lift trajectory</li>
+          </ul>
+        </div>
       </div>
-      <div class="flex items-center flex-wrap p-2.5 justify-between bg-gray-800 border-b border-true-blue">
-        <!-- show/hide buttons without javaScript -->
-        <button class="block md:hidden font-bold btn-xs leading-1 py-1 px-5 text-white w-1/4 bg-true-blue"><label class="cursor-pointer w-full" for="trigger">GLOSSARY</label></button>  
-        <button class="block md:hidden font-bold btn-xs leading-1 ml-3 py-1 px-5 text-white w-1/3 bg-true-blue">CONCEPTS</button>
-        <button class="block md:hidden font-bold btn-xs leading-1 ml-3 py-1 px-5 text-white w-1/3 bg-true-blue">EXPERTS</button>
-        <!-- Nav Menu -->
-        <ul class="hidden md:flex items-center justify-around w-full">
-          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">COMPUTATION</a></li>
-          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">PROPULSION</a></li>
-          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">ANOTHER ITEM</a></li>
-          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">ONE MORE ITEM</a></li>
-          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">HOVER ITEM</a></li>
-          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">MENU ITEM</a></li>
-          <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350"><a href="#">MENU ITEM</a></li>
+      <!-- Pagination -->
+      <div class="bg-gray-750 hidden relative">
+        <ul class="flex justify-center font-source-sans text-gray-500 text-center border-gray-600 py-2">
+          <li>
+            <label for="page1" class="cursor-pointer focus:border-matrix-blue focus:bg-matrix-blue focus:text-gray-800 px-4 py-0.5 border border-gray-700 rounded-l-full">
+              1
+            </label>
+          </li>
+          <li>
+            <label for="page2" class="cursor-pointer focus:border-matrix-blue focus:bg-matrix-blue focus:text-gray-800 px-4 py-0.5 border border-gray-700">
+              2
+            </label>
+          </li>
+          <li>
+            <label for="page3" class="cursor-pointer focus:border-matrix-blue focus:bg-matrix-blue focus:text-gray-800 px-4 py-0.5 border border-gray-700">
+              3
+            </label>
+          </li>
+          <li>
+            <label for="page4" class="cursor-pointer focus:border-matrix-blue focus:bg-matrix-blue focus:text-gray-800 px-4 py-0.5 border border-gray-700 rounded-r-full">
+              4
+            </label>
+          </li>
         </ul>
+      </div>
+      <div class="flex items-center flex-wrap p-2.5 justify-between bg-gray-800 border-b border-true-blue relative">
+        <img class="md:invisible hidden absolute top-0 left-1/6" src="assets/images/triangle-show.png"></img>
+        <!-- show/hide buttons without javaScript -->
+        <button class="block md:hidden font-bold btn-xs leading-1 py-1 px-5 text-white w-1/3-gap-3 bg-true-blue"><label class="cursor-pointer w-full" for="glossary">GLOSSARY</label></button>  
+        <button class="block md:hidden font-bold btn-xs leading-1 py-1 px-5 text-white w-1/3-gap-3 bg-true-blue">CONCEPTS</button>
+        <button class="block md:hidden font-bold btn-xs leading-1 py-1 px-5 text-white w-1/3-gap-3 bg-true-blue">EXPERTS</button>
+        <!-- Nav Menu -->
+        <div class="w-full left-5">
+          <ul class="hidden md:flex items-center justify-around w-full">
+            <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350">
+              <a href="#">COMPUTATION</a>
+            </li>
+            <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350">
+              <a href="#">PROPULSION</a>
+            </li>
+            <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350">
+              <a href="#">ANOTHER ITEM</a>
+            </li>
+            <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350">
+              <a href="#">ONE MORE ITEM</a>
+            </li>
+            <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350">
+              <a href="#">HOVER ITEM</a>
+            </li>
+            <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350">
+              <a href="#">MENU ITEM</a>
+            </li>
+            <li class="text-sm font-bold hover:text-white focus:text-white text-gray-350">
+              <a href="#">MENU ITEM</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- Landing Page -->
       <div class="bg-gray-800 sm:bg-black h-24 w-full"></div>
       <div class="bg-cover bg-right bg-spinning-stars h-120 relative">
         <div class="flex flex-col items-start sm:justify-center px-10 sm:pl-35 h-full absolute">
           <h1 class="font-bold text-4xl text-gray-100 -mt-8 sm:mt-0 leading-7">Super Cool Headline</h1>
-          <p class="text-gray-100 font-medium mt-12 sm:mt-4 text-lg leading-3">
+          <p class="text-gray-100 mt-12 sm:mt-4 text-lg leading-3">
             Very good positioning statement should go here. 
             It should capture the users attention and entice 
             them to click the call-to-action button below
@@ -112,20 +296,20 @@
         placeholder="Filter ..."
         id="filter"
         name="filter"
-        class="ml-6 text-sm rounded-sm w-full bg-gray-700 border border-gray-650 hover:border-gray-500 focus:border-matrix-blue pl-2 py-1 text-white">
-        <img src="./assets/images/filter.png" class="fas fa-filter text-gray-500 text-3xl -ml-7"></img>
+        class="ml-6 text-sm rounded-sm w-full bg-gray-700 border border-gray-650 hover:border-gray-500 focus:border-matrix-blue pl-2 py-1 text-white relative">
+        <img src="./assets/images/filter.png" class="text-gray-500 text-3xl absolute right-7"></img>
       </input>
     </div>
     <!-- Blog list -->
-    <div class="block sm:flex bg-gray-800 -mb-20 relative h-132">
-      <div class="bg-gray-800 p-4 md:w-75">
+    <div class="block sm:flex bg-gray-800 -mb-20 relative sm:h-132">
+      <div class="bg-gray-800 p-4 sm:w-1/3">
         <!-- multi-colored border -->
         <div class="border-t-3 border-danger"></div>
           <div class="bg-gray-800 px-5 py-6 border-l border-r border-gray-700">
             <h3 class="text-white text-xl font-medium">Widget Title</h3>
-            <p class="text-sm font-medium text-gray-300 mb-2">Supporting text and content goes here.</p>
+            <p class="text-sm font-medium text-gray-300 mb-2 max-h-11">Supporting text and content goes here.</p>
           </div>
-        <img class="object-cover h-28" height="230" width="556" src="./assets/images/pexels-pixabay-73910@2x.png"></img>
+        <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-73910@2x.png"></img>
         <div class="bg-gray-800 px-5 py-8 mb-5 border-l border-r border-b border-gray-700">
           <p class="text-sm text-gray-400 leading-2 sm:h-200px sm:max-h-200px overflow-hidden"> 
             Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
@@ -148,16 +332,18 @@
           <button class="btn-md text-gray-500 leading-none font-semibold border border-danger mt-8">Keep Reading</button>
         </div>
       </div>
-      <div class="bg-gray-800 p-4 md:w-75 sm:max-h-133">
+      <div class="bg-gray-800 p-4 sm:w-1/3 sm:h-132">
         <!-- multi-colored border -->
         <div class="border-t-3 border-matrix-green"></div>
           <div class="bg-gray-800 px-5 py-6 border-l border-r border-gray-700">
             <h3 class="text-white text-xl font-medium">Longer Widget Title</h3>
-            <p class="text-sm font-medium text-gray-300 mb-2">Supporting text and content goes here.</p>
+            <p class="text-sm font-medium text-gray-300 mb-2 max-h-11 overflow-hidden overflow-ellipsis">
+              Supporting text and content goes here. second line
+            </p>
           </div>
-        <img class="object-cover h-28" height="230" width="556" src="./assets/images/pexels-pixabay-41006@2x.png"></img>
+        <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-41006@2x.png"></img>
         <div class="bg-gray-800 px-5 py-8 mb-5 border-l border-r border-b border-gray-700">
-          <p class="text-sm text-gray-400 sm:h-200px sm:max-h-200px leading-2"> 
+          <p class="text-sm text-gray-400 sm:h-200px sm:max-h-200px overflow-hidden leading-2"> 
             Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
             ea nec elaboraret interpretaris, sed diceret concludaturque no.
             Verear habemus sea ut. His nibh scripta in.
@@ -170,17 +356,17 @@
           <button class="btn-md text-gray-500 leading-none font-semibold border border-matrix-green mt-8">Keep Reading</button>
         </div>
       </div>
-      <div class="bg-gray-800 h-108 relative">
-        <div class="absolute sm:static p-4 md:w-75">
+      <div class="bg-gray-800 p-4 sm:w-1/3 h-108 relative">
+        <div class="absolute pr-4 sm:p-0 sm:static">
           <!-- multi-colored border -->
           <div class="border-t-3 border-true-blue"></div>
             <div class="bg-gray-800 px-5 py-6 border-l border-r border-gray-700">
               <h3 class="text-white text-xl font-medium">Short Title</h3>
-              <p class="text-sm font-medium text-gray-300 mb-2">Supporting text and content goes here.</p>
+              <p class="text-sm font-medium text-gray-300 mb-2 max-h-11">Supporting text and content goes here.</p>
             </div>
-          <img class="object-cover h-28" height="230" width="556" src="./assets/images/pexels-pixabay-2152@2x.png"></img>
+          <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2152@2x.png"></img>
           <div class="bg-gray-800 px-5 py-8 border-l border-r border-b border-gray-700">
-            <p class="text-sm text-gray-400 sm:h-200px sm:max-h-200px leading-2"> 
+            <p class="text-sm text-gray-400 sm:h-200px sm:max-h-200px overflow-hidden leading-2"> 
               Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
               ea nec elaboraret interpretaris, sed diceret concludaturque no.
               Verear habemus sea ut. His nibh scripta in.
@@ -207,41 +393,43 @@
       </div>
     </div>
     <!-- Footer -->
-    <div class="px-6 pt-10 pb-6 sm:pb-0 bg-gray-800 flex flex-col sm:flex-row items-start">
+    <div class="px-6 pt-10 pb-6 sm:pb-0 bg-gray-800 flex flex-col sm:flex-row sm:justify-between items-start">
       <div>
         <img class="mb-3" src="./assets/images/matrix-logo-white.png">
-        <p class="text-gray-400 leading-2 mb-12 w-72">
+        <p class="text-gray-300 leading-2 mb-12 sm:mb-3 w-72">
           Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
           ea nec elaboraret interpretaris, sed diceret concludaturque no. 
           Verear habemus sea ut. His nibh scripta in. 
         </p>
       </div>
-      <div class="flex flex-col ml-5">
-        <h6 class="text-white uppercase font-medium my-5.5">
-          MENU HEADING
-        </h6>
-        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">MENU ITEM</a>
-        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">ANOTHER ITEM</a>
-        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">MENU ITEM</a>
-      </div>
-      <div class="flex flex-col ml-5">
-        <h6 class="text-white uppercase font-medium my-5.5">
-          MENU HEADING
-        </h6>
-        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">MENU ITEM</a>
-        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">ANOTHER ITEM</a>
-        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">MENU ITEM</a>
-      </div>
-      <div class="flex flex-col ml-5">
-        <h6 class="text-white uppercase font-medium my-5.5">
-          SETTINGS
-        </h6>
-        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">SWITCH TO LIGHT THEME</a>
-        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">CREATE AN ACCOUNT</a>
-        <a class="cursor-pointer my-1.5 font-medium leading-1 text-xs text-gray-350">NEWSLETTER</a>
+      <div class="grid grid-cols-12 w-1/2 sm:w-3/5">
+        <div class="col-span-12 sm:col-span-4 sm:justify-between gap-4">
+          <h6 class="text-white uppercase font-medium my-5.5 mr-4">
+            MENU HEADING
+          </h6>
+          <a class="block my-1.5 cursor-pointer leading-1 text-xs text-gray-350">MENU ITEM</a>
+          <a class="block my-1.5 cursor-pointer leading-1 text-xs text-gray-350">ANOTHER ITEM</a>
+          <a class="block my-1.5 cursor-pointer leading-1 text-xs text-gray-350">MENU ITEM</a>
+        </div>
+        <div class="col-span-12 sm:col-span-4 sm:justify-between gap-4">
+          <h6 class="text-white uppercase font-medium my-5.5 mr-4">
+            MENU HEADING
+          </h6>
+          <a class="block my-1.5 cursor-pointer leading-1 text-xs text-gray-350">MENU ITEM</a>
+          <a class="block my-1.5 cursor-pointer leading-1 text-xs text-gray-350">ANOTHER ITEM</a>
+          <a class="block my-1.5 cursor-pointer leading-1 text-xs text-gray-350">MENU ITEM</a>
+        </div>
+        <div class="col-span-12 sm:col-span-4 sm:justify-between gap-4">
+          <h6 class="text-white uppercase font-medium my-5.5 mr-4">
+            SETTINGS
+          </h6>
+          <a class="block my-1.5 cursor-pointer leading-1 text-xs text-gray-350">SWITCH TO LIGHT THEME</a>
+          <a class="block my-1.5 cursor-pointer leading-1 text-xs text-gray-350">CREATE AN ACCOUNT</a>
+          <a class="block my-1.5 cursor-pointer leading-1 text-xs text-gray-350">NEWSLETTER</a>
+        </div>
       </div>
     </div>
-    <p class="text-gray-350 text-xs bg-gray-800 p-5 mt-10 sm:pt-4 sm:mt-0">
+    <p class="text-gray-300 text-xs bg-gray-800 p-5 pt-10 sm:pt-4">
       ©2020 Earthlight Foundation. | Terms  |  Privacy
     </p>
   </body>
