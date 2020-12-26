@@ -23,6 +23,16 @@ select.btn:focus {
   display: block;
 }
 
+/* replace main nav with search input after search icon is pressed */
+#main_nav:checked + ul {
+  display: none;
+}
+
+/* show search input */
+#main_nav:checked + ul + div {
+  display: flex;
+} 
+
 input[type="radio"]:checked + div {
   display: block;
 } 

@@ -10,6 +10,9 @@ module.exports = {
       'source-sans': ['Source Sans Pro', 'sans-serif']
     },
     extend: {
+      flex: {
+        'break' : '1 1 100%'
+      },
       colors: {
         'informational': '#3A6BAF',
         'warning': '#f2cc41',
@@ -17,6 +20,7 @@ module.exports = {
         'matrix-green': '#92cbba',
         'matrix-blue': '#3A68AF',
         'true-blue': "#3968ae",
+        'dark-goldenrod': '#AD8E1B',
         gray: {
           '100': '#eeeeee',
           '200': '#f6fbfc',
@@ -64,16 +68,22 @@ module.exports = {
         '13': '3.25rem',
         '22': '5.75rem',
         '26': '99px',
+        '73': '18.8rem',
+        '75': '19.4rem',
         '35': '8.75rem',
         '84': '21rem',
         '96': '24rem',
         '108': '27rem',
-        '75': '19.4rem',
         '120': '30rem',
         '132': '33rem',
         '133': '33.5rem',
         '184': '46rem',
         '200px': '200px'
+      },
+      maxWidth: {
+        '29': '29.1875rem',
+        '290': '72.5rem',
+        
       },
       margin: {
         '-px': '-1px',
