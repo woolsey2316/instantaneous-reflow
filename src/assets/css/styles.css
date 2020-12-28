@@ -37,7 +37,45 @@ input[type="radio"]:checked + div {
   display: block;
 } 
 
-input[type="radio"] + div {
+input[type="radio"]:not(:checked) + div {
+  display: none;
+}
+
+/* open video page when glossary button pressed */
+#video-dropdown:checked + div {
+  display: flex;
+}
+#video-dropdown:checked + div + div + div {
+  padding-top: 1.5rem;
+  border-top-width: 3px;
+}
+
+/* sample */
+#uncheckAll {
+  display: none;
+}
+
+#uncheckAll:checked ~ * label[for="uncheckAll"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+label:not([for]) {
+  position: relative;
+}
+
+label[for="uncheckAll"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+input[name="dropdown"]:not(:checked) + label[for="uncheckAll"] {
   display: none;
 }
 
@@ -46,8 +84,29 @@ input[type="radio"] + div {
   display: block;
 }
 /* glossary pagination */
-#glossary:checked + div + div {
+#glossary:checked + div > div:last-child {
   display: block;
+}
+/* open glossary page when glossary button pressed */
+#page1:checked ~ * label[for="page1"] {
+  background-color:#3A68AF;
+  border-color:#3A68AF;
+  color: white;
+}
+#page2:checked ~ * label[for="page2"] {
+  background-color:#3A68AF;
+  border-color:#3A68AF;
+  color: white;
+}
+#page3:checked ~ * label[for="page3"] {
+  background-color:#3A68AF;
+  border-color:#3A68AF;
+  color: white;
+}
+#page4:checked ~ * label[for="page4"] {
+  background-color:#3A68AF;
+  border-color:#3A68AF;
+  color: white;
 }
 #glossary:checked + div + div + div {
   padding-top: 1.5rem;

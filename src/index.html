@@ -9,14 +9,14 @@
     />
     <link href="./assets/css/styles.css" rel="stylesheet" />
   </head>
-  <body class="font-IBM-plex-sans">
+  <body class="font-IBM-plex-sans bg-gray-800">
     <!-- Header with logo -->
     <div class="min-h-screen bg-gray-800">
       <div class="bg-gray-800 h-26 p-4 border-b border-gray-500">
         <div class="max-w-290 mx-auto mt-5 flex justify-between items-center">
           <img height="40" width="193" class="pl-2 sm:logo-w sm:logo-h" src="./assets/images/matrix-logo.svg"></img>
           <label class="cursor-pointer" for="nav">
-            <img height="15" width="17" class="cursor-pointer block sm:hidden" src="assets/images/menu-icon.svg"></img>
+            <img height="15" width="17" class="cursor-pointer block md:hidden" src="assets/images/menu-icon.svg"></img>
           </label>
           <!-- show/hide glossary section -->
           <input class="hidden" id="nav" type="checkbox">
@@ -43,17 +43,82 @@
             </ul>
           </div>
           <!-- show/hide buttons without javaScript -->
-          <div class="hidden sm:flex items-center w-2/3">
-            <label class="cursor-pointer text-center hidden md:block font-bold w-full btn-lg leading-1 text-white bg-matrix-blue" for="glossary">GLOSSARY</label>
-            <label class="cursor-pointer text-center hidden md:block font-bold w-full btn-lg leading-1 ml-4 text-white bg-matrix-blue" for="glossary">CONCEPTS</label>
-            <label class="cursor-pointer text-center hidden md:block font-bold w-full btn-lg leading-1 ml-4 text-white bg-matrix-blue" for="glossary">EXPERTS</label>
+          <div class="hidden md:flex items-center w-2/3">
+            <input type="radio" id="uncheckAll" checked="checked" name="dropdown"/>
+            <label class="cursor-pointer text-center hidden md:block font-bold w-full btn-lg leading-1 text-white bg-matrix-blue" for="glossary" name="dropdown">
+              GLOSSARY
+              <label for="uncheckAll"></label>
+            </label>
+            <label class="cursor-pointer text-center hidden md:block font-bold w-full btn-lg leading-1 ml-4 text-white bg-matrix-blue" for="glossary" name="dropdown">
+              CONCEPTS
+              <label for="uncheckAll"></label>
+            </label>
+            <label class="cursor-pointer text-center hidden md:block font-bold w-full btn-lg leading-1 ml-4 text-white bg-matrix-blue" for="video-dropdown" name="dropdown">
+              EXPERTS
+              <label for="uncheckAll"></label>
+            </label>
           </div>
         </div>
       </div>
       <!-- show/hide glossary section -->
-      <input class="hidden" id="glossary" type="checkbox">
+      <input class="hidden" id="video-dropdown" type="radio" name="dropdown">
+      <!-- Video dropdown -->
+      <div class="bg-gray-750 p-5 hidden overflow-hidden flex flex-wrap justify-center">
+        <div class="w-thumbnail mr-5 mb-5">
+          <img src="assets/images/video1.jpg">
+          <p class="text-gray-350">Saturn's moon encaladus could house alien life</p>
+          <p class="text-gray-350">224K views · 1 week ago</p>
+        </div>
+        <div class="w-thumbnail mr-5 mb-5">
+          <img src="assets/images/video2.jpg">
+          <p class="text-gray-350">Fitbit Alta HR review</p>
+          <p class="text-gray-350">224K views · 1 week ago</p>
+        </div>
+        <div class="w-thumbnail mr-5 mb-5">
+          <img src="assets/images/video3.jpg">
+          <p class="text-gray-350">What would movie monsters actually sound like</p>
+          <p class="text-gray-350">224K views · 1 week ago</p>
+        </div>
+        <div class="w-thumbnail mr-5 mb-5">
+          <img src="assets/images/video4.jpg">
+          <p class="text-gray-350">Youtube TV first look</p>
+          <p class="text-gray-350">224K views · 1 week ago</p>
+        </div>
+        <div class="w-thumbnail mr-5 mb-5">
+          <img src="assets/images/video5.jpg">
+          <p class="text-gray-350">LG C6 review</p>
+          <p class="text-gray-350">224K views · 1 week ago</p>
+        </div>
+        <div class="w-thumbnail mr-5 mb-5">
+          <img src="assets/images/video6.jpg">
+          <p class="text-gray-350">ISPs can now sell your data without permission</p>
+          <p class="text-gray-350">224K views · 1 week ago</p>
+        </div>
+        <div class="w-thumbnail mr-5 mb-5">
+          <img src="assets/images/video7.jpg">
+          <p class="text-gray-350">New iPad 9.7 (2017) review</p>
+          <p class="text-gray-350">224K views · 1 week ago</p>
+        </div>
+        <div class="w-thumbnail mr-5 mb-5">
+          <img src="assets/images/video8.jpg">
+          <p class="text-gray-350">SpaceX relaunches a used rocket, makes history</p>
+          <p class="text-gray-350">224K views · 1 week ago</p>
+        </div>
+        <div class="w-thumbnail mr-5 mb-5">
+          <img src="assets/images/video9.jpg">
+          <p class="text-gray-350">Samsung's Galaxy S8 launch event in 10 minutes</p>
+          <p class="text-gray-350">224K views · 1 week ago</p>
+        </div>
+        <div class="w-thumbnail mr-5 mb-5">
+          <img src="assets/images/video10.jpg">
+          <p class="text-gray-350">Samsung Galaxy S8 first look!</p>
+          <p class="text-gray-350">224K views · 1 week ago</p>
+        </div>
+      </div>
+      <!-- show/hide glossary section -->
+      <input class="hidden" id="glossary" type="radio" name="dropdown">
       <!-- Glossary -->
-      <div class="bg-gray-750 h-184 p-8 hidden overflow-hidden relative">
+      <div class="bg-gray-750 h-212 p-8 hidden overflow-hidden relative">
         <h4 class="text-white text-md font-bold sticky top-0">Glossary: Top 100 Terms</h4>
         <input class="hidden" id="page1" type="radio" name="page" checked>
         <div class="flex flex-col flex-wrap hidden pl-7 pt-4">
@@ -207,38 +272,48 @@
             <li class="mb-0.5">Zero lift trajectory</li>
           </ul>
         </div>
-      </div>
-      <!-- Pagination -->
-      <div class="bg-gray-750 hidden relative">
-        <ul class="flex justify-center font-source-sans text-gray-500 text-center border-gray-600 py-2">
-          <li>
-            <label for="page1" class="cursor-pointer focus:border-matrix-blue focus:bg-matrix-blue focus:text-gray-800 px-4 py-0.5 border border-gray-700 rounded-l-full">
-              1
-            </label>
-          </li>
-          <li>
-            <label for="page2" class="cursor-pointer focus:border-matrix-blue focus:bg-matrix-blue focus:text-gray-800 px-4 py-0.5 border border-gray-700">
-              2
-            </label>
-          </li>
-          <li>
-            <label for="page3" class="cursor-pointer focus:border-matrix-blue focus:bg-matrix-blue focus:text-gray-800 px-4 py-0.5 border border-gray-700">
-              3
-            </label>
-          </li>
-          <li>
-            <label for="page4" class="cursor-pointer focus:border-matrix-blue focus:bg-matrix-blue focus:text-gray-800 px-4 py-0.5 border border-gray-700 rounded-r-full">
-              4
-            </label>
-          </li>
-        </ul>
+        <!-- Pagination -->
+        <div class="bg-gray-750 hidden relative mt-auto">
+          <ul class="flex justify-center font-source-sans text-gray-500 text-center border-gray-600 py-2">
+            <li>
+              <label for="page1" class="cursor-pointer focus:border-matrix-blue focus:bg-matrix-blue focus:text-gray-800 px-4 py-0.5 border border-gray-700 rounded-l-full">
+                1
+              </label>
+            </li>
+            <li>
+              <label for="page2" class="cursor-pointer focus:border-matrix-blue focus:bg-matrix-blue focus:text-gray-800 px-4 py-0.5 border border-gray-700">
+                2
+              </label>
+            </li>
+            <li>
+              <label for="page3" class="cursor-pointer focus:border-matrix-blue focus:bg-matrix-blue focus:text-gray-800 px-4 py-0.5 border border-gray-700">
+                3
+              </label>
+            </li>
+            <li>
+              <label for="page4" class="cursor-pointer focus:border-matrix-blue focus:bg-matrix-blue focus:text-gray-800 px-4 py-0.5 border border-gray-700 rounded-r-full">
+                4
+              </label>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="flex items-center flex-wrap p-2.5 justify-between bg-gray-800 border-b border-matrix-blue relative">
         <img class="md:invisible hidden absolute top-0 left-1/6" src="assets/images/triangle-show.png"></img>
         <!-- show/hide buttons without javaScript -->
-        <button class="block md:hidden font-bold btn-xs leading-1 py-1 px-5 text-white w-1/3-gap-3 bg-matrix-blue"><label class="cursor-pointer w-full" for="glossary">GLOSSARY</label></button>  
-        <button class="block md:hidden font-bold btn-xs leading-1 py-1 px-5 text-white w-1/3-gap-3 bg-matrix-blue">CONCEPTS</button>
-        <button class="block md:hidden font-bold btn-xs leading-1 py-1 px-5 text-white w-1/3-gap-3 bg-matrix-blue">EXPERTS</button>
+        <input type="radio" id="uncheckAll" checked="checked" name="dropdown"/>
+        <button class="block md:hidden font-bold btn-xs leading-1 py-1 px-5 text-white w-1/3-gap-3 bg-matrix-blue">
+          <label for="uncheckAll"></label>
+          <label class="cursor-pointer w-full" for="glossary" name="dropdown">GLOSSARY</label>
+        </button>  
+        <button class="block md:hidden font-bold btn-xs leading-1 py-1 px-5 text-white w-1/3-gap-3 bg-matrix-blue">
+          <label for="uncheckAll"></label>
+          <label class="cursor-pointer w-full" for="glossary" name="dropdown">CONCEPTS</label>
+        </button>
+        <button class="block md:hidden font-bold btn-xs leading-1 py-1 px-5 text-white w-1/3-gap-3 bg-matrix-blue">
+          <label for="uncheckAll"></label>
+          <label class="cursor-pointer w-full" for="video-dropdown" name="dropdown">EXPERTS</label>
+        </button>
         <!-- Nav Menu -->
         <div class="w-full left-5 mx-auto max-w-290">
           <input class="hidden" id="main_nav" type="checkbox">
@@ -283,7 +358,7 @@
         </div>
       </div>
       <!-- Landing Page -->
-      <div class="bg-gray-800 sm:bg-black h-24 w-full"></div>
+      <div class="bg-gray-800 h-24 w-full"></div>
       <div class="bg-cover bg-right bg-spinning-stars h-120 relative">
         <div class="flex flex-col items-start sm:justify-center px-10 sm:pl-35 h-full absolute">
           <h1 class="font-bold text-4xl text-gray-100 -mt-8 sm:mt-0 leading-7">Super Cool Headline</h1>
@@ -298,8 +373,8 @@
     </div>
     <!-- search filter section -->
     <div class="p-5 bg-gray-800">
-      <div class="max-w-290 mx-auto flex justify-end">
-        <div class="flex justify-start items-center max-w-29">
+      <div class="sm:max-w-290 mx-auto flex justify-end">
+        <div class="flex justify-end items-center sm:w-116">
           <select class="select btn text-sm flex-shrink-0 rounded-sm border border-gray-650 hover:border-gray-500 text-gray-500 px-2 py-1 bg-gray-700 w-20 mr-6" name="ARM" id="ARM">
             <option value="ARM">ARM</option>
             <option value="AMD">AMD</option>
@@ -316,14 +391,14 @@
             placeholder="Filter ..."
             id="filter"
             name="filter"
-            class="ml-6 text-sm rounded-sm w-full bg-gray-700 border border-gray-650 hover:border-gray-500 focus:border-matrix-blue pl-2 py-1 text-white relative">
+            class="ml-6 text-sm flex-grow flex-shrink w-full rounded-sm bg-gray-700 border border-gray-650 hover:border-gray-500 focus:border-matrix-blue pl-2 py-1 text-white relative">
             <img src="./assets/images/filter.png" class="text-gray-500 text-3xl -ml-7 z-40"></img>
           </input>
         </div>
       </div>
     </div>
     <!-- Blog list -->
-    <div class="block sm:flex sm:justify-center bg-gray-800 -mb-20 relative sm:h-132">
+    <div class="block w-full sm:flex sm:justify-center bg-gray-800 -mb-20 relative sm:h-132">
       <div class="bg-gray-800 p-4 sm:w-1/3 lg:w-73">
         <!-- multi-colored border -->
         <div class="border-t-3 border-danger"></div>
@@ -428,7 +503,7 @@
       </div>
     </div>
     <!-- "another page section" with call to action -->
-    <div class="bg-cover h-screen bg-object-over-earth">
+    <div class="bg-cover bg-center h-129 sm:h-199 bg-object-over-earth">
       <div class="px-10 h-full text-center bg-transparent flex flex-col justify-center items-center">
         <h1 class="my-2 font-bold text-xl text-white leading-4">Another Page Section</h1>
         <p class="text-white text-md leading-3">
@@ -439,8 +514,8 @@
       </div>
     </div>
     <!-- Footer -->
-      <div class="px-6 pt-10 pb-6 sm:pb-0 bg-gray-800 flex flex-col flex-wrap sm:flex-row sm:justify-between items-start">
-        <div class="max-w-290 sm:mx-auto">
+      <div class="px-6 pt-10 pb-6 sm:pb-0 bg-gray-800 flex flex-col flex-wrap sm:flex-row sm:justify-between items-start lg:max-w-290 lg:mx-auto">
+        <div>
           <img class="mb-3" src="./assets/images/matrix-logo-white.png">
           <p class="text-gray-300 leading-2 mb-12 sm:mb-3 w-72">
             Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
@@ -448,31 +523,25 @@
             Verear habemus sea ut. His nibh scripta in. 
           </p>
         </div>
-        <div class="grid grid-cols-12 w-1/2 sm:w-3/5 max-w-290 sm:mx-auto">
-          <div class="col-span-12 sm:col-span-4 sm:justify-between gap-4">
-            <h6 class="text-white text-md uppercase font-medium mt-3.5 mb-5.5 mr-4">
-              MENU HEADING
-            </h6>
-            <a class="block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">MENU ITEM</a>
-            <a class="block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">ANOTHER ITEM</a>
-            <a class="block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">MENU ITEM</a>
-          </div>
-          <div class="col-span-12 sm:col-span-4 sm:justify-between gap-4">
-            <h6 class="text-white text-md uppercase font-medium mt-3.5 mb-5.5 mr-4">
-              MENU HEADING
-            </h6>
-            <a class="block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">MENU ITEM</a>
-            <a class="block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">ANOTHER ITEM</a>
-            <a class="block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">MENU ITEM</a>
-          </div>
-          <div class="col-span-12 sm:col-span-4 sm:justify-between gap-4">
-            <h6 class="text-white text-md uppercase font-medium mt-3.5 mb-5.5 mr-4">
-              SETTINGS
-            </h6>
-            <a class="block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">SWITCH TO LIGHT THEME</a>
-            <a class="block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">CREATE AN ACCOUNT</a>
-            <a class="block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">NEWSLETTER</a>
-          </div>
+        <div class="grid grid-cols-12 grid-rows-12 auto-rows-max w-3/5">
+          <h6 class="col-span-12 sm:col-span-4 row-start-1 text-white text-md uppercase font-medium mt-3.5 mb-5.5 mr-4">
+          MENU HEADING
+          </h6>
+          <a class="col-span-12 sm:col-span-4 row-start-2 block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">MENU ITEM</a>
+          <a class="col-span-12 sm:col-span-4 row-start-3 block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">ANOTHER ITEM</a>
+          <a class="col-span-12 sm:col-span-4 row-start-4 block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">MENU ITEM</a>
+          <h6 class="col-span-12 sm:col-span-4 row-start-1 text-white text-md uppercase font-medium mt-3.5 mb-5.5 mr-4">
+          MENU HEADING
+          </h6>
+          <a class="col-span-12 sm:col-span-4 row-start-2 block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">MENU ITEM</a>
+          <a class="col-span-12 sm:col-span-4 row-start-3 block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">ANOTHER ITEM</a>
+          <a class="col-span-12 sm:col-span-4 row-start-4 block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">MENU ITEM</a>
+          <h6 class="col-span-12 sm:col-span-4 row-start-1 text-white text-md uppercase font-medium mt-3.5 mb-5.5 mr-4">
+          SETTINGS
+          </h6>
+          <a class="col-span-12 sm:col-span-4 row-start-2 block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">SWITCH TO LIGHT THEME</a>
+          <a class="col-span-12 sm:col-span-4 row-start-3 block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">CREATE AN ACCOUNT</a>
+          <a class="col-span-12 sm:col-span-4 row-start-4 block mt-2.5 mb-3.5 cursor-pointer leading-1 text-xs text-gray-350">NEWSLETTER</a>
         </div>
         <!-- line-break inside flex container -->
         <div class="w-0 flex-break"></div>
