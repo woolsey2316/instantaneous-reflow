@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:wght@400;600&display=swap');
 
 select {
-  margin: 0;      
+  margin: 0;   
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -31,6 +31,15 @@ select.btn:focus {
 /* show search input */
 #main_nav:checked + ul + div {
   display: flex;
+} 
+
+#main_nav:not(:checked) + ul {
+  display: flex;
+}
+
+/* show search input */
+#main_nav:not(:checked) + ul + div {
+  display: none;
 } 
 
 input[type="radio"]:checked + div {
@@ -84,9 +93,10 @@ input[name="dropdown"]:not(:checked) + label[for="uncheckAll"] {
   display: block;
 }
 /* glossary pagination */
-#glossary:checked + div > div:last-child {
+#glossary:checked + div > div > div:last-child {
   display: block;
 }
+
 /* open glossary page when glossary button pressed */
 #page1:checked ~ * label[for="page1"] {
   background-color:#3A68AF;
@@ -108,13 +118,25 @@ input[name="dropdown"]:not(:checked) + label[for="uncheckAll"] {
   border-color:#3A68AF;
   color: white;
 }
-#glossary:checked + div + div + div {
+#video-dropdown:checked ~ #dropdown-buttons {
   padding-top: 1.5rem;
   border-top-width: 3px;
 }
 /* blue triangle pointing towards glossary button */
-#glossary:checked + div + div + div > img {
+#glossary:checked + div > div > div:last-of-type, #glossary:checked + div > div > img {
   display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+  #glossary:checked + div > div > div:last-of-type, #glossary:checked + div > div > img {
+    display: none;
+  }
+  input[name="page"]:not(:checked) + div {
+    display: block;
+  }
+  #glossary:checked + div {
+    display: flex;
+  }
 }
 
 @tailwind base;

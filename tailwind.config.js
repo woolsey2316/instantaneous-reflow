@@ -13,6 +13,9 @@ module.exports = {
       flex: {
         'break' : '1 1 100%'
       },
+      borderRadius: {
+        '4px': '4px'
+      },
       colors: {
         'informational': '#3A6BAF',
         'warning': '#f2cc41',
@@ -80,6 +83,8 @@ module.exports = {
         '129': '32.1875rem',
         '132': '33rem',
         '133': '33.5rem',
+        '142': '35.625rem',
+        '180': '45rem',
         '199': '49.125rem',
         '212': '53rem',
         '200px': '200px'
@@ -87,6 +92,7 @@ module.exports = {
       maxWidth: {
         '70': '17.43rem',
         '73': '18.8rem',
+        '84': '21rem',
         '116': '29.125rem',
         '120': '29.1875rem',
         '290': '72.5rem',
@@ -100,6 +106,10 @@ module.exports = {
       padding: {
         '-px': '-1px',
         '-2px': '-2px',
+        'btn-xs': '4px 19px',
+        'btn-sm': '10px 17px',
+        'btn-lg': '13px 0',
+        'btn-xl': '21px 89px'
       },
       backgroundImage: {
         'spinning-stars': "linear-gradient(rgba(0,0,0,0.37),rgba(0,0,0,0.37)),url('../images/spinning-stars.png')",
