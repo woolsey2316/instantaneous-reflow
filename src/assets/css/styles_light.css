@@ -54,23 +54,17 @@ input[type="radio"]:not(:checked) + div {
 #video-dropdown:checked + div {
   display: flex;
 }
+#video-dropdown:checked + div + div + div {
+  padding-top: 1.5rem;
+  border-top-width: 3px;
+}
 
-/* radio button to mimic "nothing selected" */
+/* sample */
 #uncheckAll {
   display: none;
 }
 
 #uncheckAll:checked ~ * label[for="uncheckAll"] {
-  display: none;
-}
-
-/* hides null radio button, to allow user to click glossary button when glossary page is not open.
-  Otherwise   */
-#glossary:not(:checked) ~ #dropdown-buttons > div > label[for="glossary"] > label[for="uncheckAll"] {
-  display: none;
-}
-/* hides null radio button, to allow user to click glossary button when glossary page is not open. */
-#video-dropdown:not(:checked) ~ #dropdown-buttons > div > label[for="video-dropdown"] > label[for="uncheckAll"] {
   display: none;
 }
 
@@ -99,7 +93,7 @@ input[name="dropdown"]:not(:checked) + label[for="uncheckAll"] {
   display: block;
 }
 /* glossary pagination */
-#glossary:checked + div > div > div:last-of-type {
+#glossary:checked + div > div > div:last-child {
   display: block;
 }
 
@@ -107,44 +101,33 @@ input[name="dropdown"]:not(:checked) + label[for="uncheckAll"] {
 #page1:checked ~ * label[for="page1"] {
   background-color:#3A68AF;
   border-color:#3A68AF;
-  color: #333333;
+  color: white;
 }
 #page2:checked ~ * label[for="page2"] {
   background-color:#3A68AF;
   border-color:#3A68AF;
-  color: #333333;
+  color: white;
 }
 #page3:checked ~ * label[for="page3"] {
   background-color:#3A68AF;
   border-color:#3A68AF;
-  color: #333333;
+  color: white;
 }
 #page4:checked ~ * label[for="page4"] {
   background-color:#3A68AF;
   border-color:#3A68AF;
-  color: #333333;
+  color: white;
 }
-
 #video-dropdown:checked ~ #dropdown-buttons {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   border-top-width: 3px;
 }
-#video-dropdown:checked ~ #dropdown-buttons > div, #glossary:checked ~ #dropdown-buttons > div {
-  border-top-width: 0px;
-}
-/* blue triangle indicates which dropdown is active */
-#glossary:checked ~ #dropdown-buttons {
-  padding-top: 1rem;
-  border-top-width: 3px;
-}
-#glossary:checked + div > div > img {
-  display: block;
-}
-#video-dropdown:checked + div > div + img {
+/* blue triangle pointing towards glossary button */
+#glossary:checked + div > div > div:last-of-type, #glossary:checked + div > div > img {
   display: block;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1024px) {
   #glossary:checked + div > div > div:last-of-type, #glossary:checked + div > div > img {
     display: none;
   }
@@ -153,29 +136,6 @@ input[name="dropdown"]:not(:checked) + label[for="uncheckAll"] {
   }
   #glossary:checked + div {
     display: flex;
-  }
-  /* 
-    Change button text. the screen gets larger and so more text can fit inside 
-    eg. experts -> meet the experts 
-  */
-  #concepts-btn span {
-    display: none;
-  }
-  #concepts-btn:after {
-    content: 'CORE CONCEPTS'
-  }
-  #video-btn span {
-    display: none;
-  }
-  #video-btn:after {
-    content: 'MEET THE EXPERTS'
-  }
-}
-
-@media (min-width: 72.5rem) {
-  .full-width {
-    margin-left: calc(-100vw / 2 + 72.5rem / 2);
-    margin-right: calc(-100vw / 2 + 72.5rem / 2);
   }
 }
 

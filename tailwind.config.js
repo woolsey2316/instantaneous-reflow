@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class',
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
@@ -10,6 +11,9 @@ module.exports = {
       'source-sans': ['Source Sans Pro', 'sans-serif']
     },
     extend: {
+      boxShadow: {
+        DEFAULT: '0 6px 12px 0 rgba(0, 0, 0, 0.15)',
+      },
       flex: {
         'break' : '1 1 100%'
       },
@@ -25,12 +29,16 @@ module.exports = {
         'true-blue': "#3968ae",
         'dark-goldenrod': '#AD8E1B',
         gray: {
+          '50': '#EAEAEA',
           '100': '#eeeeee',
+          '150': '#d8d8d8',
           '200': '#f6fbfc',
+          '250': '#939393',
           '300': '#9A9A9A',
-          '350': 'rgba(255,255,255,0.7)',
+          '350': '#959595',
           '400': '#888888',
           '500': '#686868',
+          '550': 'rgb(51, 51, 51, 0.7)',
           '600': '#5c8697',
           '650': '#444444',
           '700': '#333333',
@@ -63,16 +71,20 @@ module.exports = {
         '4xl': '48px'
       },
       spacing: {
-        '1/6': 'calc(16.66% - 0.75rem)',
+        '1/6': 'calc(16%)',
         '1/3-gap-3': 'calc(33.33% - 0.50rem)',
         'mob-nav': 'calc(100% - 2.5rem)',
         'thumbnail': '13.125rem',
         '5.5': '1.3rem',
         '11': '2.6rem',
         '13': '3.25rem',
+        '16.5': '4.125rem',
+        '20.5': '5.125rem',
         '22': '5.75rem',
-        '35': '8.75rem',
         '26': '99px',
+        '35': '8.75rem',
+        '68': '17rem',
+        '71.5': '17.875rem',
         '73': '18.8rem',
         '75': '19.4rem',
         '84': '21rem',
@@ -84,6 +96,9 @@ module.exports = {
         '132': '33rem',
         '133': '33.5rem',
         '142': '35.625rem',
+        '144.5': '36.125rem',
+        '150': '37.5rem',
+        '176': '44rem',
         '180': '45rem',
         '199': '49.125rem',
         '212': '53rem',
@@ -95,6 +110,8 @@ module.exports = {
         '84': '21rem',
         '116': '29.125rem',
         '120': '29.1875rem',
+        '150': '37.5rem',
+        '176': '44rem',
         '290': '72.5rem',
         
       },
@@ -139,7 +156,8 @@ module.exports = {
       backgroundColor: ['active'],
       borderWidth: ['active'],
       borderColor: ['active'],
-      textColor: ['active']
+      textColor: ['active'],
+      fill: ['hover', 'focus']
 
     }
   },

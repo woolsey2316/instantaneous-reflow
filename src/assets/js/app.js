@@ -1,12 +1,12 @@
 $( document ).ready(function() {
   var _mySearchField = document.getElementById("blog-search");
   var _mySearchField2 = document.getElementById("blog-search2");
-  _mySearchField.onchange = getData;
+  // _mySearchField.onchange = getData;
 
   const borderColor = ['danger', 'matrix-blue', 'matrix-green', 'dark-goldenrod']
   function getData(){
     $.ajax({
-      url: "http://API_ENDPOINT"+_mySearchField.value,
+      url: "http://API_ENDPOINT/"+_mySearchField.value,
       method: "GET",
       dataType: "json",
       success: function(data) {     
@@ -59,11 +59,30 @@ $( document ).ready(function() {
 
 // hides the 2nd hero section when blog search bar is in focus to make room for blog tile results 
 $( document ).ready(function() {
-  var _mySearchField = $('blog-search').onfocus() = hideSecondHero;
-
+  var _mySearchField = document.getElementById("blog-search");
+  var _blogContainer = document.getElementById("blog-container");
+  var _landingPage = document.getElementById("landing-page");
+  var _blogPagination = document.getElementById("blog-pagination");
+  _mySearchField.addEventListener("focusin", hideSecondHero)
+  _mySearchField.addEventListener("focusout", hideSecondHero)
+  
   function hideSecondHero(){
-    if (_mySearchField.hasFocus() ) {
-      $('2nd-hero-section').style.display = "none";
+    var isFocused = (document.activeElement === _mySearchField)
+    if (isFocused) {
+      document.getElementById('2nd-hero-section').style.display = "none";
+      _blogContainer.style.height = "1457px";
+      _blogContainer.style.position = "static";
+      _landingPage.style.height = "17rem";
+      _blogPagination.style.display = "block";
+      _blogPagination.style.borderColor = "transparent";
+      _blogPagination.style.borderBottomColor = "#686868";
+      _blogPagination.style.borderWidth = "1px";
+
+
+    } else {
+      document.getElementById('2nd-hero-section').style.display = "block";
+      _landingPage.style.height = "30rem";
+      _blogPagination.style.display = "none";
 
     }
   }
