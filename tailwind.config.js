@@ -23,11 +23,12 @@ module.exports = {
       colors: {
         'informational': '#3A6BAF',
         'warning': '#f2cc41',
-        'danger': '#7C0C12',
+        'true-blue': "#3968ae",
+        'maroon': '#7C0C12',
         'matrix-green': '#92cbba',
         'matrix-blue': '#3A68AF',
-        'true-blue': "#3968ae",
         'dark-goldenrod': '#AD8E1B',
+        'windsor-tan': '#A34F1A',
         gray: {
           '50': '#EAEAEA',
           '100': '#eeeeee',
@@ -73,9 +74,14 @@ module.exports = {
       spacing: {
         '1/6': 'calc(16%)',
         '1/3-gap-3': 'calc(33.33% - 0.50rem)',
+        'almost-1/3': 'calc(33.33% - 1.5rem)',
+        'almost-1/4': 'calc(25% - 1.5rem)',
+        'almost-1/2': 'calc(50% - 1.5rem)',
+        'nearly-1/2': 'calc(50% - 0.5rem)',
         'mob-nav': 'calc(100% - 2.5rem)',
         'thumbnail': '13.125rem',
         '5.5': '1.3rem',
+        '9': '2.25rem',
         '11': '2.6rem',
         '13': '3.25rem',
         '16.5': '4.125rem',
@@ -95,6 +101,7 @@ module.exports = {
         '129': '32.1875rem',
         '132': '33rem',
         '133': '33.5rem',
+        '135': '33.75rem',
         '142': '35.625rem',
         '144.5': '36.125rem',
         '150': '37.5rem',
@@ -102,7 +109,7 @@ module.exports = {
         '180': '45rem',
         '199': '49.125rem',
         '212': '53rem',
-        '200px': '200px'
+        '199px': '199px'
       },
       maxWidth: {
         '70': '17.43rem',
@@ -118,7 +125,9 @@ module.exports = {
       margin: {
         '-px': '-1px',
         '-2px': '-2px',
+        '4.5': '1.125rem',
         '5.5': '1.375rem',
+        '71.5': '17.875rem',
       },
       padding: {
         '-px': '-1px',
@@ -126,10 +135,11 @@ module.exports = {
         'btn-xs': '4px 19px',
         'btn-sm': '10px 17px',
         'btn-lg': '13px 0',
-        'btn-xl': '21px 89px'
+        'btn-xl': '21px 89px',
+        '14': '3.5rem'
       },
       backgroundImage: {
-        'spinning-stars': "linear-gradient(rgba(0,0,0,0.37),rgba(0,0,0,0.37)),url('../images/spinning-stars.png')",
+        'spinning-stars': "linear-gradient(rgba(0,0,0,0.63),rgba(0,0,0,0.63)),url('../images/spinning-stars.png')",
         'object-over-earth': "linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('../images/pexels-spacex-23789@2x.png')",
       }
     },

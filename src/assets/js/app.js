@@ -1,88 +1,104 @@
 $( document ).ready(function() {
   var _mySearchField = document.getElementById("blog-search");
   var _mySearchField2 = document.getElementById("blog-search2");
-  // _mySearchField.onchange = getData;
+  var _mySearchField3 = document.getElementById("blog-search3");
+  var _blogContainer = document.getElementById("blog-container")
+  _mySearchField.onchange = getData;
+  _mySearchField2.onchange = getData;
+  _mySearchField3.onchange = getData;
 
-  const borderColor = ['danger', 'matrix-blue', 'matrix-green', 'dark-goldenrod']
   function getData(){
     $.ajax({
       url: "http://API_ENDPOINT/"+_mySearchField.value,
       method: "GET",
       dataType: "json",
       success: function(data) {     
-        $("blog-container").empty()   
-        for(var i= 0; i < data.matchingResults.length-1; i++){
-          //convert string response to html blog tile 
-          var blogTile = [
-            '<div class="block w-full sm:flex sm:justify-center bg-gray-800 -mb-20 relative sm:h-132">',
-              '<div class="bg-gray-800 p-4 sm:w-1/3 lg:w-73">',
-                '<div class="border-t-3' + borderColor[i%4] + '"></div>',
-                  '<div class="bg-gray-800 px-5 py-6 border-l border-r border-gray-700">',
-                    '<h3 class="text-white text-xl font-medium">' + data.matchingResults[i].title + '</h3>',
-                    '<p class="text-sm font-medium text-gray-300 mb-2 max-h-11">' + data.matchingResults[i].subtitle + '</p>',
-                  '</div>',
-                  '<img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-73910@2x.png"></img>',
-                  '<div class="bg-gray-800 px-5 py-8 mb-5 border-l border-r border-b border-gray-700">',
-                    '<p class="text-sm text-gray-400 leading-2 sm:h-200px sm:max-h-200px overflow-hidden">' + data.matchingResults[i].description + '</p>',
-                    '<button class="btn-md text-gray-500 leading-none font-semibold border border-danger mt-8">Keep Reading</button>',
-                  '</div>',
-                '</div>',
-              '</div>',
-            '</div>'
-          ].join("\n");
-          
-          $("blog-container").append(blogTile);
-        }
-        // last blog tile needs to overlap with the section below
-        const finalBlogTile = [
-        '<div class="bg-gray-800 p-4 sm:w-1/3 lg:w-73 h-108 relative">',
-          '<div class="absolute pr-4 sm:p-0 sm:static">',
-            '<div class="border-t-3' + borderColor[data.matchingResults.length-1%4] + '"></div>',
-              '<div class="bg-gray-800 px-5 py-6 border-l border-r border-gray-700">',
-                '<h3 class="text-white text-xl font-medium">' + title + '</h3>',
-                '<p class="text-sm font-medium text-gray-300 mb-2 max-h-11">' + subtitle + '</p>',
-              '</div>',
-            '<img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2152@2x.png"></img>',
-            '<div class="bg-gray-800 px-5 py-8 border-l border-r border-b border-gray-700">',
-              '<p class="text-sm text-gray-400 sm:h-200px sm:max-h-200px overflow-hidden leading-2"> + </p>',
-              '<button class="btn-md text-gray-500 leading-none font-semibold border border-true-blue mt-8">Keep Reading</button>',
-            '</div>',
-          '</div>',
-        '</div>'
-        ].join("\n")
-
-        $("blog-container").append(finalBlogTile);
+        _blogContainer.empty()   
+        paginateBlogTiles(data)
       }
     });
+  }
+  // Places search results into a page container
+  function paginateBlogTiles(data) {
+    const BLOG_TILES_PER_PAGE = 8
+    for(var i= 0; i < data.blogs.length; i++){
+      // if blog tile exceeds maximum number for current page, new page (div container) is created
+      if (i % 8 === 0) {
+        const PAGE_CONTAINER = [
+          '<input class="hidden" id="blog-page1' + Math.floor(i / BLOG_TILES_PER_PAGE + 1) + '" type="radio" name="blog-page" checked></input>',
+          '<div class="flex flex-col w-full sm:flex-row sm:flex-wrap sm:justify-between">'
+        ].join("\n");
+        
+        _blogContainer.append(PAGE_CONTAINER);
+      }
+
+      // appends html blog tiles between html page containers
+      appendBlogTile(data.blogs[i])
+
+      // check if final blog tile was just added to page
+      if (i + 1 % 8 === 0) {
+        _blogContainer.append('</div>');
+      }
+    }
+  }
+  // converts json data into html blog tile
+  function appendBlogTile(blogTile) {
+    var blogTile = [
+      '<div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">',
+        '<div class="border-t-3' + blogTile.color + '"></div>',
+        '<div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">',
+          '<h3 class="dark:text-white text-gray-700 text-xl font-medium">' + blogTile.title + '</h3>',
+          '<p class="text-sm text-gray-300 font-medium mb-2 max-h-11">' + blogTile.subtitle + '</p>',
+        '</div>',
+        '<img class="object-cover h-28" height="230" width="640" src="' + blogTile.imagelink + '"></img>',
+        '<div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">',
+          '<p class="text-sm text-gray-500 leading-2 sm:h-199px sm:max-h-199px overflow-hidden">' + blogTile.abstract + '</p>',
+          '<a href="' + blogTile.buttonlink + '" class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-maroon mt-8">' + blogTile.buttontext + '</a>',
+        '</div>',
+      '</div>'
+    ].join("\n");
+    
+    _blogContainer.append(blogTile);
   }
 });
 
 // hides the 2nd hero section when blog search bar is in focus to make room for blog tile results 
 $( document ).ready(function() {
   var _mySearchField = document.getElementById("blog-search");
+  var _mySearchField2 = document.getElementById("blog-search2");
+  var _mySearchField3 = document.getElementById("blog-search3");
   var _blogContainer = document.getElementById("blog-container");
   var _landingPage = document.getElementById("landing-page");
   var _blogPagination = document.getElementById("blog-pagination");
+  var _callToAction = document.getElementById("call-to-action")
+  
   _mySearchField.addEventListener("focusin", hideSecondHero)
+  _mySearchField2.addEventListener("focusin", hideSecondHero)
+  _mySearchField3.addEventListener("focusin", hideSecondHero)
   _mySearchField.addEventListener("focusout", hideSecondHero)
+  _mySearchField2.addEventListener("focusout", hideSecondHero)
+  _mySearchField3.addEventListener("focusout", hideSecondHero)
   
   function hideSecondHero(){
-    var isFocused = (document.activeElement === _mySearchField)
+    var isFocused = (
+      document.activeElement === _mySearchField 
+      || document.activeElement === _mySearchField2
+      || document.activeElement === _mySearchField3
+    )
+
     if (isFocused) {
       document.getElementById('2nd-hero-section').style.display = "none";
-      _blogContainer.style.height = "1457px";
+      _callToAction.style.display = "none";
+      _blogContainer.style.height = "auto";
+      _blogContainer.style.marginBottom = "0px";
       _blogContainer.style.position = "static";
       _landingPage.style.height = "17rem";
       _blogPagination.style.display = "block";
-      _blogPagination.style.borderColor = "transparent";
-      _blogPagination.style.borderBottomColor = "#686868";
-      _blogPagination.style.borderWidth = "1px";
 
 
     } else {
-      document.getElementById('2nd-hero-section').style.display = "block";
       _landingPage.style.height = "30rem";
-      _blogPagination.style.display = "none";
+      _callToAction.style.display = "block";
 
     }
   }

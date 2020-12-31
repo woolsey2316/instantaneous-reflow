@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:wght@400;600&display=swap');
 
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
 select {
   margin: 0;   
   -webkit-box-sizing: border-box;
@@ -42,11 +47,23 @@ select.btn:focus {
   display: none;
 } 
 
+/* show */
 input[type="radio"]:checked + div {
   display: block;
 } 
 
+/* hide */
 input[type="radio"]:not(:checked) + div {
+  display: none;
+}
+
+/* show blog*/
+input[name="blog-page"]:checked + div {
+  display: flex;
+} 
+
+/* hide blog*/
+input[name="blog-page"]:not(:checked) + div {
   display: none;
 }
 
@@ -67,6 +84,9 @@ input[type="radio"]:not(:checked) + div {
 /* hides null radio button, to allow user to click glossary button when glossary page is not open.
   Otherwise   */
 #glossary:not(:checked) ~ #dropdown-buttons > div > label[for="glossary"] > label[for="uncheckAll"] {
+  display: none;
+}
+#concepts:not(:checked) ~ #dropdown-buttons > div > label[for="concepts"] > label[for="uncheckAll"] {
   display: none;
 }
 /* hides null radio button, to allow user to click glossary button when glossary page is not open. */
@@ -103,7 +123,16 @@ input[name="dropdown"]:not(:checked) + label[for="uncheckAll"] {
   display: block;
 }
 
-/* open glossary page when glossary button pressed */
+/* open concepts page when concepts button pressed */
+#concepts:checked + div {
+  display: block;
+}
+/* concepts pagination */
+#concepts:checked + div > div > div:last-of-type {
+  display: block;
+}
+
+/* active state for pagination buttons */
 #page1:checked ~ * label[for="page1"] {
   background-color:#3A68AF;
   border-color:#3A68AF;
@@ -125,6 +154,28 @@ input[name="dropdown"]:not(:checked) + label[for="uncheckAll"] {
   color: #333333;
 }
 
+/* active state for pagination buttons */
+#blog-page1:checked ~ * label[for="blog-page1"] {
+  background-color:#3A68AF;
+  border-color:#3A68AF;
+  color: #333333;
+}
+#blog-page2:checked ~ * label[for="blog-page2"] {
+  background-color:#3A68AF;
+  border-color:#3A68AF;
+  color: #333333;
+}
+#blog-page3:checked ~ * label[for="blog-page3"] {
+  background-color:#3A68AF;
+  border-color:#3A68AF;
+  color: #333333;
+}
+#blog-page4:checked ~ * label[for="blog-page4"] {
+  background-color:#3A68AF;
+  border-color:#3A68AF;
+  color: #333333;
+}
+
 #video-dropdown:checked ~ #dropdown-buttons {
   padding-top: 1rem;
   border-top-width: 3px;
@@ -140,6 +191,13 @@ input[name="dropdown"]:not(:checked) + label[for="uncheckAll"] {
 #glossary:checked + div > div > img {
   display: block;
 }
+#concepts:checked ~ #dropdown-buttons {
+  padding-top: 1rem;
+  border-top-width: 3px;
+}
+#concepts:checked + div > div > img {
+  display: block;
+}
 #video-dropdown:checked + div > div + img {
   display: block;
 }
@@ -148,10 +206,16 @@ input[name="dropdown"]:not(:checked) + label[for="uncheckAll"] {
   #glossary:checked + div > div > div:last-of-type, #glossary:checked + div > div > img {
     display: none;
   }
+  #concepts:checked + div > div > div:last-of-type, #concepts:checked + div > div > img {
+    display: none;
+  }
   input[name="page"]:not(:checked) + div {
     display: block;
   }
   #glossary:checked + div {
+    display: flex;
+  }
+  #concepts:checked + div {
     display: flex;
   }
   /* 
@@ -172,18 +236,17 @@ input[name="dropdown"]:not(:checked) + label[for="uncheckAll"] {
   }
 }
 
-@media (min-width: 72.5rem) {
-  .full-width {
-    margin-left: calc(-100vw / 2 + 72.5rem / 2);
-    margin-right: calc(-100vw / 2 + 72.5rem / 2);
-  }
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
+  @media (min-width: 72.5rem) {
+    .full-width {
+      margin-left: calc(-100vw / 2 + 72.5rem / 2);
+      margin-right: calc(-100vw / 2 + 72.5rem / 2);
+    }
+  }
   .heading-1 {
     font-size: 36px;
     line-height: 47px;
@@ -221,7 +284,7 @@ input[name="dropdown"]:not(:checked) + label[for="uncheckAll"] {
   }
   .btn-md {
     height: 30px;
-    padding: 0px 19px;
+    padding: 6px 19px;
     border-radius: 4px;
     font-size: 14px;
   }
