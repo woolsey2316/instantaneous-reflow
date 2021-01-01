@@ -21,6 +21,7 @@ module.exports = {
         '4px': '4px'
       },
       colors: {
+        'silver': '#c9c9c9',
         'informational': '#3A6BAF',
         'warning': '#f2cc41',
         'true-blue': "#3968ae",
@@ -64,6 +65,7 @@ module.exports = {
       fontSize: {
         'xs': '13px',
         'sm': '14px',
+        'reg': '16px',
         'md': '18px',
         'lg': '19px',
         'xl': '22px',
