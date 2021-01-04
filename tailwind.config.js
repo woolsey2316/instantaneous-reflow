@@ -111,7 +111,8 @@ module.exports = {
         '180': '45rem',
         '199': '49.125rem',
         '212': '53rem',
-        '199px': '199px'
+        '199px': '199px',
+        '99vw': '99vw'
       },
       maxWidth: {
         '70': '17.43rem',
@@ -154,6 +155,9 @@ module.exports = {
 
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
+
+      'max-len': '1152px',
+      // => @media (min-width: 1152px) { ... }
 
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }

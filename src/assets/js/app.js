@@ -104,4 +104,31 @@ $( document ).ready(function() {
   }
 });
 
+// scroll to top of page when a dropdown button is pressed
+$( document ).ready(function() {
+  $("label[for='glossary']").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 250);
+    return true;
+  });
 
+  $("label[for='concepts']").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 250);
+    return true;
+  });
+
+  $("label[for='video-dropdown']").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 250);
+    return true;
+  });
+
+  // pagination buttons inside dropdown also trigger scroll animation
+  $("label[name='pagination-glossary']").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 250);
+    return true;
+  });
+
+  $("label[name='pagination-concepts']").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 250);
+    return true;
+  });
+})
