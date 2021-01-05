@@ -113,7 +113,7 @@
             </div>
             <!-- show/hide concepts section (its actually the same glossary page) -->
             <input class="hidden" id="concepts" type="radio" name="dropdown">
-            <div class="md:order-first full-width w-screen mt-5 md:mt-0 hidden bg-white dark:bg-gray-750 md:border-b-3 md:border-matrix-blue">
+            <div class="md:order-first full-width w-99vw mt-5 md:mt-0 hidden bg-white dark:bg-gray-750 md:border-b-3 md:border-matrix-blue">
               <!-- Glossary -->
               <div class="w-full max-w-290 mx-auto p-12 pt-14 relative lg:flex lg:flex-wrap lg:justify-between">
                 <h4 class="text-gray-700 dark:text-white text-md font-bold absolute fixed top-9">Glossary: Top 100 Terms</h4>
@@ -300,7 +300,7 @@
             </div>
             <!-- show/hide glossary section -->
             <input class="hidden" id="glossary" type="radio" name="dropdown">
-            <div class="md:order-first full-width w-screen mt-5 md:mt-0 hidden bg-white dark:bg-gray-750 md:border-b-3 md:border-matrix-blue">
+            <div class="md:order-first full-width w-99vw mt-5 md:mt-0 hidden bg-white dark:bg-gray-750 md:border-b-3 md:border-matrix-blue">
               <!-- Glossary -->
               <div class="w-full max-w-290 mx-auto p-12 pt-14 relative lg:flex lg:flex-wrap lg:justify-between">
                 <h4 class="text-gray-800 dark:text-white text-md font-bold absolute fixed top-9">Glossary: Top 100 Terms</h4>
@@ -560,7 +560,7 @@
       </div>
       <!-- Landing Page -->
       <div class="bg-gray-800 md:h-0 h-24 w-full"></div>
-      <div id="landing-page" class="bg-cover bg-right bg-spinning-stars h-120 relative md:px-8">
+      <div id="landing-page" class="bg-cover bg-right bg-spinning-stars h-120 relative md:px-8 transition-all duration-200 ease-linear">
         <div class="flex flex-col items-start md:justify-center px-10 md:px-0 h-full max-w-290 mx-auto">
           <h1 class="font-bold text-4xl text-gray-100 -mt-8 md:mt-0 leading-7">Super Cool Headline</h1>
           <p class="text-gray-100 mt-12 md:mt-4 text-lg leading-3 sm:w-144.5">
@@ -568,12 +568,12 @@
             It should capture the users attention and entice 
             them to click the call-to-action button below
           </p>
-          <button id="call-to-action" class="text-white text-sm leading-2 font-bold bg-matrix-blue btn-sm mt-10 md:mt-5">Call To Action</button>
+          <button id="call-to-action" class="transition-opacity duration-200 ease-in-out text-white text-sm leading-2 font-bold bg-matrix-blue btn-sm mt-10 md:mt-5">Call To Action</button>
         </div>
       </div>
     </div>
     <!-- search filter section -->
-    <div class="py-5 bg-white dark:bg-gray-800 mx-8">
+    <div id="search-section" class="py-5 bg-white dark:bg-gray-800 mx-8">
       <div class="sm:max-w-290 mx-auto flex justify-end">
         <div class="flex justify-end items-center sm:w-116 md:w-116">
           <select class="select btn text-sm flex-shrink-0 border border-gray-150 dark:border-gray-650 hover:dark:border-gray-500 text-gray-500 px-2 py-1 dark:bg-gray-700 w-20 mr-6" name="ARM" id="ARM">
@@ -1215,17 +1215,17 @@
         <div id="blog-pagination" class="bg-white dark:bg-gray-800 hidden relative mt-12 mb-71.5">
           <ul class="flex justify-center font-source-sans text-gray-500 dark:text-gray-500 text-center py-2">
             <li>
-              <label for="blog-page1" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-10 py-1 w-22 border border-gray-500 dark:border-gray-700 rounded-l-full">
+              <label for="blog-page1" name="blog-page" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-10 py-1 w-22 border border-gray-500 dark:border-gray-700 rounded-l-full">
                 1
               </label>
             </li>
             <li>
-              <label for="blog-page2" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-10 py-1 w-22 border border-gray-500 dark:border-gray-700">
+              <label for="blog-page2" name="blog-page" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-10 py-1 w-22 border border-gray-500 dark:border-gray-700">
                 2
               </label>
             </li>
             <li>
-              <label for="blog-page3" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-10 py-1 w-22 border border-gray-500 dark:border-gray-700 rounded-r-full">
+              <label for="blog-page3" name="blog-page" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-10 py-1 w-22 border border-gray-500 dark:border-gray-700 rounded-r-full">
                 3
               </label>
             </li>

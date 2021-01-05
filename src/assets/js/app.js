@@ -1,24 +1,24 @@
 $( document ).ready(function() {
-  var _mySearchField = document.getElementById("blog-search");
-  var _mySearchField2 = document.getElementById("blog-search2");
-  var _mySearchField3 = document.getElementById("blog-search3");
-  var _blogContainer = document.getElementById("blog-container")
-  _mySearchField.onchange = getData;
-  _mySearchField2.onchange = getData;
-  _mySearchField3.onchange = getData;
+  var mainSearchField = document.getElementById("blog-search");
+  var navSearchField = document.getElementById("blog-search2");
+  var mobileSearchField = document.getElementById("blog-search3");
+
+  mainSearchField.onchange = getData;
+  navSearchField.onchange = getData;
+  mobileSearchField.onchange = getData;
 
   function getData(){
     $.ajax({
-      url: "http://API_ENDPOINT/"+_mySearchField.value,
+      url: "http://API_ENDPOINT/"+mainSearchField.value,
       method: "GET",
       dataType: "json",
       success: function(data) {     
-        _blogContainer.empty()   
+        blogContainer.empty()   
         paginateBlogTiles(data)
       }
     });
   }
-  // Places search results into a page container
+  // Assigns all blog tiles to a page number
   function paginateBlogTiles(data) {
     const BLOG_TILES_PER_PAGE = 8
     for(var i= 0; i < data.blogs.length; i++){
@@ -29,7 +29,7 @@ $( document ).ready(function() {
           '<div class="flex flex-col w-full sm:flex-row sm:flex-wrap sm:justify-between">'
         ].join("\n");
         
-        _blogContainer.append(PAGE_CONTAINER);
+        blogContainer.append(PAGE_CONTAINER);
       }
 
       // appends html blog tiles between html page containers
@@ -37,7 +37,7 @@ $( document ).ready(function() {
 
       // check if final blog tile was just added to page
       if (i + 1 % 8 === 0) {
-        _blogContainer.append('</div>');
+        blogContainer.append('</div>');
       }
     }
   }
@@ -58,54 +58,55 @@ $( document ).ready(function() {
       '</div>'
     ].join("\n");
     
-    _blogContainer.append(blogTile);
+    blogContainer.append(blogTile);
   }
 });
 
 // hides the 2nd hero section when blog search bar is in focus to make room for blog tile results 
 $( document ).ready(function() {
-  var _mySearchField = document.getElementById("blog-search");
-  var _mySearchField2 = document.getElementById("blog-search2");
-  var _mySearchField3 = document.getElementById("blog-search3");
-  var _blogContainer = document.getElementById("blog-container");
-  var _landingPage = document.getElementById("landing-page");
-  var _blogPagination = document.getElementById("blog-pagination");
-  var _callToAction = document.getElementById("call-to-action")
+  var mainSearchField = document.getElementById("blog-search");
+  var navSearchField = document.getElementById("blog-search2");
+  var mobileSearchField = document.getElementById("blog-search3");
+  var blogContainer = document.getElementById("blog-container");
+  var landingPage = document.getElementById("landing-page");
+  var searchContainer = document.getElementById("search-section");
+  var blogPagination = document.getElementById("blog-pagination");
+  var callToAction = document.getElementById("call-to-action");
+
+  mainSearchField.addEventListener("focusin", hideSecondHeroSection)
+  mainSearchField.addEventListener("focusout", hideSecondHeroSection)
+  navSearchField.addEventListener("focusin", hideSecondHeroSection)
+  navSearchField.addEventListener("focusout", hideSecondHeroSection)
+  mobileSearchField.addEventListener("focusout", hideSecondHeroSection)
+  mobileSearchField.addEventListener("focusin", hideSecondHeroSection)
   
-  _mySearchField.addEventListener("focusin", hideSecondHero)
-  _mySearchField2.addEventListener("focusin", hideSecondHero)
-  _mySearchField3.addEventListener("focusin", hideSecondHero)
-  _mySearchField.addEventListener("focusout", hideSecondHero)
-  _mySearchField2.addEventListener("focusout", hideSecondHero)
-  _mySearchField3.addEventListener("focusout", hideSecondHero)
-  
-  function hideSecondHero(){
+  function hideSecondHeroSection(){
     var isFocused = (
-      document.activeElement === _mySearchField 
-      || document.activeElement === _mySearchField2
-      || document.activeElement === _mySearchField3
+      document.activeElement === mainSearchField 
+      || document.activeElement === navSearchField
+      || document.activeElement === mobileSearchField
     )
 
     if (isFocused) {
+      landingPage.scrollIntoView();
+
       document.getElementById('2nd-hero-section').style.display = "none";
-      _callToAction.style.display = "none";
-      _blogContainer.style.height = "auto";
-      _blogContainer.style.marginBottom = "0px";
-      _blogContainer.style.position = "static";
-      _landingPage.style.height = "17rem";
-      _blogPagination.style.display = "block";
+      callToAction.style.opacity = 0;
+      blogContainer.style.height = "auto";
+      blogContainer.style.marginBottom = "0px";
+      blogContainer.style.position = "static";
+      landingPage.style.height = "17rem";
+      blogPagination.style.display = "block";
 
 
     } else {
-      _landingPage.style.height = "30rem";
-      _callToAction.style.display = "block";
+      landingPage.style.height = "30rem";
+      callToAction.style.opacity = 1;
 
     }
   }
-});
 
-// scroll to top of page when a dropdown button is pressed
-$( document ).ready(function() {
+  // scroll to top of page when a dropdown button is pressed
   $("label[for='glossary']").click(function() {
     $("html, body").animate({ scrollTop: 0 }, 250);
     return true;
@@ -131,4 +132,10 @@ $( document ).ready(function() {
     $("html, body").animate({ scrollTop: 0 }, 250);
     return true;
   });
-})
+
+  // scrolls to top of page when page number is chosen
+  $("label[name='blog-page']").click(function() {
+    searchContainer.scrollIntoView();
+    return true;
+  });
+});
