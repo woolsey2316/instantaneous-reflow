@@ -270,6 +270,12 @@ input[name="dropdown"]:not(:checked) + label[for="uncheckAll"] {
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .tag-sm {
+    @apply px-2 mr-2 py-1 bg-matrix-blue uppercase text-sm text-white uppercase;
+  }
+}
+
 @layer utilities {
   @variants responsive {
     .full-width {
