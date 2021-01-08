@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- <html id="top" lang="en"> -->
 <html lang="en" class="dark">
   <head>
     <title>Instantaneous Reflow</title>
@@ -13,10 +12,10 @@
     <script src="https://code.jquery.com/jquery-latest.js"></script>
   </head>
   <body class="font-IBM-plex-sans bg-white dark:bg-gray-800">
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/main-article.js"></script>
     <!-- Header with logo -->
     <div class="bg-white dark:bg-gray-800">
-      <div class="bg-white dark:bg-gray-800 md:border-b md:border-gray-50 md:dark:border-gray-500">
+      <div class="bg-white dark:bg-gray-800 md:border-b md:border-gray-150 md:dark:border-gray-500">
         <div class="flex flex-wrap justify-between items-center">
           <div class="w-0 flex-break"></div>
           <div class="w-full max-w-290 mx-auto md:pb-4 flex flex-wrap justify-between items-center">
@@ -42,7 +41,7 @@
                   <svg class="text-gray-700 dark:text-white fill-current absolute top-20 right-12" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.153 15.094h-1.084l-.384-.37a8.933 8.933 0 10-.961.961l.37.384v1.084L21.955 24 24 21.955zm-8.233 0a6.175 6.175 0 116.175-6.175 6.167 6.167 0 01-6.176 6.175z"/></svg>
                 </input>
                 <ul class="items-center justify-around w-full z-50">
-                  <li class="text-md mt-4 font-bold hover:dark:text-white active:dark:text-white text-gray-400"><a href="#">COMPUTATION</a></li>
+                  <li class="text-md mt-4 font-bold hover:dark:text-white active:dark:text-white text-gray-400"><a href="./main-article.html">SINGLE ARTICLE</a></li>
                   <li class="text-md mt-4 font-bold hover:dark:text-white active:dark:text-white text-gray-400"><a href="#">ANOTHER ITEM</a></li>
                   <li class="text-md mt-4 font-bold hover:dark:text-white active:dark:text-white text-gray-400"><a href="#">PROPULSION</a></li>
                   <li class="text-md mt-4 font-bold hover:dark:text-white active:dark:text-white text-gray-400"><a href="#">ONE MORE ITEM</a></li>
@@ -486,8 +485,8 @@
               </div>
             </div>
             <!-- show/hide buttons without javaScript -->
-            <div id="dropdown-buttons" class="bg-white dark:bg-gray-800 order-last md:order-2 w-full md:w-129 flex flex-wrap justify-between items-center border-b border-matrix-blue md:border-none">
-              <div class="flex justify-between items-center w-full lg:w-142 p-2.5 md:mt-2 max-w-290 md:mt-0 border-t dark:border-gray-500 md:border-none">
+            <div id="dropdown-buttons" class="bg-white dark:bg-gray-800 order-last md:order-2 w-full md:w-129 flex flex-wrap justify-between items-center border-b border-gray-150 md:border-none">
+              <div class="flex justify-between items-center w-full lg:w-142 p-2.5 md:mt-2 max-w-290 md:mt-0 border-t border-gray-150 dark:border-gray-500 md:border-none">
                 <input type="radio" id="uncheckAll" checked="checked" name="dropdown"/>
                 <label class="cursor-pointer p-btn-xs text-xs sm:text-sm leading-1 py-1 rounded-4px px-5 w-1/3-gap-3 text-center md:block font-bold md:w-full sm:p-btn-lg leading-1 text-white bg-matrix-blue relative" for="glossary" id="glossary-btn" name="dropdown">
                   <span>GLOSSARY</span>
@@ -512,31 +511,31 @@
           </div>
         </div>
       </div>
-      <div class="flex items-center flex-wrap lg:p-4 justify-between bg-white dark:bg-gray-800 lg:border-b lg:border-matrix-blue relative">
+      <div class="flex items-center flex-wrap lg:p-4 justify-between bg-white dark:bg-gray-800 lg:border-b lg:border-gray-150 relative">
         <!-- Nav Menu -->
-        <div class="hidden lg:block w-full left-5 mx-auto max-w-290">
+        <nav class="hidden lg:block w-full left-5 mx-auto max-w-290">
           <input class="hidden" id="main_nav" type="checkbox">
           <ul class="hidden lg:flex items-center justify-between w-full max-w-290 pr-4">
             <li>
-              <a class="pl-4 text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="/article">COMPUTATION</a>
+              <a class="pl-4 text-gray-550 dark:text-gray-350 text-sm font-bold transition duration-200 ease-in-out dark:hover:text-gray-200 dark:active:text-white" href="main-article.html">SINGLE ARTICLE</a>
             </li>
             <li>
-              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="#">PROPULSION</a>
+              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold transition duration-200 ease-in-out dark:hover:text-gray-200 dark:active:text-white" href="#">PROPULSION</a>
             </li>
             <li>
-              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="#">ANOTHER ITEM</a>
+              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold transition duration-200 ease-in-out dark:hover:text-gray-200 dark:active:text-white" href="#">ANOTHER ITEM</a>
             </li>
             <li>
-              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="#">ONE MORE ITEM</a>
+              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold transition duration-200 ease-in-out dark:hover:text-gray-200 dark:active:text-white" href="#">ONE MORE ITEM</a>
             </li>
             <li>
-              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="#">HOVER ITEM</a>
+              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold transition duration-200 ease-in-out dark:hover:text-gray-200 dark:active:text-white" href="#">HOVER ITEM</a>
             </li>
             <li>
-              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="#">MENU ITEM</a>
+              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold transition duration-200 ease-in-out dark:hover:text-gray-200 dark:active:text-white" href="#">MENU ITEM</a>
             </li>
             <li>
-              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="#">MENU ITEM</a>
+              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold transition duration-200 ease-in-out dark:hover:text-gray-200 dark:active:text-white" href="#">MENU ITEM</a>
             </li>
             <li class="text-sm font-bold dark:hover:text-white dark:focus:text-white">
               <label class="cursor-pointer" for="main_nav">
@@ -550,39 +549,675 @@
               placeholder="search ..."
               id="blog-search2"
               name="search"
-              class="text-md rounded-sm w-full bg-transparent border-none hover:border-gray-500 text-gray-500 dark:text-white relative">
+              class="pl-2 text-md rounded-sm w-full bg-transparent border-none hover:border-gray-500 text-gray-500 dark:text-white relative">
               <label class="cursor-pointer" for="main_nav">
                 <svg class="text-gray-700 dark:text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.153 15.094h-1.084l-.384-.37a8.933 8.933 0 10-.961.961l.37.384v1.084L21.955 24 24 21.955zm-8.233 0a6.175 6.175 0 116.175-6.175 6.167 6.167 0 01-6.176 6.175z"/></svg>
               </label>
             </input>
           </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Blog list container-->
+    <div id="blog-container" class="mx-8 hidden">
+      <div class="flex flex-col w-full sm:flex-row flex-wrap justify-center items-center relative -mb-20 max-w-290 mx-auto">
+        <input class="hidden" id="blog-page1" type="radio" name="blog-page" checked></input>
+        <div class="flex flex-col w-full sm:flex-row sm:flex-wrap sm:justify-between sm:items-start">
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-maroon"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11">Supporting text and content goes here.</p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-73910@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 leading-2 sm:h-199px sm:max-h-199px overflow-hidden"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-maroon mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-matrix-green"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Longer Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11 overflow-hidden overflow-ellipsis">
+                Supporting text and content goes here. second line
+              </p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-41006@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-matrix-green mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8 relative">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-true-blue"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Short Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11">Supporting text and content goes here.</p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2152@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-true-blue mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 hidden lg:block sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-dark-goldenrod"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Longer Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11 overflow-hidden overflow-ellipsis">
+                Supporting text and content goes here. second line
+              </p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2166@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-dark-goldenrod mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-maroon"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11">Supporting text and content goes here.</p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-73910@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 leading-2 sm:h-199px sm:max-h-199px overflow-hidden"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-maroon mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-matrix-green"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Longer Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11 overflow-hidden overflow-ellipsis">
+                Supporting text and content goes here. second line
+              </p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-41006@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-matrix-green mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8 relative">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-true-blue"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Short Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11">Supporting text and content goes here.</p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2152@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-true-blue mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-dark-goldenrod"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Longer Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11 overflow-hidden overflow-ellipsis">
+                Supporting text and content goes here. second line
+              </p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2166@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-dark-goldenrod mt-8">Keep Reading</a>
+            </div>
+          </div>
+        </div>
+        <input class="hidden" id="blog-page2" type="radio" name="blog-page"></input>
+        <div class="flex flex-col w-full sm:flex-row sm:flex-wrap sm:justify-between">
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-matrix-green"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11">Supporting text and content goes here.</p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-73910@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 leading-2 sm:h-199px sm:max-h-199px overflow-hidden"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-maroon mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-matrix-green"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Longer Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11 overflow-hidden overflow-ellipsis">
+                Supporting text and content goes here. second line
+              </p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-41006@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-matrix-green mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8 relative">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-matrix-green"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Short Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11">Supporting text and content goes here.</p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2152@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-matrix-green mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 hidden lg:block sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-matrix-green"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Longer Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11 overflow-hidden overflow-ellipsis">
+                Supporting text and content goes here. second line
+              </p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2166@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-matrix-green mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-matrix-green"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11">Supporting text and content goes here.</p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-73910@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 leading-2 sm:h-199px sm:max-h-199px overflow-hidden"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-matrix-green mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-matrix-green"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Longer Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11 overflow-hidden overflow-ellipsis">
+                Supporting text and content goes here. second line
+              </p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-41006@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-matrix-green mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8 relative">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-matrix-green"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Short Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11">Supporting text and content goes here.</p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2152@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-matrix-green mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 hidden lg:block sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-matrix-green"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Longer Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11 overflow-hidden overflow-ellipsis">
+                Supporting text and content goes here. second line
+              </p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2166@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-matrix-green mt-8">Keep Reading</a>
+            </div>
+          </div>
+        </div>
+        <input class="hidden" id="blog-page3" type="radio" name="blog-page"></input>
+        <div class="flex flex-col w-full sm:flex-row sm:flex-wrap sm:justify-between">
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-maroon"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11">Supporting text and content goes here.</p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-73910@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 leading-2 sm:h-199px sm:max-h-199px overflow-hidden"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-maroon mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-maroon"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Longer Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11 overflow-hidden overflow-ellipsis">
+                Supporting text and content goes here. second line
+              </p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-41006@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-maroon mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8 relative">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-maroon"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Short Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11">Supporting text and content goes here.</p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2152@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-maroon mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 hidden lg:block sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-maroon"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Longer Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11 overflow-hidden overflow-ellipsis">
+                Supporting text and content goes here. second line
+              </p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2166@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-maroon mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-maroon"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11">Supporting text and content goes here.</p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-73910@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 leading-2 sm:h-199px sm:max-h-199px overflow-hidden"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-maroon mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-maroon"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Longer Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11 overflow-hidden overflow-ellipsis">
+                Supporting text and content goes here. second line
+              </p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-41006@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-maroon mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8 relative">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-maroon"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Short Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11">Supporting text and content goes here.</p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2152@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <a class="cursor-pointer inline-block align-middle btn-md text-gray-500 leading-none font-bold border border-maroon mt-8">Keep Reading</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 hidden lg:block sm:w-almost-1/2 md:w-almost-1/3 lg:w-almost-1/4 mt-8">
+            <!-- multi-colored border -->
+            <div class="border-t-3 border-maroon"></div>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-6 border-l border-r dark:border-gray-700">
+              <h3 class="dark:text-white text-gray-700 text-xl font-medium">Longer Widget Title</h3>
+              <p class="text-sm text-gray-300 font-medium mb-2 max-h-11 overflow-hidden overflow-ellipsis">
+                Supporting text and content goes here. second line
+              </p>
+            </div>
+            <img class="object-cover h-28" height="230" width="640" src="./assets/images/pexels-pixabay-2166@2x.png"></img>
+            <div class="bg-white dark:bg-gray-800 shadow px-5 py-8 border-l border-r border-b dark:border-gray-700">
+              <p class="text-sm text-gray-500 sm:h-199px sm:max-h-199px overflow-hidden leading-2"> 
+                Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+                ea nec elaboraret interpretaris, sed diceret concludaturque no.
+                Verear habemus sea ut. His nibh scripta in.
+                In sea vocibus facilisis.
+                Sed ea cibo eripuit vituperata, pri eius debitis ne.
+                Eos et wisi legimus, vel cu paulo doctus vidisse.
+                Iudico dicant nostrum nec an, in eos harum vitae,
+                te quod vero salutandi nam.
+              </p>
+              <button class="btn-md text-gray-500 leading-none font-bold border border-maroon mt-8">Keep Reading</button>
+            </div>
+          </div>
+        </div>
+        <div id="blog-pagination" class="bg-white dark:bg-gray-800 hidden relative mt-12 mb-71.5">
+          <ul class="flex justify-center font-source-sans text-gray-500 dark:text-gray-500 text-center py-2">
+            <li>
+              <label for="blog-page1" name="blog-page" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-10 py-1 w-22 border border-gray-500 dark:border-gray-700 rounded-l-full">
+                1
+              </label>
+            </li>
+            <li>
+              <label for="blog-page2" name="blog-page" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-10 py-1 w-22 border border-gray-500 dark:border-gray-700">
+                2
+              </label>
+            </li>
+            <li>
+              <label for="blog-page3" name="blog-page" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-10 py-1 w-22 border border-gray-500 dark:border-gray-700 rounded-r-full">
+                3
+              </label>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
     <!-- Main Article-->
-    <div class="mx-8">
+    <div id="main-article" class="px-4 pt-4 sm:pt-20 min-h-screen">
       <!-- search filter section -->
-      <div id="tags" class="py-5 bg-white dark:bg-gray-800 mx-8">
-        <div class="sm:max-w-290 mx-auto flex justify-center">
+      <div id="tags" class="py-4 dark:bg-gray-800">
+        <div class="sm:max-w-175 mx-auto flex justify-start">
           <div class="tag-sm uppercase">Liquid</div>
           <div class="tag-sm uppercase">Solid</div>
         </div>
       </div>
-      <div class="text-gray-850 dark:text-gray-200 pb-10 flex flex-col w-full sm:flex-row flex-wrap justify-center items-center relative max-w-290 mx-auto">
-        <h1 class="text-4xl font-medium text-center">Blog Title that Overflows to the Next line</h1>
-        <p class="text-gray-400 mb-10">12.09.2021</p>
-        <img height="487" width="968" src="assets/images/pexels-pixabay-87089@2x.png">
-        <p class="max-w-175 mt-10">
+      <div class="text-gray-850 dark:text-gray-200 pb-10 flex flex-col w-full flex-wrap justify-center items-center relative max-w-175 mx-auto">
+        <h1 class="text-4xl font-bold leading-tight">Blog Title that Overflows to the Next line</h1>
+        <div class="flex self-start mt-2 mb-5 text-gray-650 dark:text-gray-200 text-sm-vw font-lato">
+          <p class="mr-2">By David Lee</p>
+          <p class="font-medium">June 3, 2021</p>
+        </div>
+        <img class="mr-auto" height="487" width="968" src="assets/images/pexels-pixabay-256379@2x.png">
+        <p class="max-w-175 text-reg-vw leading-relaxed mt-6">
           Lommodo ligula eget dolor. Aenean massa. Cum sociis que penatibus et magnis 
           dis parturient montes lorem, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
           pellentesque eu, pretium quis, sem. Nulla onsequat massa quis enim. Donec pede justo 
           fringilla vel aliquet nec vulputate eget. Lorem ispum dolore siamet ipsum dolor.
         </p>
-        <blockquote class="max-w-175 mt-10">
+        <blockquote class="max-w-175 text-reg-vw mt-6 italic font-medium pl-8 border-l-2 border-matrix-blue">
           You will never be happy if you continue to search for what happiness 
           consists of. You will never live if you are looking for the meaning of life.
         </blockquote>
-        <p class="max-w-175 mt-10">
+        <p class="max-w-175 text-reg-vw leading-relaxed mt-6">
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
           sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
           Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
@@ -591,27 +1226,28 @@
           exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
           consequatur reprehenderit qui in ea voluptate velit esse quam nihil.
         </p>
-        <h2 class="max-w-175 text-3xl mt-10">
-          IBM Plex Sans Regular 36
+        <h2 class="max-w-175 text-3xl font-semibold mt-6">
+          IBM Plex Sans Regular 32
         </h2>
-        <p class="max-w-175 mt-10">
+        <p class="max-w-175 text-reg-vw leading-relaxed mt-4">
           Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta 
           nobis est eligendi optio cumquer nihil impedit quo minus id quod maxime placeat facere.
         </p>
-        <img class="mt-10" src="assets/images/pexels-pixabay-256379@2x.png"></img>
-        <h3 class="max-w-175 mt-10 text-md">IBM Plex Sans Regular 18</h3>
-        <p class="max-w-175 mt-10">
+        <img class="mt-6" src="assets/images/pexels-pixabay-87089@2x.png"></img>
+        <p class="text-xs text-gray-500 dark:text-gray-300 font-lato">Ken Cedeno/Polaris/Bloomberg via Getty Images</p>
+        <h3 class="max-w-175 mt-6 font-semibold text-md">IBM Plex Sans Regular 18</h3>
+        <p class="max-w-175 text-reg-vw leading-relaxed mt-4">
           Rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis 
           pretium. Integer cidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend 
         </p>
-        <p class="max-w-175 mt-10">
+        <p class="max-w-175 text-reg-vw leading-relaxed mt-6">
           Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, 
           imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
           Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
           porttitor eu, consequat vitae, eleifend ac, enim.
         </p>
-        <h3 class="max-w-175 mt-10 text-xl">IBM Plex Sans Medium 24</h3>
-        <p class="max-w-175 mt-10">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+        <h3 class="max-w-175 mt-6 font-semibold text-xl">IBM Plex Sans Medium 22</h3>
+        <p class="max-w-175 text-reg-vw leading-relaxed mt-4">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
           adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore 
           magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem 
           ullam corporis suscipit. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
@@ -623,35 +1259,35 @@
       <div class="px-6 xl:px-0 pt-10 pb-6 sm:pb-0 bg-white dark:bg-gray-800 flex flex-col flex-wrap sm:flex-row sm:justify-between items-start lg:max-w-290 lg:mx-auto">
         <div>
           <svg class="text-gray-700 dark:text-white fill-current mb-4" xmlns="http://www.w3.org/2000/svg" width="214.277" height="44.368"><path data-name="Path 138" d="M49.278 4.99a2.373 2.373 0 00-1.793-.156 2.269 2.269 0 00-1.326 1.092l-22.847.624-.156.468-.309-.155L.078 24.64l29.865 14.191 12.866-9.357.78 1.793a3.2 3.2 0 00-1.248 1.248 3.269 3.269 0 00-.312 1.248l-9.981 5.146.156.312 9.9-5.146a1.469 1.469 0 00.156.624 2.97 2.97 0 004.912 1.17 2.8 2.8 0 00.546-.78 2.847 2.847 0 00-.624-3.431l4.679-6-.234-.234-4.679 6c-.156-.078-.312-.234-.468-.312a2.846 2.846 0 00-2.261-.156.272.272 0 00-.156.078l-.854-1.871 8.421-6.082-9.664-5.459 5.458-8.421a2.373 2.373 0 001.637.078 1.257 1.257 0 00.546-.312l2.5 10.683.312-.078-2.582-10.839a.076.076 0 00.078-.078 4.325 4.325 0 00.468-.624 2.373 2.373 0 00.156-1.793 2.974 2.974 0 00-1.173-1.248zM46.24 31.424a2.616 2.616 0 11-2.339 4.679 2.736 2.736 0 01-1.323-1.482 2.608 2.608 0 01.156-2.027 2.736 2.736 0 011.478-1.331 3 3 0 012.028.161zm-16.3 6.94L.778 24.563 22.847 7.251l.156.078-4.757 13.256a3.961 3.961 0 00-1.326.234 4.614 4.614 0 00-2.65 2.344 4.567 4.567 0 00-.234 3.509 4.647 4.647 0 007.486 1.949l7.252 6.94.234-.234-7.252-6.94a3.085 3.085 0 00.78-1.17 3.839 3.839 0 00.468-2.261l14.268-1.093a1.4 1.4 0 00.546.39 2.373 2.373 0 001.793.156 1.618 1.618 0 00.78-.468l2.261 5.068zm9.9-18.246a2.373 2.373 0 00-1.637-.078 2.208 2.208 0 00-1.326 1.17 2.373 2.373 0 00-.156 1.793 1.567 1.567 0 00.312.624l-14.03 1.013a2.076 2.076 0 00-.234-.936 4.614 4.614 0 00-2.339-2.651 4.152 4.152 0 00-1.871-.468l4.679-13.1L41.328 17.7zm.858 3.041a2 2 0 01-3.665-.312 1.957 1.957 0 01.078-1.482 2.369 2.369 0 01.39-.546 1.618 1.618 0 01.78-.468 1.957 1.957 0 011.482.078 2.077 2.077 0 01.94 2.734zm-24.25 5.926a4.385 4.385 0 01-1.949-5.77 5.535 5.535 0 01.78-1.092 4.337 4.337 0 016.94 4.99 4.428 4.428 0 01-5.766 1.872zm34.47-5.922l-7.954 5.77-2.261-5.146c.078-.156.234-.312.312-.468a2.349 2.349 0 00-.858-3.041l1.56-2.339zM23.393 7.173l.078-.312 22.535-.546a2.315 2.315 0 001.014 2.807l-5.459 8.341zm26.668-.7a1.957 1.957 0 01-.083 1.48 1.9 1.9 0 01-1.17 1.014 1.957 1.957 0 01-1.482-.078 1.9 1.9 0 01-.848-2.651 1.9 1.9 0 011.17-1.014 1.658 1.658 0 011.482.078 1.787 1.787 0 01.93 1.17z" /><g data-name="Group 85"><circle data-name="Ellipse 36" cx="4.289" cy="4.289" r="4.289" transform="translate(46.941 18.792)"/></g><g data-name="Group 86"><circle data-name="Ellipse 37" cx="7.018" cy="7.018" r="7.018" transform="translate(15.751)"/></g><g data-name="Group 87"><circle data-name="Ellipse 38" cx="4.055" cy="4.055" r="4.055" transform="translate(0 20.04)"/></g><g data-name="Group 88"><circle data-name="Ellipse 39" cx="5.77" cy="5.77" r="5.77" transform="translate(24.172 32.828)"/></g><g data-name="Group 89" ><path data-name="Path 139" d="M68.463 13.334h1.793l7.486 10.059 7.408-10.059h1.793v20.43h-1.48V15.127l-7.1 9.747h-1.4l-6.94-9.747v18.715h-1.56z"/><path data-name="Path 140" d="M97.704 33.764l8.811-20.664h1.56l9.279 20.664h-1.637l-2.5-5.848h-11.613l-2.417 5.848zm4.367-6.94h10.917L107.373 14.5z"/><path data-name="Path 141" d="M132.56 14.734h-8.5v-1.4h18.4v1.4h-8.5v19.1h-1.4z"/><path data-name="Path 142" d="M153.69 33.764v-20.43h13.88a4.709 4.709 0 013.665 1.56 5.965 5.965 0 011.326 3.977 6.433 6.433 0 01-1.092 3.743 4.057 4.057 0 01-3.2 1.637l-1.482.078h-.546l5.3 9.513h-1.637l-5.3-9.591h-9.354v9.591h-1.56zm1.56-10.917h12.32a3.016 3.016 0 002.573-1.17 4.866 4.866 0 00.858-2.885 5.3 5.3 0 00-.858-2.963 2.974 2.974 0 00-2.573-1.248h-12.32z"/><path data-name="Path 143" d="M184.335 13.334h1.56v20.43h-1.56z"/><path data-name="Path 144" d="M204.219 23.159l-7.408-9.825h1.949l6.55 8.655 6.55-8.655h1.793l-7.486 9.747 8.109 10.761h-2.027l-7.174-9.591-7.174 9.591h-1.714z"/></g></svg>
-          <p class="text-gray-250 leading-2 mb-12 sm:mb-3 w-72">
+          <p class="text-gray-700 dark:text-gray-250 leading-2 mb-12 sm:mb-3 w-full sm:w-72">
             Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
             ea nec elaboraret interpretaris, sed diceret concludaturque no. 
             Verear habemus sea ut. His nibh scripta in. 
           </p>
         </div>
         <div class="sm:grid sm:grid-cols-12 grid-rows-12 auto-rows-max md:w-3/5">
-          <h6 class="col-span-12 sm:col-span-4 row-start-1 text-gray-500 dark:text-white text-md uppercase font-medium text-sm sm:text-md mt-4 mb-7 mr-4">
+          <h6 class="col-span-12 sm:col-span-4 row-start-1 text-gray-800 dark:text-white text-md uppercase font-medium text-sm sm:text-md mt-4 mb-7 mr-4">
           MENU HEADING
           </h6>
-          <a class="col-span-12 sm:col-span-4 row-start-2 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-350 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">MENU ITEM</a>
-          <a class="col-span-12 sm:col-span-4 row-start-3 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-350 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">ANOTHER ITEM</a>
-          <a class="col-span-12 sm:col-span-4 row-start-4 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-350 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">MENU ITEM</a>
-          <h6 class="col-span-12 sm:col-span-4 row-start-1 text-gray-500 dark:text-white text-md uppercase font-medium text-sm sm:text-md mt-4 mb-7 mr-4">
+          <a class="col-span-12 sm:col-span-4 row-start-2 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-sm sm:text-reg text-gray-700 hover:text-gray-500 active:text-gray-500 dark:hover:text-gray-200 dark:text-gray-350 font-medium transition duration-200 ease-in-out">MENU ITEM</a>
+          <a class="col-span-12 sm:col-span-4 row-start-3 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-sm sm:text-reg text-gray-700 hover:text-gray-500 active:text-gray-500 dark:hover:text-gray-200 dark:text-gray-350 font-medium transition duration-200 ease-in-out">ANOTHER ITEM</a>
+          <a class="col-span-12 sm:col-span-4 row-start-4 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-sm sm:text-reg text-gray-700 hover:text-gray-500 active:text-gray-500 dark:hover:text-gray-200 dark:text-gray-350 font-medium transition duration-200 ease-in-out">MENU ITEM</a>
+          <h6 class="col-span-12 sm:col-span-4 row-start-1 text-gray-800 dark:text-white text-md uppercase font-medium text-sm sm:text-md mt-4 mb-7 mr-4">
           MENU HEADING
           </h6>
-          <a class="col-span-12 sm:col-span-4 row-start-2 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-350 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">MENU ITEM</a>
-          <a class="col-span-12 sm:col-span-4 row-start-3 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-350 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">ANOTHER ITEM</a>
-          <a class="col-span-12 sm:col-span-4 row-start-4 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-350 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">MENU ITEM</a>
-          <h6 class="col-span-12 sm:col-span-4 row-start-1 text-gray-500 dark:text-white text-md uppercase font-medium text-sm sm:text-md mt-4 mb-7 mr-4">
+          <a class="col-span-12 sm:col-span-4 row-start-2 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-sm sm:text-reg text-gray-700 hover:text-gray-500 active:text-gray-500 dark:hover:text-gray-200 dark:text-gray-350 font-medium transition duration-200 ease-in-out">MENU ITEM</a>
+          <a class="col-span-12 sm:col-span-4 row-start-3 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-sm sm:text-reg text-gray-700 hover:text-gray-500 active:text-gray-500 dark:hover:text-gray-200 dark:text-gray-350 font-medium transition duration-200 ease-in-out">ANOTHER ITEM</a>
+          <a class="col-span-12 sm:col-span-4 row-start-4 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-sm sm:text-reg text-gray-700 hover:text-gray-500 active:text-gray-500 dark:hover:text-gray-200 dark:text-gray-350 font-medium transition duration-200 ease-in-out">MENU ITEM</a>
+          <h6 class="col-span-12 sm:col-span-4 row-start-1 text-gray-800 dark:text-white text-md uppercase font-medium text-sm sm:text-md mt-4 mb-7 mr-4">
           SETTINGS
           </h6>
-          <a class="col-span-12 sm:col-span-4 row-start-2 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-350 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">SWITCH TO LIGHT THEME</a>
-          <a class="col-span-12 sm:col-span-4 row-start-3 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-350 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">CREATE AN ACCOUNT</a>
-          <a class="col-span-12 sm:col-span-4 row-start-4 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-350 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">NEWSLETTER</a>
+          <a class="col-span-12 sm:col-span-4 row-start-2 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-sm sm:text-reg text-gray-700 hover:text-gray-500 active:text-gray-500 dark:hover:text-gray-200 dark:text-gray-350 font-medium transition duration-200 ease-in-out">SWITCH TO LIGHT THEME</a>
+          <a class="col-span-12 sm:col-span-4 row-start-3 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-sm sm:text-reg text-gray-700 hover:text-gray-500 active:text-gray-500 dark:hover:text-gray-200 dark:text-gray-350 font-medium transition duration-200 ease-in-out">CREATE AN ACCOUNT</a>
+          <a class="col-span-12 sm:col-span-4 row-start-4 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-sm sm:text-reg text-gray-700 hover:text-gray-500 active:text-gray-500 dark:hover:text-gray-200 dark:text-gray-350 font-medium transition duration-200 ease-in-out">NEWSLETTER</a>
         </div>
         <!-- line-break inside flex container -->
         <div class="w-0 flex-break"></div>
-        <p class="text-gray-250 text-xs bg-white dark:bg-gray-800 pb-5 pt-10 sm:pt-4 mr-auto max-w-290">
+        <p class="text-gray-700 dark:text-gray-250 text-xs bg-white dark:bg-gray-800 pb-5 pt-10 sm:pt-4 mr-auto max-w-290">
           ©2020 Earthlight Foundation. | Terms  |  Privacy
         </p>
       </div>

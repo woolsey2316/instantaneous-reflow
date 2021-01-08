@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'IBM-plex-sans': ['IBM Plex Sans', 'sans-serif'],
+      'lato': ['Lato', 'sans-serif'],
       'source-sans': ['Source Sans Pro', 'sans-serif']
     },
     extend: {
@@ -22,7 +23,7 @@ module.exports = {
       },
       colors: {
         'silver': '#c9c9c9',
-        'informational': '#3A6BAF',
+        'informational': '#3B5371',
         'warning': '#f2cc41',
         'true-blue': "#3968ae",
         'maroon': '#7C0C12',
@@ -72,7 +73,16 @@ module.exports = {
         'xl': '22px',
         '2xl': '26px',
         '3xl': '32px',
-        '4xl': '48px'
+        '4xl': '48px',
+        'xs-vw': 'calc(13px + 0.05vw)',
+        'sm-vw': 'calc(14px + 0.1vw)',
+        'reg-vw': 'calc(16px + 0.15vw)',
+        'md-vw': 'calc(18px + 0.2vw)',
+        'lg-vw': 'calc(19px + 0.25vw)',
+        'xl-vw': 'calc(22px + 0.35vw)',
+        '2xl-vw': 'calc(26px + 0.4vw)',
+        '3xl-vw': 'calc(32px + 0.45vw)',
+        '4xl-vw': 'calc(48px + 0.5vw)'
       },
       spacing: {
         '1/6': 'calc(16%)',
@@ -108,7 +118,6 @@ module.exports = {
         '142': '35.625rem',
         '144.5': '36.125rem',
         '150': '37.5rem',
-        '175': '43.75rem',
         '176': '44rem',
         '180': '45rem',
         '199': '49.125rem',
@@ -123,6 +132,7 @@ module.exports = {
         '116': '29.125rem',
         '120': '29.1875rem',
         '150': '37.5rem',
+        '175': '43.75rem',
         '176': '44rem',
         '290': '72.5rem',
         
@@ -132,6 +142,8 @@ module.exports = {
         '-2px': '-2px',
         '4.5': '1.125rem',
         '5.5': '1.375rem',
+        '13': '3.25rem',
+        '18': '4.5rem',
         '71.5': '17.875rem',
       },
       padding: {
