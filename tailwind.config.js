@@ -22,6 +22,7 @@ module.exports = {
         '4px': '4px'
       },
       colors: {
+        'steel-teal': '5c8697',
         'silver': '#c9c9c9',
         'informational': '#3B5371',
         'warning': '#f2cc41',
@@ -31,6 +32,13 @@ module.exports = {
         'matrix-blue': '#3A68AF',
         'dark-goldenrod': '#AD8E1B',
         'windsor-tan': '#A34F1A',
+        // text inner shadow trick needs some opacity to work
+        'true-blue-90': "rgba(57, 104, 174, 0.9)",
+        'maroon-90': 'rgba(124, 12, 18, 0.9)',
+        'matrix-green-90': 'rgba(146, 203, 186, 0.9)',
+        'matrix-blue-90': 'rgba(58, 104, 175, 0.9)',
+        'dark-goldenrod-90': 'rgba(173, 142, 27, 0.9)',
+        'windsor-tan-90': 'rgba(163, 79, 26, 0.9)',
         gray: {
           '50': '#EAEAEA',
           '100': '#eeeeee',
@@ -42,7 +50,7 @@ module.exports = {
           '400': '#888888',
           '500': '#686868',
           '550': 'rgb(51, 51, 51, 0.7)',
-          '600': '#5c8697',
+          '600': '#575454',
           '650': '#444444',
           '700': '#333333',
           '750': '#272727',
@@ -71,7 +79,9 @@ module.exports = {
         'md': '18px',
         'lg': '19px',
         'xl': '22px',
+        '1.5xl': '24px',
         '2xl': '26px',
+        '2.5xl': '28px',
         '3xl': '32px',
         '4xl': '48px',
         'xs-vw': 'calc(13px + 0.05vw)',
@@ -102,6 +112,10 @@ module.exports = {
         '22': '5.75rem',
         '26': '99px',
         '35': '8.75rem',
+        '40': '10.5rem',
+        '44': '11rem',
+        '50': '12.5rem',
+        '56': '14rem',
         '68': '17rem',
         '71.5': '17.875rem',
         '73': '18.8rem',
@@ -124,6 +138,14 @@ module.exports = {
         '212': '53rem',
         '199px': '199px',
         '99vw': '99vw'
+      },
+      inset: {
+        'close': '10%',
+        'nearly': '5%',
+        'of-center': '26%',
+        'of-center-2': '30%',
+        'middle': '27%',
+        'vertically-center': '21%'
       },
       maxWidth: {
         '70': '17.43rem',
@@ -163,6 +185,9 @@ module.exports = {
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
+
+      'blog-max-len': '700px',
+      // => @media (min-width: 700px) { ... }
 
       'md': '768px',
       // => @media (min-width: 768px) { ... }
