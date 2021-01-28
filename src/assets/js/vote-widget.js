@@ -1,6 +1,4 @@
-function kFormatter(num) {
-  return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'K' : Math.sign(num)*Math.abs(num)
-}
+import { kFormatter } from './helper'
 
 $( document ).ready(function() {
   var voteButtonCollection = document.getElementsByName("switch-vote-type");
@@ -24,11 +22,7 @@ $( document ).ready(function() {
     $.ajax({
       url: "http://API_ENDPOINT/" + type + "/" + mainSearchField.value,
       method: "POST",
-      dataType: "json",
-      success: function(data) {     
-        blogContainer.empty()   
-        paginateBlogTiles(data)
-      }
+      dataType: "json"
     });
   }
   
@@ -44,7 +38,7 @@ $( document ).ready(function() {
     updateScores(newVoteType)
   }
   
-  // changes the vote tally and average score on all cards to switch between expert and community 
+  // changes the vote tally and average score on all cards, switching between 'expert' and 'community' 
   function updateScores(newVoteType) {
     var scores = document.getElementsByName("score")
     var totalVotes = document.getElementsByName("total-votes")

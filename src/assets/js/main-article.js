@@ -1,6 +1,80 @@
+import { kFormatter } from './helper'
+
 $( document ).ready(function() {
   var navSearchField = document.getElementById("blog-search2");
   var mobileSearchField = document.getElementById("blog-search3");
+  var voteButtonCollection = document.getElementsByName("switch-vote-type");
+  var voteTypeLabel = document.getElementsByName("vote-type");
+
+  var blogCard = [
+    {
+      color: "windsor-tan",
+      title: "Widget Title",
+      subtitle: "Supporting text and content goes here.",
+      imagelink: "../images/pexels-pixabay-2166@2x.png",
+      abstract: "Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec elaboraret interpretaris, sed diceret concludaturque no. Verear habemus sea ut. His nibh scripta in. In sea vocibus facilisis. Sed ea cibo eripuit vituperata, pri eius debitis ne. Eos et wisi legimus, vel cu paulo doctus vidisse. Iudico dicant nostrum nec an, in eos harum vitae, te quod vero salutandi nam. Lorem",
+      buttonlink: "/somewhere",
+      buttonText: "Keep Reading",
+      community_score: 3.76,
+      community_total_vote_count: 11000,
+      expert_score: 4.50,
+      expert_total_vote_count: 9494,
+    }
+  ]
+
+  voteButtonCollection.forEach(
+    (value, key, parent) => {
+      value.onclick = switchVoteType; 
+    }
+  )
+
+  localStorage.setItem("blogCard", JSON.stringify(blogCard))
+
+  // switches display between expert and community vote tallies
+  function switchVoteType() { 
+    var newVoteType = localStorage.getItem("voteType") === "Expert" ? "Community" : "Expert"
+    voteTypeLabel.forEach(
+      (value, key, parent) => {
+        value.innerHTML = newVoteType
+      }
+    )
+    localStorage.setItem("voteType", newVoteType)
+    updateScores(newVoteType)
+  }
+  
+  // changes the vote tally and average score on all cards, switching between 'expert' and 'community' 
+  function updateScores(newVoteType) {
+    var scores = document.getElementsByName("score")
+    var totalVotes = document.getElementsByName("total-votes")
+    var blogTile = JSON.parse(localStorage.getItem("blogCard"));
+
+    if (newVoteType === "Community") {
+      scores.forEach(
+        (value, key, parent) => {
+          value.innerHTML = blogTile[key].community_score
+        }
+      )
+      totalVotes.forEach(
+        (value, key, parent) => {
+          // format numerical display eg. 1000 -> 1K
+          value.innerHTML = kFormatter(blogTile[key].community_total_vote_count)
+        }
+      )
+    // display expert votes
+    } else {
+      scores.forEach(
+        (value, key, parent) => {
+          value.innerHTML = blogTile[key].expert_score
+        }
+      )
+      totalVotes.forEach(
+        (value, key, parent) => {
+          // format numerical display eg. 1000 -> 1K
+          value.innerHTML = kFormatter(blogTile[key].expert_total_vote_count)
+        }
+      )
+    }
+  }
 
   navSearchField.onchange = getData;
   mobileSearchField.onchange = getData;
