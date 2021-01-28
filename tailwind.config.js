@@ -75,7 +75,7 @@ module.exports = {
       fontSize: {
         'xs': '13px',
         'sm': '14px',
-        'reg': '16px',
+        'reg': '15px',
         'md': '18px',
         'lg': '19px',
         'xl': '22px',
@@ -86,7 +86,7 @@ module.exports = {
         '4xl': '48px',
         'xs-vw': 'calc(13px + 0.05vw)',
         'sm-vw': 'calc(14px + 0.1vw)',
-        'reg-vw': 'calc(16px + 0.15vw)',
+        'base-vw': 'calc(16px + 0.15vw)',
         'md-vw': 'calc(18px + 0.2vw)',
         'lg-vw': 'calc(19px + 0.25vw)',
         'xl-vw': 'calc(22px + 0.35vw)',
@@ -99,11 +99,12 @@ module.exports = {
         '1/3-gap-3': 'calc(33.33% - 0.50rem)',
         'almost-1/3': 'calc(33.33% - 1.5rem)',
         'almost-1/4': 'calc(25% - 1.5rem)',
-        'almost-1/2': 'calc(50% - 1.5rem)',
+        'almost-1/2': 'calc(50% - 0.75rem)',
         'nearly-1/2': 'calc(50% - 0.5rem)',
         'mob-nav': 'calc(100% - 2.5rem)',
         'thumbnail': '13.125rem',
         '5.5': '1.3rem',
+        '7.5': '1.875rem',
         '9': '2.25rem',
         '11': '2.6rem',
         '13': '3.25rem',
@@ -115,7 +116,10 @@ module.exports = {
         '40': '10.5rem',
         '44': '11rem',
         '50': '12.5rem',
+        '52': '13rem',
         '56': '14rem',
+        '58': '14.5rem',
+        '60': '15rem',
         '68': '17rem',
         '71.5': '17.875rem',
         '73': '18.8rem',
@@ -190,6 +194,9 @@ module.exports = {
       // => @media (min-width: 700px) { ... }
 
       'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'xmd': '896px',
       // => @media (min-width: 768px) { ... }
 
       'lg': '1024px',

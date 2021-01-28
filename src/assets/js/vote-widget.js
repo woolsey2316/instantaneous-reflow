@@ -1,9 +1,11 @@
+function kFormatter(num) {
+  return Math.abs(num) > 999 ? Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'K' : Math.sign(num)*Math.abs(num)
+}
+
 $( document ).ready(function() {
   var voteButtonCollection = document.getElementsByName("switch-vote-type");
   var voteTypeLabel = document.getElementsByName("vote-type");
   var voteTypeDisplay = document.getElementsByName("voteable");
-  
-  localStorage.setItem("voteType","Expert")
 
   voteTypeDisplay.forEach(
     (value, key, parent) => {
@@ -39,23 +41,40 @@ $( document ).ready(function() {
       }
     )
     localStorage.setItem("voteType", newVoteType)
-    updateScores()
+    updateScores(newVoteType)
   }
   
-  function updateScores() {
+  // changes the vote tally and average score on all cards to switch between expert and community 
+  function updateScores(newVoteType) {
     var scores = document.getElementsByName("score")
-    var blogTile = JSON.parse(localStorage.getItem("blogTile"));
-    scores.forEach(
-      (value, key, parent) => {
-        value.innerHTML = blogTile[key].score
-      }
-    )
     var totalVotes = document.getElementsByName("total-votes")
-    totalVotes.forEach(
-      (value, key, parent) => {
-        value.innerHTML = blogTile[key].totalVotes
-      }
-    )
+    var blogTiles = JSON.parse(localStorage.getItem("blogTiles"));
+
+    if (newVoteType === "Community") {
+      scores.forEach(
+        (value, key, parent) => {
+          value.innerHTML = blogTiles[key].community_score
+        }
+      )
+      totalVotes.forEach(
+        (value, key, parent) => {
+          // format numerical display eg. 1000 -> 1K
+          value.innerHTML = kFormatter(blogTiles[key].community_total_vote_count)
+        }
+      )
+    // display expert votes
+    } else {
+      scores.forEach(
+        (value, key, parent) => {
+          value.innerHTML = blogTiles[key].expert_score
+        }
+      )
+      totalVotes.forEach(
+        (value, key, parent) => {
+          // format numerical display eg. 1000 -> 1K
+          value.innerHTML = kFormatter(blogTiles[key].expert_total_vote_count)
+        }
+      )
+    }
   }
-  
 });
