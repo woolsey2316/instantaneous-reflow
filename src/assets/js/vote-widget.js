@@ -17,15 +17,6 @@ $( document ).ready(function() {
     }
   )
   
-  // user scores the readiness of a certain space tech from 1-5
-  function scoreReadinessOfSpaceTech(type){
-    $.ajax({
-      url: "http://API_ENDPOINT/" + type + "/" + mainSearchField.value,
-      method: "POST",
-      dataType: "json"
-    });
-  }
-  
   // switches display between expert and community vote tallies
   function switchVoteType() { 
     var newVoteType = localStorage.getItem("voteType") === "Expert" ? "Community" : "Expert"

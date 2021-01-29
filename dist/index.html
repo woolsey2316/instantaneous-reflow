@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <title>Instantaneous Reflow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/index.d6716197.css" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-latest.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <body class="font-IBM-plex-sans bg-white dark:bg-gray-800">
+    <script src="/index.53c6c459.js"></script>
+    <script src="/index.ecb4c7f4.js"></script>
+    <!-- Header with logo -->
+    <div class="bg-white dark:bg-gray-800">
+      <div class="bg-white dark:bg-gray-800 md:border-b md:border-gray-50 md:dark:border-gray-500">
+        <div class="flex flex-wrap justify-between items-center">
+          <div class="w-0 flex-break"></div>
+          <div class="w-full max-w-290 mx-auto md:pb-4 flex flex-wrap justify-between items-center">
+            <!-- flex break -->
+            <div class="break"></div>
+            <div class="mt-4 w-full md:w-auto flex flex-wrap justify-between items-center h-20.5 md:h-16">
+              <img height="40" width="193" class="pl-2 sm:logo-w sm:logo-h" src="/matrix-logo.59d20414.svg">
+              <label class="cursor-pointer mr-4" for="nav">
+                <svg class="cursor-pointer block md:hidden text-gray-500 dark:text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="17.024" height="16"><path d="M0 0v2.128h17.024V0zm0 6.32v2.128h17.024V6.32zm0 6.38v2.128h17.024V12.7z"></path></svg>
+              </label>
+              <!-- show/hide mobile nav menu -->
+              <input class="hidden" id="nav" type="checkbox">
+              <!-- Mobile nav -->
+              <div class="hidden bg-black w-mob-nav h-full left-10 fixed top-0 p-6 z-50">
+                <label class="cursor-pointer" for="nav">
+                  <img width="21" height="21" src="/ionic-close.24117542.png">
+                </label>
+                <input type="text" id="blog-search3" name="filter" class="text-md rounded-md w-full bg-gray-700 border dark:border-gray-650 hover:dark:border-gray-500 dark:focus:border-matrix-blue pl-4 py-2.5 my-6 text-white">
+                  <svg class="text-gray-700 dark:text-white fill-current absolute top-20 right-12" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.153 15.094h-1.084l-.384-.37a8.933 8.933 0 10-.961.961l.37.384v1.084L21.955 24 24 21.955zm-8.233 0a6.175 6.175 0 116.175-6.175 6.167 6.167 0 01-6.176 6.175z"></path></svg>
+                
+                <ul class="items-center justify-around w-full z-50">
+                  <li class="text-md mt-4 font-bold hover:dark:text-white active:dark:text-white text-gray-400"><a href="/main-article.html">COMPUTATION</a></li>
+                  <li class="text-md mt-4 font-bold hover:dark:text-white active:dark:text-white text-gray-400"><a href="#">ANOTHER ITEM</a></li>
+                  <li class="text-md mt-4 font-bold hover:dark:text-white active:dark:text-white text-gray-400"><a href="#">PROPULSION</a></li>
+                  <li class="text-md mt-4 font-bold hover:dark:text-white active:dark:text-white text-gray-400"><a href="#">ONE MORE ITEM</a></li>
+                  <li class="text-md mt-4 font-bold hover:dark:text-white active:dark:text-white text-gray-400"><a href="#">HOVER ITEM</a></li>
+                  <li class="text-md mt-4 font-bold hover:dark:text-white active:dark:text-white text-gray-400"><a href="#">MENU ITEM</a></li>
+                  <li class="text-md mt-4 font-bold hover:dark:text-white active:dark:text-white text-gray-400"><a href="#">MENU ITEM</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- show/hide video section -->
+            <input class="hidden" id="video-dropdown" type="radio" name="dropdown">
+            <!-- Video dropdown -->
+            <div class="md:order-first hidden mt-5 md:mt-0">
+              <div class="full-width w-99vw bg-white dark:bg-gray-750 text-sm text-gray-650 dark:text-gray-350 leading-tight p-8 md:border-b-3 md:border-matrix-blue flex flex-col items-center">
+                <div class="overflow-hidden flex flex-wrap justify-center max-w-290">
+                  <div class="w-thumbnail mr-5 mb-5">
+                    <img class="mb-2" src="/video1.6589a8ce.jpg">
+                    <a class="font-medium" href="https://youtube.com">Saturn's moon encaladus could house alien life</a>
+                    <p class="text-sm my-2">224K views · 1 week ago</p>
+                  </div>
+                  <div class="w-thumbnail mr-5 mb-5">
+                    <img class="mb-2" src="/video2.9be9144d.jpg">
+                    <a class="font-medium" href="https://youtube.com">Fitbit Alta HR review</a>
+                    <p class="text-sm my-2">224K views · 1 week ago</p>
+                  </div>
+                  <div class="w-thumbnail mr-5 mb-5">
+                    <img class="mb-2" src="/video3.e4599f13.jpg">
+                    <a class="font-medium" href="https://youtube.com">What would movie monsters actually sound like</a>
+                    <p class="text-sm my-2">224K views · 1 week ago</p>
+                  </div>
+                  <div class="w-thumbnail mr-5 mb-5">
+                    <img class="mb-2" src="/video4.6ce1a7a0.jpg">
+                    <a class="font-medium" href="https://youtube.com">Youtube TV first look</a>
+                    <p class="text-sm my-2">224K views · 1 week ago</p>
+                  </div>
+                  <div class="w-thumbnail mr-5 mb-5">
+                    <img class="mb-2" src="/video5.94692172.jpg">
+                    <a class="font-medium" href="https://youtube.com">LG C6 review</a>
+                    <p class="text-sm my-2">224K views · 1 week ago</p>
+                  </div>
+                  <div class="w-thumbnail mr-5 mb-5">
+                    <img class="mb-2" src="/video6.90a87a60.jpg">
+                    <a class="font-medium" href="https://youtube.com">ISPs can now sell your data without permission</a>
+                    <p class="text-sm my-2">224K views · 1 week ago</p>
+                  </div>
+                  <div class="w-thumbnail mr-5 mb-5">
+                    <img class="mb-2" src="/video7.04e058c5.jpg">
+                    <a class="font-medium" href="https://youtube.com">New iPad 9.7 (2017) review</a>
+                    <p class="text-sm my-2">224K views · 1 week ago</p>
+                  </div>
+                  <div class="w-thumbnail mr-5 mb-5">
+                    <img class="mb-2" src="/video8.f37bbce5.jpg">
+                    <a class="font-medium" href="https://youtube.com">SpaceX relaunches a used rocket, makes history</a>
+                    <p class="text-sm my-2">224K views · 1 week ago</p>
+                  </div>
+                  <div class="w-thumbnail mr-5 mb-5">
+                    <img class="mb-2" src="/video9.0c4edefe.jpg">
+                    <a class="font-medium" href="https://youtube.com">Samsung's Galaxy S8 launch event in 10 minutes</a>
+                    <p class="text-sm my-2">224K views · 1 week ago</p>
+                  </div>
+                  <div class="w-thumbnail mr-5 mb-5">
+                    <img class="mb-2" src="/video10.3f370d8b.jpg">
+                    <a class="font-medium" href="https://youtube.com">Samsung Galaxy S8 first look!</a>
+                    <p class="text-sm my-2">224K views · 1 week ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- show/hide concepts section (its actually the same glossary page) -->
+            <input class="hidden" id="concepts" type="radio" name="dropdown">
+            <div class="md:order-first full-width w-99vw mt-5 md:mt-0 hidden bg-white dark:bg-gray-750 md:border-b-3 md:border-matrix-blue">
+              <!-- Glossary -->
+              <div class="w-full max-w-290 mx-auto p-12 pt-14 relative lg:flex lg:flex-wrap lg:justify-between">
+                <h4 class="text-gray-700 dark:text-white text-md font-bold absolute fixed top-9">Glossary: Top 100 Terms</h4>
+                <!-- line-break inside flex container -->
+                <div class="w-0 flex-break"></div>
+                <input class="hidden" id="concepts-page1" type="radio" name="concepts-page" checked="">
+                <div class="flex flex-col flex-wrap hidden lg:block pl-7 pt-4 text-gray-650 dark:text-gray-300 font-medium">
+                  <ul class="leading-3 mb-4">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Aimpoint</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Air lock</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Ambient</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Anti-matter</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Backscattering</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Bi-propellant</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Black hole</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Booster</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Calibration</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Celestial sphere</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Chromosphere</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Coronal mass ejection</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Dark matter</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Decompression</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Descent module</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Dynamo process</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Eccentricity</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Ecliptic</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Electric propulsion</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Electromagnetic</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Fairing</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Fission</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Flux</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Fusion</a></li>
+                  </ul>
+                </div>
+                <input class="hidden" id="concepts-page2" type="radio" name="concepts-page">
+                <div class="flex flex-col flex-wrap hidden lg:block pl-7 pt-4 text-gray-650 dark:text-gray-300 font-medium">
+                  <ul class="leading-3 mb-4">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Galaxy</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Gas giant</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Geostationary orbit</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Gravitational waves</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Heliocentric</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">High-energy particle detector</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Hydrosphere</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Hyperbolic</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Impulse</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Infrared</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Interplanetary magnetic field</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Ion engine</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Jansky</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Jet propulsion</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Jovian planet</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">JPL</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Kelvin</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Kinetic energy</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Kosmolyot</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Kuiper belt</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Lander spacecraft</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Liquid oxygen</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Low Earth orbit</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Lunar module</a></li>
+                  </ul>
+                </div>
+                <input class="hidden" id="concepts-page3" type="radio" name="concepts-page">
+                <div class="flex flex-col flex-wrap hidden lg:block pl-7 pt-4 text-gray-650 dark:text-gray-300 font-medium">
+                  <ul class="leading-3 mb-4">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Magnetic field</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">MagnetoHydroDynamics</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Mesosphere</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Momentum</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Nadir</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Nautical mile</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Newton</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Nitrogen tetroxide</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Occultation</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Orbit trim maneuver</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Orbital mechanics</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Oxidizer</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Parking orbit</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Passive cooling</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Photosphere</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Propulsion</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Quasars</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Radiation belt</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Reaction control system</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Regenerative cooling</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Round-trip light time</a></li>
+                  </ul>
+                </div>
+                <input class="hidden" id="concepts-page4" type="radio" name="concepts-page">
+                <div class="flex flex-col flex-wrap hidden lg:block pl-7 pt-4 text-gray-650 dark:text-gray-300 font-medium">
+                  <ul class="leading-3 mb-4">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Satellite</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Service module</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">SETI</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Spin stabilization</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Telemetry</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Transducer</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Troposphere</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">True anomaly</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Ullage maneuver</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Ultraviolet</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Velocity trim</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Walking orbit</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Weightlessness</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">X-band</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">X-rays</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Yaw</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Zenith</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Zero gravity</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Zero lift trajectory</a></li>
+                  </ul>
+                </div>
+                <!-- Pagination -->
+                <div class="bg-white dark:bg-gray-750 hidden relative mt-auto">
+                  <ul class="flex justify-center font-source-sans text-gray-500 dark:text-gray-500 text-center dark:border-steel-teal py-2">
+                    <li>
+                      <label for="concepts-page1" name="pagination-concepts" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 pr-2 pl-2.5 border border-matrix-blue dark:border-gray-700 rounded-l-full">
+                        1
+                      </label>
+                    </li>
+                    <li>
+                      <label for="concepts-page2" name="pagination-concepts" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-2 border-r border-t border-b border-matrix-blue dark:border-gray-700">
+                        2
+                      </label>
+                    </li>
+                    <li>
+                      <label for="concepts-page3" name="pagination-concepts" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-2 border-r border-t border-b border-matrix-blue dark:border-gray-700">
+                        3
+                      </label>
+                    </li>
+                    <li>
+                      <label for="concepts-page4" name="pagination-concepts" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 pr-2.5 pl-2 border-r border-t border-b border-matrix-blue dark:border-gray-700 rounded-r-full">
+                        4
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- show/hide glossary section -->
+            <input class="hidden" id="glossary" type="radio" name="dropdown">
+            <div class="md:order-first full-width w-99vw mt-5 md:mt-0 hidden bg-white dark:bg-gray-750 md:border-b-3 md:border-matrix-blue">
+              <!-- Glossary -->
+              <div class="w-full max-w-290 mx-auto p-12 pt-14 relative lg:flex lg:flex-wrap lg:justify-between">
+                <h4 class="text-gray-800 dark:text-white text-md font-bold absolute fixed top-9">Glossary: Top 100 Terms</h4>
+                <!-- line-break inside flex container -->
+                <div class="w-0 flex-break"></div>
+                <input class="hidden" id="glossary-page1" type="radio" name="glossary-page" checked="">
+                <div class="flex flex-col flex-wrap hidden lg:block pl-7 pt-4 text-gray-700 dark:text-gray-300 font-medium">
+                  <ul class="leading-3 mb-4">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Aimpoint</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Air lock</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Ambient</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Anti-matter</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Backscattering</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Bi-propellant</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Black hole</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Booster</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Calibration</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Celestial sphere</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Chromosphere</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Coronal mass ejection</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Dark matter</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Decompression</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Descent module</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Dynamo process</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Eccentricity</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Ecliptic</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Electric propulsion</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Electromagnetic</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Fairing</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Fission</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Flux</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Fusion</a></li>
+                  </ul>
+                </div>
+                <input class="hidden" id="glossary-page2" type="radio" name="glossary-page">
+                <div class="flex flex-col flex-wrap hidden lg:block pl-7 pt-4 text-gray-700 dark:text-gray-300 font-medium">
+                  <ul class="leading-3 mb-4">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Galaxy</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Gas giant</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Geostationary orbit</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Gravitational waves</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Heliocentric</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">High-energy particle detector</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Hydrosphere</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Hyperbolic</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Impulse</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Infrared</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Interplanetary magnetic field</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Ion engine</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Jansky</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Jet propulsion</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Jovian planet</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">JPL</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Kelvin</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Kinetic energy</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Kosmolyot</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Kuiper belt</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Lander spacecraft</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Liquid oxygen</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Low Earth orbit</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Lunar module</a></li>
+                  </ul>
+                </div>
+                <input class="hidden" id="glossary-page3" type="radio" name="glossary-page">
+                <div class="flex flex-col flex-wrap hidden lg:block pl-7 pt-4 text-gray-700 dark:text-gray-300 font-medium">
+                  <ul class="leading-3 mb-4">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Magnetic field</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">MagnetoHydroDynamics</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Mesosphere</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Momentum</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Nadir</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Nautical mile</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Newton</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Nitrogen tetroxide</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Occultation</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Orbit trim maneuver</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Orbital mechanics</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Oxidizer</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Parking orbit</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Passive cooling</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Photosphere</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Propulsion</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Quasars</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Radiation belt</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Reaction control system</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Regenerative cooling</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Round-trip light time</a></li>
+                  </ul>
+                </div>
+                <input class="hidden" id="glossary-page4" type="radio" name="glossary-page">
+                <div class="flex flex-col flex-wrap hidden lg:block pl-7 pt-4 text-gray-700 dark:text-gray-300 font-medium">
+                  <ul class="leading-3 mb-4">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Satellite</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Service module</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">SETI</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Spin stabilization</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Telemetry</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Transducer</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Troposphere</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">True anomaly</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Ullage maneuver</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Ultraviolet</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Velocity trim</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Walking orbit</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Weightlessness</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">  
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">X-band</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">X-rays</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Yaw</a></li>
+                  </ul>
+                  <ul class="leading-3 my-5">
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Zenith</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Zero gravity</a></li>
+                    <li class="mb-0.5"><svg class="text-gray-300 dark:text-silver inline mr-2 mb-1 fill-current" xmlns="http://www.w3.org/2000/svg" width="12.745" height="6.265"><path d="M8.931 1.995H.341A.341.341 0 000 2.336v1.593a.341.341 0 00.341.341h8.59v1.31a.683.683 0 001.166.483l2.448-2.448a.683.683 0 000-.966L10.1.201a.683.683 0 00-1.166.483z"></path></svg><a class="cursor-pointer">Zero lift trajectory</a></li>
+                  </ul>
+                </div>
+                <!-- Pagination -->
+                <div class="bg:gray-300 dark:bg-gray-750 hidden relative mt-auto">
+                  <ul class="flex justify-center font-source-sans text-gray-500 text-center dark:border-steel-teal py-2">
+                    <li>
+                      <label for="glossary-page1" name="pagination-glossary" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 pr-2 pl-2.5 border border-matrix-blue dark:border-gray-700 rounded-l-full">
+                        <span>1</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="glossary-page2" name="pagination-glossary" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-2 border-r border-t border-b border-matrix-blue dark:border-gray-700">
+                        <span>2</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="glossary-page3" name="pagination-glossary" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-2 border-r border-t border-b border-matrix-blue dark:border-gray-700">
+                        <span>3</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="glossary-page4" name="pagination-glossary" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 pr-2.5 pl-2 border-r border-t border-b border-matrix-blue dark:border-gray-700 rounded-r-full">
+                        <span>4</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- show/hide buttons without javaScript -->
+            <div id="dropdown-buttons" class="bg-white dark:bg-gray-800 order-last md:order-2 w-full md:w-129 flex flex-wrap justify-between items-center border-b border-matrix-blue md:border-none">
+              <div class="flex justify-between items-center w-full lg:w-142 p-2.5 md:mt-2 max-w-290 md:mt-0 border-t dark:border-gray-500 md:border-none">
+                <input type="radio" id="uncheckAll" checked="checked" name="dropdown">
+                <label class="cursor-pointer p-btn-xs text-xs sm:text-sm leading-1 py-1 rounded-4px px-5 w-1/3-gap-3 text-center md:block font-bold md:w-full sm:p-btn-lg leading-1 text-white bg-matrix-blue relative" for="glossary" id="glossary-btn" name="dropdown">
+                  <span>GLOSSARY</span>
+                  <label for="uncheckAll">
+                    <img class="absolute -top-7 md:-top-9 left-nearly-1/2 z-40" src="/triangle-show.620b4fac.png">
+                  </label>
+                </label>
+                <label class="cursor-pointer p-btn-xs text-xs sm:text-sm leading-1 py-1 rounded-4px px-5 w-1/3-gap-3 text-center md:block font-bold md:w-full sm:p-btn-lg leading-1 ml-3 md:ml-4 text-white bg-matrix-blue relative" for="concepts" id="concepts-btn" name="dropdown">
+                  <span>CONCEPTS</span>
+                  <label for="uncheckAll">
+                    <img class="absolute -top-7 md:-top-9 left-nearly-1/2 z-40" src="/triangle-show.620b4fac.png">
+                  </label>
+                </label>
+                <label class="cursor-pointer p-btn-xs text-xs sm:text-sm leading-1 py-1 rounded-4px px-5 w-1/3-gap-3 text-center md:block font-bold md:w-full sm:p-btn-lg leading-1 ml-3 md:ml-4 text-white bg-matrix-blue relative" for="video-dropdown" id="video-btn" name="dropdown">
+                  <span>EXPERTS</span>
+                  <label for="uncheckAll">
+                    <img class="absolute -top-7 md:-top-9 left-nearly-1/2 z-40" src="/triangle-show.620b4fac.png">
+                  </label>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center flex-wrap lg:p-4 justify-between bg-white dark:bg-gray-800 lg:border-b lg:border-matrix-blue relative">
+        <!-- Nav Menu -->
+        <div class="hidden lg:block w-full left-5 mx-auto max-w-290">
+          <input class="hidden" id="main_nav" type="checkbox">
+          <ul class="hidden lg:flex items-center justify-between w-full max-w-290 pr-4">
+            <li>
+              <a class="pl-4 text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="/main-article.html">SINGLE ARTICLE</a>
+            </li>
+            <li>
+              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="#">PROPULSION</a>
+            </li>
+            <li>
+              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="#">ANOTHER ITEM</a>
+            </li>
+            <li>
+              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="#">ONE MORE ITEM</a>
+            </li>
+            <li>
+              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="#">HOVER ITEM</a>
+            </li>
+            <li>
+              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="#">MENU ITEM</a>
+            </li>
+            <li>
+              <a class="text-gray-550 dark:text-gray-350 text-sm font-bold hover:dark:text-white dark:focus:text-white" href="#">MENU ITEM</a>
+            </li>
+            <li class="text-sm font-bold dark:hover:text-white dark:focus:text-white">
+              <label class="cursor-pointer" for="main_nav">
+                <svg class="text-gray-700 dark:text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.153 15.094h-1.084l-.384-.37a8.933 8.933 0 10-.961.961l.37.384v1.084L21.955 24 24 21.955zm-8.233 0a6.175 6.175 0 116.175-6.175 6.167 6.167 0 01-6.176 6.175z"></path></svg>
+              </label>
+            </li>
+          </ul>
+          <div class="hidden items-center justify-between max-h-6 w-full pr-4">
+            <input type="text" placeholder="search ..." id="blog-search2" name="search" class="pl-2 text-md rounded-sm w-full bg-transparent border-none hover:border-gray-500 text-gray-500 dark:text-white relative">
+              <label class="cursor-pointer" for="main_nav">
+                <svg class="text-gray-700 dark:text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17.153 15.094h-1.084l-.384-.37a8.933 8.933 0 10-.961.961l.37.384v1.084L21.955 24 24 21.955zm-8.233 0a6.175 6.175 0 116.175-6.175 6.167 6.167 0 01-6.176 6.175z"></path></svg>
+              </label>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Landing Page -->
+      <div class="bg-gray-800 md:h-0 h-24 w-full"></div>
+      <div id="landing-page" class="bg-cover bg-right bg-spinning-stars h-120 relative md:px-8 transition-all duration-200 ease-linear">
+        <div class="flex flex-col items-start md:justify-center px-10 md:px-0 h-full max-w-290 mx-auto">
+          <h1 class="font-bold text-4xl text-gray-100 -mt-8 md:mt-0 leading-7">Super Cool Headline</h1>
+          <p class="text-gray-100 mt-12 md:mt-4 text-lg leading-3 sm:w-144.5">
+            Very good positioning statement should go here. 
+            It should capture the users attention and entice 
+            them to click the call-to-action button below
+          </p>
+          <button id="call-to-action" class="transition-opacity duration-200 ease-in-out text-white text-sm leading-2 font-bold bg-matrix-blue btn-sm mt-10 md:mt-5">Call To Action</button>
+        </div>
+      </div>
+    </div>
+    <!-- search filter section -->
+    <div id="search-section" class="py-5 bg-white dark:bg-gray-800 mx-8">
+      <div class="sm:max-w-290 mx-auto flex justify-end">
+        <div class="flex justify-end items-center sm:w-116 md:w-116">
+          <select class="select btn text-sm flex-shrink-0 border border-gray-150 dark:border-gray-650 hover:dark:border-gray-500 text-gray-500 px-2 py-1 dark:bg-gray-700 w-20 mr-6" name="ARM" id="ARM">
+            <option value="ARM">ARM</option>
+            <option value="AMD">AMD</option>
+            <option value="IDT">IDT</option>
+            <option value="audi">audi</option>
+          </select>
+          <select class="select btn text-sm flex-shrink-0 border border-gray-150 dark:border-gray-650 hover:dark:border-gray-500 text-gray-500 px-2 py-1 dark:bg-gray-700 w-20" name="x86" id="x86">
+            <option value="x86">x86</option>
+            <option value="x32">x32</option>
+            <option value="x64">x64</option>
+          </select>
+          <div class="relative flex flex-grow flex-shrink w-full">
+            <input type="text" placeholder="Filter ..." id="blog-search" name="filter" class="w-full ml-6 text-sm dark:bg-gray-700 border border-gray-150 text-gray-500 dark:text-white dark:border-gray-650 hover:border-gray-350 dark:hover:border-gray-500 dark:focus:border-matrix-blue pl-2 py-1 relative">
+            
+            <svg class="text-gray-500 dark:text-white fill-current absolute top-2 right-3 z-40" overflow="visible" xmlns="http://www.w3.org/2000/svg" width="20.287" height="13.525"><path data-name="Icon material-filter-list" d="M7.889 13.525H12.4v-2.254H7.889zM0 0v2.254h20.287V0zm3.381 7.889h13.525V5.635H3.381z"></path></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog list container-->
+    <div class="mx-8">
+      <div id="blog-container" class="flex flex-col w-full sm:flex-row flex-wrap justify-center items-center relative -mb-20 max-w-290 mx-auto">
+        <div id="blog-pagination" class="bg-white dark:bg-gray-800 hidden relative mt-12 mb-71.5">
+          <ul class="flex justify-center font-source-sans text-gray-500 dark:text-gray-500 text-center py-2">
+            <li>
+              <label for="blog-page1" name="blog-page" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-10 py-1 w-22 border border-gray-500 dark:border-gray-700 rounded-l-full">
+                1
+              </label>
+            </li>
+            <li>
+              <label for="blog-page2" name="blog-page" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-10 py-1 w-22 border border-gray-500 dark:border-gray-700">
+                2
+              </label>
+            </li>
+            <li>
+              <label for="blog-page3" name="blog-page" class="cursor-pointer font-semibold dark:focus:border-matrix-blue dark:focus:bg-matrix-blue focus:text-white dark:focus:text-gray-800 px-10 py-1 w-22 border border-gray-500 dark:border-gray-700 rounded-r-full">
+                3
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- "another page section" with call to action -->
+    <div id="2nd-hero-section" class="bg-cover bg-center h-129 sm:h-199 bg-object-over-earth z-40">
+      <div class="px-10 h-full text-center bg-transparent flex flex-col justify-center items-center">
+        <h1 class="my-2 font-bold text-xl text-white leading-4">Another Page Section</h1>
+        <p class="text-white text-md leading-3 w-75 sm:w-144.5">
+          Very good positioning statement should go here. 
+          It should capture the users attention and entice them to click the call-to-action button below.
+        </p>
+        <button class="btn-sm text-gray-700 text-sm leading-none font-bold bg-white mt-8">Call To Action</button>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="border-t border-gray-300 dark:border-gray-500">
+      <div class="px-6 xl:px-0 pt-10 pb-6 sm:pb-0 bg-white dark:bg-gray-800 flex flex-col flex-wrap sm:flex-row sm:justify-between items-start lg:max-w-290 lg:mx-auto">
+        <div>
+          <svg class="text-gray-700 dark:text-white fill-current mb-4" xmlns="http://www.w3.org/2000/svg" width="214.277" height="44.368"><path data-name="Path 138" d="M49.278 4.99a2.373 2.373 0 00-1.793-.156 2.269 2.269 0 00-1.326 1.092l-22.847.624-.156.468-.309-.155L.078 24.64l29.865 14.191 12.866-9.357.78 1.793a3.2 3.2 0 00-1.248 1.248 3.269 3.269 0 00-.312 1.248l-9.981 5.146.156.312 9.9-5.146a1.469 1.469 0 00.156.624 2.97 2.97 0 004.912 1.17 2.8 2.8 0 00.546-.78 2.847 2.847 0 00-.624-3.431l4.679-6-.234-.234-4.679 6c-.156-.078-.312-.234-.468-.312a2.846 2.846 0 00-2.261-.156.272.272 0 00-.156.078l-.854-1.871 8.421-6.082-9.664-5.459 5.458-8.421a2.373 2.373 0 001.637.078 1.257 1.257 0 00.546-.312l2.5 10.683.312-.078-2.582-10.839a.076.076 0 00.078-.078 4.325 4.325 0 00.468-.624 2.373 2.373 0 00.156-1.793 2.974 2.974 0 00-1.173-1.248zM46.24 31.424a2.616 2.616 0 11-2.339 4.679 2.736 2.736 0 01-1.323-1.482 2.608 2.608 0 01.156-2.027 2.736 2.736 0 011.478-1.331 3 3 0 012.028.161zm-16.3 6.94L.778 24.563 22.847 7.251l.156.078-4.757 13.256a3.961 3.961 0 00-1.326.234 4.614 4.614 0 00-2.65 2.344 4.567 4.567 0 00-.234 3.509 4.647 4.647 0 007.486 1.949l7.252 6.94.234-.234-7.252-6.94a3.085 3.085 0 00.78-1.17 3.839 3.839 0 00.468-2.261l14.268-1.093a1.4 1.4 0 00.546.39 2.373 2.373 0 001.793.156 1.618 1.618 0 00.78-.468l2.261 5.068zm9.9-18.246a2.373 2.373 0 00-1.637-.078 2.208 2.208 0 00-1.326 1.17 2.373 2.373 0 00-.156 1.793 1.567 1.567 0 00.312.624l-14.03 1.013a2.076 2.076 0 00-.234-.936 4.614 4.614 0 00-2.339-2.651 4.152 4.152 0 00-1.871-.468l4.679-13.1L41.328 17.7zm.858 3.041a2 2 0 01-3.665-.312 1.957 1.957 0 01.078-1.482 2.369 2.369 0 01.39-.546 1.618 1.618 0 01.78-.468 1.957 1.957 0 011.482.078 2.077 2.077 0 01.94 2.734zm-24.25 5.926a4.385 4.385 0 01-1.949-5.77 5.535 5.535 0 01.78-1.092 4.337 4.337 0 016.94 4.99 4.428 4.428 0 01-5.766 1.872zm34.47-5.922l-7.954 5.77-2.261-5.146c.078-.156.234-.312.312-.468a2.349 2.349 0 00-.858-3.041l1.56-2.339zM23.393 7.173l.078-.312 22.535-.546a2.315 2.315 0 001.014 2.807l-5.459 8.341zm26.668-.7a1.957 1.957 0 01-.083 1.48 1.9 1.9 0 01-1.17 1.014 1.957 1.957 0 01-1.482-.078 1.9 1.9 0 01-.848-2.651 1.9 1.9 0 011.17-1.014 1.658 1.658 0 011.482.078 1.787 1.787 0 01.93 1.17z"></path><g data-name="Group 85"><circle data-name="Ellipse 36" cx="4.289" cy="4.289" r="4.289" transform="translate(46.941 18.792)"></circle></g><g data-name="Group 86"><circle data-name="Ellipse 37" cx="7.018" cy="7.018" r="7.018" transform="translate(15.751)"></circle></g><g data-name="Group 87"><circle data-name="Ellipse 38" cx="4.055" cy="4.055" r="4.055" transform="translate(0 20.04)"></circle></g><g data-name="Group 88"><circle data-name="Ellipse 39" cx="5.77" cy="5.77" r="5.77" transform="translate(24.172 32.828)"></circle></g><g data-name="Group 89"><path data-name="Path 139" d="M68.463 13.334h1.793l7.486 10.059 7.408-10.059h1.793v20.43h-1.48V15.127l-7.1 9.747h-1.4l-6.94-9.747v18.715h-1.56z"></path><path data-name="Path 140" d="M97.704 33.764l8.811-20.664h1.56l9.279 20.664h-1.637l-2.5-5.848h-11.613l-2.417 5.848zm4.367-6.94h10.917L107.373 14.5z"></path><path data-name="Path 141" d="M132.56 14.734h-8.5v-1.4h18.4v1.4h-8.5v19.1h-1.4z"></path><path data-name="Path 142" d="M153.69 33.764v-20.43h13.88a4.709 4.709 0 013.665 1.56 5.965 5.965 0 011.326 3.977 6.433 6.433 0 01-1.092 3.743 4.057 4.057 0 01-3.2 1.637l-1.482.078h-.546l5.3 9.513h-1.637l-5.3-9.591h-9.354v9.591h-1.56zm1.56-10.917h12.32a3.016 3.016 0 002.573-1.17 4.866 4.866 0 00.858-2.885 5.3 5.3 0 00-.858-2.963 2.974 2.974 0 00-2.573-1.248h-12.32z"></path><path data-name="Path 143" d="M184.335 13.334h1.56v20.43h-1.56z"></path><path data-name="Path 144" d="M204.219 23.159l-7.408-9.825h1.949l6.55 8.655 6.55-8.655h1.793l-7.486 9.747 8.109 10.761h-2.027l-7.174-9.591-7.174 9.591h-1.714z"></path></g></svg>
+          <p class="text-gray-700 dark:text-gray-250 leading-2 mb-12 sm:mb-3 w-full sm:w-72">
+            Lorem ipsum dolor sit amet, vel accumsan liberavisse ex,
+            ea nec elaboraret interpretaris, sed diceret concludaturque no. 
+            Verear habemus sea ut. His nibh scripta in. 
+          </p>
+        </div>
+        <div class="sm:grid sm:grid-cols-12 grid-rows-12 auto-rows-max md:w-3/5">
+          <h6 class="col-span-12 sm:col-span-4 row-start-1 text-gray-800 dark:text-white text-md uppercase font-medium text-sm sm:text-md mt-4 mb-7 mr-4">
+          MENU HEADING
+          </h6>
+          <a class="col-span-12 sm:col-span-4 row-start-2 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-700 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">MENU ITEM</a>
+          <a class="col-span-12 sm:col-span-4 row-start-3 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-700 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">ANOTHER ITEM</a>
+          <a class="col-span-12 sm:col-span-4 row-start-4 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-700 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">MENU ITEM</a>
+          <h6 class="col-span-12 sm:col-span-4 row-start-1 text-gray-800 dark:text-white text-md uppercase font-medium text-sm sm:text-md mt-4 mb-7 mr-4">
+          MENU HEADING
+          </h6>
+          <a class="col-span-12 sm:col-span-4 row-start-2 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-700 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">MENU ITEM</a>
+          <a class="col-span-12 sm:col-span-4 row-start-3 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-700 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">ANOTHER ITEM</a>
+          <a class="col-span-12 sm:col-span-4 row-start-4 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-700 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">MENU ITEM</a>
+          <h6 class="col-span-12 sm:col-span-4 row-start-1 text-gray-800 dark:text-white text-md uppercase font-medium text-sm sm:text-md mt-4 mb-7 mr-4">
+          SETTINGS
+          </h6>
+          <a class="col-span-12 sm:col-span-4 row-start-2 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-700 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">SWITCH TO LIGHT THEME</a>
+          <a class="col-span-12 sm:col-span-4 row-start-3 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-700 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">CREATE AN ACCOUNT</a>
+          <a class="col-span-12 sm:col-span-4 row-start-4 block mt-4 sm:mt-1 sm:mb-1.5 cursor-pointer leading-1 text-xs sm:text-sm text-gray-700 hover:text-gray-500 active:text-gray-500 dark:text-gray-350 font-medium">NEWSLETTER</a>
+        </div>
+        <!-- line-break inside flex container -->
+        <div class="w-0 flex-break"></div>
+        <p class="text-gray-700 dark:text-gray-250 text-xs bg-white dark:bg-gray-800 pb-5 pt-10 sm:pt-4 mr-auto max-w-290">
+          ©2020 Earthlight Foundation. | Terms  |  Privacy
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

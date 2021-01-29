@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.277" height="24" viewBox="0 0 20.277 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_125" data-name="Path 125" d="M298.143-2.143h14.973V-8.571h2.143V0H296V-8.571h2.143ZM300.5-9.161l.442-2.1,10.487,2.21-.442,2.089Zm1.379-5.009.9-1.955,9.71,4.54-.9,1.942Zm2.692-4.768,1.366-1.647,8.223,6.871-1.366,1.647ZM309.888-24l6.388,8.585-1.714,1.286-6.388-8.585ZM300.272-4.3V-6.429h10.714V-4.3Z" transform="translate(0 24)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_145" data-name="Rectangle 145" width="31" height="34" transform="translate(291 -5)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Path_121" data-name="Path 121" d="M296,0h21V-24H296Z" transform="translate(0 24)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Path_124" data-name="Path 124" d="M294-24h24V0H294Z" transform="translate(0 24)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="stack-overflow" transform="translate(-296)" clip-path="url(#clip-path)">
+    <g id="Group_73" data-name="Group 73" clip-path="url(#clip-path-2)">
+      <g id="Group_70" data-name="Group 70" clip-path="url(#clip-path-3)">
+        <path id="Path_120" data-name="Path 120" d="M291,5h30.277V-29H291Z" transform="translate(0 24)" fill="#414141"/>
+      </g>
+      <g id="Group_72" data-name="Group 72" clip-path="url(#clip-path-4)">
+        <g id="Group_71" data-name="Group 71" clip-path="url(#clip-path-3)">
+          <path id="Path_122" data-name="Path 122" d="M289,5h34V-29H289Z" transform="translate(0 24)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

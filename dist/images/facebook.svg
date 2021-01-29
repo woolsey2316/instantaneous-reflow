@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12.461" height="24" viewBox="0 0 12.461 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_101" data-name="Path 101" d="M116.462-23.827A28.26,28.26,0,0,0,113.173-24c-3.26,0-5.5,1.99-5.5,5.639v3.144H104v4.269h3.678V0h4.413V-10.947h3.663l.563-4.269h-4.226v-2.726c0-1.226.332-2.077,2.106-2.077h2.264Z" transform="translate(0 24)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_141" data-name="Rectangle 141" width="24" height="34" transform="translate(98 -5)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Path_97" data-name="Path 97" d="M104,0h13V-24H104Z" transform="translate(0 24)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Path_100" data-name="Path 100" d="M98-24h24V0H98Z" transform="translate(0 24)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="facebook" transform="translate(-104)" clip-path="url(#clip-path)">
+    <g id="Group_53" data-name="Group 53" clip-path="url(#clip-path-2)">
+      <g id="Group_50" data-name="Group 50" clip-path="url(#clip-path-3)">
+        <path id="Path_96" data-name="Path 96" d="M99,5h22.462V-29H99Z" transform="translate(0 24)" fill="#414141"/>
+      </g>
+      <g id="Group_52" data-name="Group 52" clip-path="url(#clip-path-4)">
+        <g id="Group_51" data-name="Group 51" clip-path="url(#clip-path-3)">
+          <path id="Path_98" data-name="Path 98" d="M93,5h34V-29H93Z" transform="translate(0 24)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
